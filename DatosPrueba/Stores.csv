@@ -1,0 +1,307 @@
+StoreKey;Store Type;Store Name;Continent;City;State;CountryRegion;Employees;Selling Area;Last Remodel Date
+17;Store;Contoso Spokane Store;North America;Spokane;Washington;United States;25;700;17/6/2009
+5;Store;Contoso Redmond Store;North America;Redmond;Washington;United States;33;560;17/6/2009
+15;Store;Contoso Renton Store;North America;Renton;Washington;United States;22;500;17/6/2009
+2;Store;Contoso Seattle No.2 Store;North America;Seattle;Washington;United States;25;700;17/6/2009
+150;Store;Contoso Attleboro Store;North America;Attleboro;Massachusetts;United States;19;455;17/6/2009
+40;Store;Contoso Aurora Store;North America;Aurora;Colorado;United States;25;700;17/6/2009
+197;Store;Contoso Back River Store;North America;Back River;Maryland;United States;33;560;17/6/2009
+192;Store;Contoso Baltimore Store;North America;Baltimore;Maryland;United States;17;460;17/6/2009
+167;Store;Contoso Bar Harbor Store;North America;Bar Harbor;Maine;United States;47;1125;17/6/2009
+137;Store;Contoso Bayonne Store;North America;Bayonne;New Jersey;United States;47;1125;17/6/2009
+37;Store;Contoso Boulder Store;North America;Boulder;Colorado;United States;47;1125;17/6/2009
+52;Store;Contoso Burlington Store;North America;Burlington;Wisconsin;United States;47;1125;17/6/2009
+145;Store;Contoso Cape May Store;North America;Cape May;New Jersey;United States;22;500;17/6/2009
+190;Store;Contoso Charleston Store;North America;Charleston;South Carolina;United States;47;1125;17/6/2009
+90;Store;Contoso Dallas Store;North America;Dallas;Texas;United States;47;1125;17/6/2009
+35;Store;Contoso Denver No.2 Store;North America;Denver;Colorado;United States;19;455;17/6/2009
+95;Store;Contoso Desoto Store;North America;Desoto;Texas;United States;26;680;17/6/2009
+135;Store;Contoso East Orange Store;North America;East Orange;New Jersey;United States;19;455;17/6/2009
+20;Store;Contoso Englewood Store;North America;Englewood;Colorado;United States;33;560;17/6/2009
+30;Store;Contoso Fort Collins Store;North America;Fort Collins;Colorado;United States;22;500;17/6/2009
+155;Store;Contoso Framingham Store;North America;Framingham;Massachusetts;United States;25;700;17/6/2009
+187;Store;Contoso Fredericksburg Store;North America;Fredericksburg;Virginia;United States;26;680;17/6/2009
+55;Store;Contoso Germantown Store;North America;Germantown;Maryland;United States;25;700;17/6/2009
+7;Store;Contoso Granger Store;North America;Granger;Washington;United States;22;500;17/6/2009
+25;Store;Contoso Greeley  No.1 Store;North America;Greeley;Colorado;United States;25;700;17/6/2009
+42;Store;Contoso Green Bay Store;North America;Green Bay;Wisconsin;United States;19;455;17/6/2009
+140;Store;Contoso Hackensack Store;North America;Hackensack;New Jersey;United States;25;700;17/6/2009
+172;Store;Contoso Hartford Store;North America;Hartford;Connecticut;United States;26;680;17/6/2009
+92;Store;Contoso Hillsboro Store;North America;Hillsboro;Texas;United States;17;460;17/6/2009
+67;Store;Contoso Houston No.2 Store;North America;Houston;Texas;United States;47;1125;17/6/2009
+132;Store;Contoso Jersey City Store;North America;Jersey City;New Jersey;United States;25;700;17/6/2009
+112;Store;Contoso Key West Store;North America;Key West;Florida;United States;19;455;17/6/2009
+80;Store;Contoso La Porte Store;North America;La Porte;Texas;United States;26;680;17/6/2009
+27;Store;Contoso Lafayette Store;North America;Lafayette;Colorado;United States;19;455;17/6/2009
+152;Store;Contoso Leominster Store;North America;Leominster;Massachusetts;United States;47;1125;17/6/2009
+97;Store;Contoso Lewisville Store;North America;Lewisville;Texas;United States;33;560;17/6/2009
+75;Store;Contoso Longview Store;North America;Longview;Texas;United States;47;1125;17/6/2009
+60;Store;Contoso Madison Store;North America;Madison;Wisconsin;United States;47;1125;17/6/2009
+102;Store;Contoso Miami No.2 Store;North America;Miami;Florida;United States;25;700;17/6/2009
+70;Store;Contoso Midland Store;North America;Midland;Texas;United States;25;700;17/6/2009
+32;Store;Contoso Milliken Store;North America;Milliken;Colorado;United States;25;700;17/6/2009
+47;Store;Contoso Milwaukee No.1 Store;North America;Milwaukee;Wisconsin;United States;25;700;17/6/2009
+72;Store;Contoso Minden Store;North America;Minden;Texas;United States;26;680;17/6/2009
+142;Store;Contoso Montclair Store;North America;Montclair;New Jersey;United States;19;455;17/6/2009
+165;Store;Contoso Nantucket Store;North America;Nantucket;Massachusetts;United States;19;455;17/6/2009
+227;Store;Contoso Naples Store;North America;Naples;Florida;United States;13;500;17/6/2009
+177;Store;Contoso New Haven Store;North America;New Haven;Connecticut;United States;17;462;17/6/2009
+115;Store;Contoso New York No.1 Store;North America;New York;New York;United States;22;500;17/6/2009
+117;Store;Contoso New York No.2 Store;North America;New York;New York;United States;25;700;17/6/2009
+130;Store;Contoso Newark No.1 Store;North America;Newark;New Jersey;United States;22;500;17/6/2009
+180;Store;Contoso Norfolk Store;North America;Norfolk;Virginia;United States;26;680;17/6/2009
+12;Store;Contoso North Bend Store;North America;North Bend;Washington;United States;19;455;17/6/2009
+160;Store;Contoso Northampton Store;North America;Northampton;Massachusetts;United States;47;1125;17/6/2009
+175;Store;Contoso Old Saybrook Store;North America;Old Saybrook;Connecticut;United States;47;1125;17/6/2009
+77;Store;Contoso Orange Store;North America;Orange;Texas;United States;17;462;17/6/2009
+110;Store;Contoso Orlando Store;North America;Orlando;Florida;United States;25;700;17/6/2009
+170;Store;Contoso Orono Store;North America;Orono;Maine;United States;25;700;17/6/2009
+45;Store;Contoso Oshkosh Store;North America;Oshkosh;Wisconsin;United States;22;500;17/6/2009
+122;Store;Contoso Oswego Store;North America;Oswego;New York;United States;22;500;17/6/2009
+162;Store;Contoso Pittsfield Store;North America;Pittsfield;Massachusetts;United States;17;462;17/6/2009
+100;Store;Contoso Plano Store;North America;Plano;Texas;United States;17;462;17/6/2009
+120;Store;Contoso Plattsburgh Store;North America;Plattsburgh;New York;United States;33;560;17/6/2009
+127;Store;Contoso Poestenkill Store;North America;Poestenkill;New York;United States;19;455;17/6/2009
+57;Store;Contoso Port Washington Store;North America;Port Washington;Wisconsin;United States;26;680;17/6/2009
+195;Store;Contoso Queen Anne's County Store;North America;Queen Anne's County;Maryland;United States;26;680;17/6/2009
+125;Store;Contoso Queens Store;North America;Queens;New York;United States;25;700;17/6/2009
+65;Store;Contoso Racine No.2 Store;North America;Racine;Wisconsin;United States;19;455;17/6/2009
+185;Store;Contoso Roanoke Store;North America;Roanoke;Virginia;United States;17;462;17/6/2009
+87;Store;Contoso San Antonio Store;North America;San Antonio;Texas;United States;26;680;17/6/2009
+107;Store;Contoso Sebring Store;North America;Sebring;Florida;United States;22;500;17/6/2009
+157;Store;Contoso Somerville Store;North America;Somerville;Massachusetts;United States;26;680;17/6/2009
+85;Store;Contoso Spring Store;North America;Spring;Texas;United States;17;462;17/6/2009
+62;Store;Contoso Stoughton Store;North America;Stoughton;Wisconsin;United States;17;462;17/6/2009
+105;Store;Contoso Tallahassee No.2 Store;North America;Tallahassee;Florida;United States;33;560;17/6/2009
+82;Store;Contoso Texas City Store;North America;Texas City;Texas;United States;33;560;17/6/2009
+10;Store;Contoso Wapato Store;North America;Wapato;Washington;United States;25;700;17/6/2009
+50;Store;Contoso Waukesha No.1 Store;North America;Waukesha;Wisconsin;United States;19;455;17/6/2009
+182;Store;Contoso Winchester Store;North America;Winchester;Virginia;United States;33;560;17/6/2009
+147;Store;Contoso Worcester No.1 Store;North America;Worcester;Massachusetts;United States;25;700;17/6/2009
+200;Catalog;Contoso Catalog Store;North America;North Harford;Maryland;United States;120;462;17/6/2009
+199;Online;Contoso North America Online Store;North America;Bethesda;Maryland;United States;325;500;16/6/2009
+4;Store;Contoso Bellevue Store;North America;Bellevue;Washington;United States;19;455;16/6/2009
+6;Store;Contoso Yakima Store;North America;Yakima;Washington;United States;47;1125;16/6/2009
+79;Store;Contoso Baytown Store;North America;Baytown;Texas;United States;26;680;16/6/2009
+16;Store;Contoso Everett Store;North America;Everett;Washington;United States;17;462;16/6/2009
+1;Store;Contoso Seattle No.1 Store;North America;Seattle;Washington;United States;17;462;16/6/2009
+114;Store;Contoso Albany Store;North America;Albany;New York;United States;47;1125;16/6/2009
+184;Store;Contoso Alexandria Store;North America;Alexandria;Virginia;United States;22;500;16/6/2009
+191;Store;Contoso Annapolis Store;North America;Annapolis;Maryland;United States;22;500;16/6/2009
+141;Store;Contoso Atlantic City Store;North America;Atlantic City;New Jersey;United States;26;680;16/6/2009
+86;Store;Contoso Austin Store;North America;Austin;Texas;United States;25;700;16/6/2009
+81;Store;Contoso Bacliff Store;North America;Bacliff;Texas;United States;19;455;16/6/2009
+166;Store;Contoso Bangor Store;North America;Bangor;Maine;United States;33;560;16/6/2009
+76;Store;Contoso Beaumont No.1 Store;North America;Beaumont;Texas;United States;22;500;16/6/2009
+146;Store;Contoso Boston Store;North America;Boston;Massachusetts;United States;17;460;16/6/2009
+121;Store;Contoso Brooklyn Store;North America;Brooklyn;New York;United States;47;1125;16/6/2009
+119;Store;Contoso Buffalo Store;North America;Buffalo;New York;United States;19;455;16/6/2009
+186;Store;Contoso Charlottesville Store;North America;Charlottesville;Virginia;United States;25;700;16/6/2009
+19;Store;Contoso Cheney Store;North America;Cheney;Washington;United States;19;455;16/6/2009
+11;Store;Contoso Cle Elum Store;North America;Cle Elum;Washington;United States;26;680;16/6/2009
+134;Store;Contoso Clifton Store;North America;Clifton;New Jersey;United States;26;680;16/6/2009
+176;Store;Contoso Darien Store;North America;Darien;Connecticut;United States;22;500;16/6/2009
+34;Store;Contoso Denver No.1 Store;North America;Denver;Colorado;United States;26;680;16/6/2009
+36;Store;Contoso Denver No.3 Store;North America;Denver;Colorado;United States;33;560;16/6/2009
+126;Store;Contoso Elmira Store;North America;Elmira;New York;United States;26;680;16/6/2009
+14;Store;Contoso Fall City Store;North America;Fall City;Washington;United States;47;1125;16/6/2009
+46;Store;Contoso Fond du Lac Store;North America;Fond du Lac;Wisconsin;United States;17;460;16/6/2009
+64;Store;Contoso Fort Atkinson Store;North America;Fort Atkinson;Wisconsin;United States;26;680;16/6/2009
+109;Store;Contoso Fort Lauderdale Store;North America;Fort Lauderdale;Florida;United States;25;700;16/6/2009
+99;Store;Contoso Fort Worth Store;North America;Fort Worth;Texas;United States;22;500;16/6/2009
+91;Store;Contoso Georgetown Store;North America;Georgetown;Texas;United States;22;500;16/6/2009
+94;Store;Contoso Grand Prairie Store;North America;Grand Prairie;Texas;United States;25;700;16/6/2009
+31;Store;Contoso Greeley No.2 Store;North America;Greeley;Colorado;United States;17;462;16/6/2009
+189;Store;Contoso Greenville Store;North America;Greenville;South Carolina;United States;33;560;16/6/2009
+161;Store;Contoso Holyoke Store;North America;Holyoke;Massachusetts;United States;22;500;16/6/2009
+66;Store;Contoso Houston No.1 Store;North America;Houston;Texas;United States;33;560;16/6/2009
+69;Store;Contoso Houston No.4 Store;North America;Houston;Texas;United States;17;460;16/6/2009
+84;Store;Contoso Humble Store;North America;Humble;Texas;United States;22;500;16/6/2009
+169;Store;Contoso Lewiston Store;North America;Lewiston;Maine;United States;17;460;16/6/2009
+39;Store;Contoso Littleton Store;North America;Littleton;Colorado;United States;17;462;16/6/2009
+26;Store;Contoso Loveland Store;North America;Loveland;Colorado;United States;26;680;16/6/2009
+151;Store;Contoso Lowell Store;North America;Lowell;Massachusetts;United States;33;560;16/6/2009
+159;Store;Contoso Lynn Store;North America;Lynn;Massachusetts;United States;33;560;16/6/2009
+59;Store;Contoso Manitowoc Store;North America;Manitowoc;Wisconsin;United States;33;560;16/6/2009
+74;Store;Contoso Marshall Store;North America;Marshall;Texas;United States;33;560;16/6/2009
+44;Store;Contoso Menasha Store;North America;Menasha;Wisconsin;United States;47;1125;16/6/2009
+101;Store;Contoso Miami No.1 Store;North America;Miami;Florida;United States;17;462;16/6/2009
+49;Store;Contoso Milwaukee No.3 Store;North America;Milwaukee;Wisconsin;United States;26;680;16/6/2009
+144;Store;Contoso Morristown Store;North America;Morristown;New Jersey;United States;47;1125;16/6/2009
+149;Store;Contoso New Bedford Store;North America;New Bedford;Massachusetts;United States;26;680;16/6/2009
+139;Store;Contoso New Brunswick Store;North America;New Brunswick;New Jersey;United States;17;462;16/6/2009
+24;Store;Contoso New Castle Store;North America;New Castle;Colorado;United States;25;700;16/6/2009
+179;Store;Contoso New London Store;North America;New London;Connecticut;United States;26;680;16/6/2009
+131;Store;Contoso Newark No.2 Store;North America;Newark;New Jersey;United States;17;462;16/6/2009
+61;Store;Contoso Oregon Store;North America;Oregon;Wisconsin;United States;22;500;16/6/2009
+41;Store;Contoso Parker Store;North America;Parker;Colorado;United States;26;680;16/6/2009
+196;Store;Contoso Parkville Store;North America;Parkville;Maryland;United States;19;455;16/6/2009
+136;Store;Contoso Passaic Store;North America;Passaic;New Jersey;United States;33;560;16/6/2009
+164;Store;Contoso Provincetown Store;North America;Provincetown;Massachusetts;United States;26;680;16/6/2009
+154;Store;Contoso Quincy Store;North America;Quincy;Massachusetts;United States;17;462;16/6/2009
+51;Store;Contoso Racine No.1 Store;North America;Racine;Wisconsin;United States;33;560;16/6/2009
+96;Store;Contoso Richardson Store;North America;Richardson;Texas;United States;19;455;16/6/2009
+194;Store;Contoso Ridgely Store;North America;Ridgely;Maryland;United States;25;700;16/6/2009
+116;Store;Contoso Rochester No.1 Store;North America;Rochester;New York;United States;17;462;16/6/2009
+124;Store;Contoso Rochester No.2 Store;North America;Rochester;New York;United States;25;700;16/6/2009
+89;Store;Contoso Round Rock Store;North America;Round Rock;Texas;United States;33;560;16/6/2009
+71;Store;Contoso Russellville Store;North America;Russellville;Texas;United States;25;700;16/6/2009
+29;Store;Contoso Sedalia Store;North America;Sedalia;Colorado;United States;47;1125;16/6/2009
+171;Store;Contoso South Portland Store;North America;South Portland;Maine;United States;25;700;16/6/2009
+104;Store;Contoso Tallahassee No.1 Store;North America;Tallahassee;Florida;United States;19;455;16/6/2009
+111;Store;Contoso Tampa Store;North America;Tampa;Florida;United States;26;680;16/6/2009
+9;Store;Contoso Toppenish Store;North America;Toppenish;Washington;United States;25;700;16/6/2009
+129;Store;Contoso Trenton No.2 Store;North America;Trenton;New Jersey;United States;47;1125;16/6/2009
+181;Store;Contoso Virginia Beach Store;North America;Virginia Beach;Virginia;United States;19;455;16/6/2009
+174;Store;Contoso Waterbury Store;North America;Waterbury;Connecticut;United States;33;560;16/6/2009
+54;Store;Contoso Waukesha No.2 Store;North America;Waukesha;Wisconsin;United States;17;462;16/6/2009
+21;Store;Contoso Wheat Ridge Store;North America;Wheat Ridge;Colorado;United States;47;1125;16/6/2009
+88;Store;Contoso Cedar Park Store;North America;Cedar Park;Texas;United States;19;455;18/6/2009
+308;Reseller;Contoso North America Reseller;North America;Seattle;Washington;United States;15;450;5/6/2008
+183;Store;Contoso Anchorage Store;North America;Anchorage;Alaska;United States;47;1125;18/6/2009
+43;Store;Contoso Appleton Store;North America;Appleton;Wisconsin;United States;33;560;18/6/2009
+93;Store;Contoso Arlington Store;North America;Arlington;Texas;United States;25;700;18/6/2009
+78;Store;Contoso Beaumont No.2 Store;North America;Beaumont;Texas;United States;25;700;18/6/2009
+33;Store;Contoso Berthoud Store;North America;Berthoud;Colorado;United States;26;680;18/6/2009
+173;Store;Contoso Bridgeport Store;North America;Bridgeport;Connecticut;United States;19;455;18/6/2009
+113;Store;Contoso Cape Canaveral Store;North America;Cape Canaveral;Florida;United States;33;560;18/6/2009
+28;Store;Contoso Castle Rock Store;North America;Castle Rock;Colorado;United States;33;560;18/6/2009
+98;Store;Contoso Denton Store;North America;Denton;Texas;United States;47;1125;18/6/2009
+53;Store;Contoso East Troy Store;North America;East Troy;Wisconsin;United States;22;500;18/6/2009
+63;Store;Contoso Edgerton Store;North America;Edgerton;Wisconsin;United States;25;700;18/6/2009
+163;Store;Contoso Falmouth Store;North America;Falmouth;Massachusetts;United States;25;700;18/6/2009
+198;Store;Contoso North Harford Store;North America;Germantown;Maryland;United States;47;1125;18/6/2009
+23;Store;Contoso Grand Junction Store;North America;Grand Junction;Colorado;United States;17;460;18/6/2009
+158;Store;Contoso Haverhill Store;North America;Haverhill;Massachusetts;United States;19;455;18/6/2009
+153;Store;Contoso Hingham Store;North America;Hingham;Massachusetts;United States;22;500;18/6/2009
+143;Store;Contoso Hoboken Store;North America;Hoboken;New Jersey;United States;33;560;18/6/2009
+68;Store;Contoso Houston No.3 Store;North America;Houston;Texas;United States;22;500;18/6/2009
+193;Store;Contoso Howard Store;North America;Howard;Maryland;United States;25;700;18/6/2009
+123;Store;Contoso Ithaca Store;North America;Ithaca;New York;United States;17;460;18/6/2009
+103;Store;Contoso Jacksonville Store;North America;Jacksonville;Florida;United States;26;680;18/6/2009
+168;Store;Contoso Kennebunkport Store;North America;Kennebunkport;Maine;United States;22;500;18/6/2009
+3;Store;Contoso Kennewick Store;North America;Kennewick;Washington;United States;26;680;18/6/2009
+108;Store;Contoso Lakeland Store;North America;Lakeland;Florida;United States;17;460;18/6/2009
+178;Store;Contoso Litchfield County Store;North America;Litchfield County;Connecticut;United States;25;700;18/6/2009
+188;Store;Contoso Martinsville Store;North America;Martinsville;Virginia;United States;19;455;18/6/2009
+48;Store;Contoso Milwaukee No.2 Store;North America;Milwaukee;Wisconsin;United States;25;700;18/6/2009
+83;Store;Contoso Pasadena Store;North America;Pasadena;Texas;United States;47;1125;18/6/2009
+133;Store;Contoso Paterson Store;North America;Paterson;New Jersey;United States;26;680;18/6/2009
+58;Store;Contoso Sheboygan Store;North America;Sheboygan;Wisconsin;United States;19;455;18/6/2009
+73;Store;Contoso Shreveport Store;North America;Shreveport;Texas;United States;19;455;18/6/2009
+13;Store;Contoso Snoqualmie Store;North America;Snoqualmie;Washington;United States;33;560;18/6/2009
+8;Store;Contoso Sunnyside Store;North America;Sunnyside;Washington;United States;17;460;18/6/2009
+118;Store;Contoso Syracuse Store;North America;Syracuse;New York;United States;26;680;18/6/2009
+38;Store;Contoso Thornton Store;North America;Thornton;Colorado;United States;22;500;18/6/2009
+128;Store;Contoso Trenton No.1 Store;North America;Trenton;New Jersey;United States;33;560;18/6/2009
+18;Store;Contoso Veradale Store;North America;Veradale;Washington;United States;26;680;18/6/2009
+138;Store;Contoso Vineland Store;North America;Vineland;New Jersey;United States;22;500;18/6/2009
+148;Store;Contoso Worcester No.2 Store;North America;Worcester;Massachusetts;United States;25;700;18/6/2009
+156;Store;Contoso Cambridge Store;Europe;Cambridge;England;United Kingdom;26;680;16/6/2009
+214;Store;Contoso Leeds Store;Europe;Leeds;England;United Kingdom;25;680;16/6/2009
+201;Store;Contoso London Store;Europe;London;England;United Kingdom;17;462;16/6/2009
+215;Store;Contoso Paris Store;Europe;Paris;Seine (Paris);France;12;680;17/6/2009
+309;Reseller;Contoso Europe Reseller;Europe;Paris;Seine (Paris);France;12;551;5/6/2008
+253;Store;Contoso Sydney No.1 Store;Asia;Sydney;New South Wales;Australia;20;480;18/6/2009
+300;Store;Contoso Sydney  No.2 Store;Asia;Sydney;New South Wales;Australia;95;480;18/6/2009
+289;Store;Contoso Vancouver  No.1 Store;North America;Vancouver;British Columbia;Canada;95;480;18/6/2009
+290;Store;Contoso Vancouver  No.2 Store;North America;Vancouver;British Columbia;Canada;95;480;18/6/2009
+22;Store;Contoso Westminster Store;North America;Westminster;British Columbia;Canada;22;500;17/6/2009
+204;Store;Contoso York Store;Europe;York;England;United Kingdom;78;680;16/6/2009
+228;Store;Contoso Berlin Store;Europe;Berlin;Berlin;Germany;13;500;18/6/2009
+306;Online;Contoso Europe Online Store;Europe;Berlin;Berlin;Germany;7;1000;18/6/2009
+291;Store;Contoso Calgary  Store;North America;Calgary;Alberta;Canada;95;480;18/6/2009
+212;Store;Contoso Liverpool Store;Europe;Liverpool;England;United Kingdom;64;680;17/6/2009
+298;Store;Contoso Ashgabat  No.2 Store;Asia;Ashgabat;Ahal Province;Turkmenistan;95;480;18/6/2009
+264;Store;Contoso Ashgabat No.1 Store;Asia;Ashgabat;Ahal Province;Turkmenistan;68;480;16/6/2009
+262;Store;Contoso Bangkok No.1 Store;Asia;Bangkok;Krung Thep;Thailand;62;480;17/6/2009
+296;Store;Contoso Bangkok No.2 Store;Asia;Bangkok;Krung Thep;Thailand;95;480;18/6/2009
+307;Online;Contoso Asia Online Store;Asia;Beijing;Beijing;China;8;93800;18/6/2009
+310;Reseller;Contoso Asia Reseller;Asia;Beijing;Beijing;China;17;93800;5/11/2008
+279;Store;Contoso Beijing Store;Asia;Beijing;Beijing;China;86;480;17/6/2009
+276;Store;Contoso Bishkek Store;Asia;Bishkek;Chuy Province;Kyrgyzstan;50;480;16/6/2009
+275;Store;Contoso Busan Store;Asia;Busan;Yeongnam;South Korea;50;480;18/6/2009
+252;Store;Contoso Canberra Store;Asia;Canberra;Molonglo;Australia;28;480;17/6/2009
+295;Store;Contoso Damascus No.2 Store;Asia;Damascus;Damascus;Syria;95;480;18/6/2009
+261;Store;Contoso Damascus No.1 Store;Asia;Damascus;Damascus;Syria;35;480;16/6/2009
+280;Store;Contoso Guangzhou Store;Asia;Guangzhou;GuangDong;China;131;480;18/6/2009
+293;Store;Contoso Hong Kong No.2 Store;Asia;Hong Kong;Hong Kong;China;95;480;18/6/2009
+259;Store;Contoso Hong Kong No.1 Store;Asia;Hong Kong;Hong Kong;China;35;480;16/6/2009
+265;Store;Contoso Islamabad No.1 Store;Asia;Islamabad;Islamabad Capital Territory;Pakistan;71;480;17/6/2009
+299;Store;Contoso Islamabad  No.2 Store;Asia;Islamabad;Islamabad Capital Territory;Pakistan;95;480;18/6/2009
+257;Store;Contoso Kolkata Store;Asia;Kolkata;West Bengal;India;35;480;17/6/2009
+273;Store;Contoso Kyoto Store;Asia;Kyoto;Kansai;Japan;50;480;16/6/2009
+256;Store;Contoso Mumbai Store;Asia;Mumbai;Maharashtra;India;35;480;16/6/2009
+271;Store;Contoso Nagoya Store;Asia;Nagoya;Chubu;Japan;50;480;16/6/2009
+255;Store;Contoso New Delhi Store;Asia;New Delhi;National Capital Territory of Delhi;India;29;480;17/6/2009
+270;Store;Contoso Osaka No.1 Store;Asia;Osaka;Kansai;Japan;80;480;18/6/2009
+301;Store;Contoso Osaka No.2 Store;Asia;Osaka;Kansai;Japan;95;480;18/6/2009
+272;Store;Contoso Sapporo Store;Asia;Sapporo;Hokkaido;Japan;50;480;17/6/2009
+274;Store;Contoso Seoul Store;Asia;Seoul;Seoul-jikhalsi;South Korea;50;480;17/6/2009
+277;Store;Contoso Shanghai No.1 Store;Asia;Shanghai;Shanghai;China;95;480;18/6/2009
+281;Store;Contoso Shanghai No.2 Store;Asia;Shanghai;Shanghai;China;95;480;18/6/2009
+251;Store;Contoso Singapore Store;Asia;Singapore;Singapore;Singapore;27;480;16/6/2009
+302;Store;Contoso Taipei  Store;Asia;Taipei;Taiwan;Taiwan;95;480;18/6/2009
+260;Store;Contoso Tehran No.1 Store;Asia;Tehran;Tehran;Iran;35;480;17/6/2009
+294;Store;Contoso Tehran No.2 Store;Asia;Tehran;Tehran;Iran;95;480;18/6/2009
+292;Store;Contoso Thimphu No.2 Store;Asia;Thimphu;Thimphu District;Bhutan;95;480;18/6/2009
+258;Store;Contoso Thimphu No.1 Store;Asia;Thimphu;Thimphu District;Bhutan;35;480;18/6/2009
+267;Store;Contoso Tokyo No.1 Store;Asia;Tokyo;Kanto;Japan;68;480;17/6/2009
+268;Store;Contoso Tokyo No.2 Store;Asia;Tokyo;Kanto;Japan;68;480;18/6/2009
+278;Store;Contoso Urumqi Store;Asia;Urumqi;Xinjiang;China;50;480;16/6/2009
+254;Store;Contoso Yerevan Store;Asia;Yerevan;Armenia;Armenia;15;480;16/6/2009
+269;Store;Contoso Yokohama Store;Asia;Yokohama;Kanto;Japan;77;480;17/6/2009
+240;Store;Contoso Amsterdam Store;Europe;Amsterdam;Noord-Holland;the Netherlands;26;680;17/6/2009
+250;Store;Contoso Athens Store;Europe;Athens;Central Greece and Evvoia;Greece;15;680;17/6/2009
+209;Store;Contoso Baildon Store;Europe;Baildon;England;United Kingdom;32;680;16/6/2009
+236;Store;Contoso Baumholder Store;Europe;Baumholder;Rhineland-Palatinate;Germany;28;500;16/6/2009
+246;Store;Contoso Berne Store;Europe;Berne;Bern;Switzerland;53;680;16/6/2009
+245;Store;Contoso Bucharest Store;Europe;Bucharest;Bucuresti;Romania;25;680;17/6/2009
+205;Store;Contoso Carlisle Store;Europe;Carlisle;England;United Kingdom;23;680;17/6/2009
+210;Store;Contoso Cheshire Store;Europe;Cheshire;England;United Kingdom;;680;17/6/2009
+241;Store;Contoso Copenhagen Store;Europe;Copenhagen;Staden Kobenhavn;Denmark;25;680;16/6/2009
+249;Store;Contoso Dublin Store;Europe;Dublin;Leinster;Ireland;55;680;16/6/2009
+234;Store;Contoso Dusseldorf Store;Europe;Dusseldorf;North Rhine-Westphalia;Germany;24;500;16/6/2009
+202;Store;Contoso Edinburgh Store;Europe;Edinburgh;Scotland;United Kingdom;25;700;17/6/2009
+224;Store;Contoso Firenze Store;Europe;Firenze;Province of Florence;Italy;45;500;16/6/2009
+237;Store;Contoso Giebelstadt Store;Europe;Giebelstadt;Bavaria;Germany;15;500;17/6/2009
+203;Store;Contoso Glasgow Store;Europe;Glasgow;Scotland;United Kingdom;26;680;18/6/2009
+231;Store;Contoso Hofheim Store;Europe;Hofheim am Taunus;Hesse;Germany;25;500;16/6/2009
+213;Store;Contoso Knotty Ash Store;Europe;Knotty Ash;England;United Kingdom;24;680;18/6/2009
+232;Store;Contoso koln No.1 Store;Europe;Koln;North Rhine-Westphalia;Germany;35;500;17/6/2009
+230;Store;Contoso koln No.2 Store;Europe;Koln;North Rhine-Westphalia;Germany;25;500;17/6/2009
+207;Store;Contoso Lancashire Store;Europe;Lancashire;England;United Kingdom;36;680;17/6/2009
+233;Store;Contoso Landstuhl Store;Europe;Landstuhl;Rhineland-Palatinate;Germany;21;500;18/6/2009
+303;Store;Contoso Lisbon Store;Europe;Lisbon;Lisboa Region;Portugal;95;480;18/6/2009
+244;Store;Contoso Ljubljana Store;Europe;Ljubljana;Ljubljana;Slovenia;36;680;16/6/2009
+217;Store;Contoso Lyon Store;Europe;Lyon;Rhone-Alpes;France;15;680;17/6/2009
+243;Store;Contoso Madrid Store;Europe;Madrid;Madrid;Spain;35;680;18/6/2009
+206;Store;Contoso Manchester Store;Europe;Manchester;England;United Kingdom;11;680;16/6/2009
+216;Store;Contoso Marseille Store;Europe;Marseille;Provence-Alpes-Cote d'Azur;France;13;680;16/6/2009
+226;Store;Contoso Milan Store;Europe;Milan;Lombardia;Italy;23;500;16/6/2009
+263;Store;Contoso Moscow  No.1 Store;Europe;Moscow;Moskovskaya oblast;Russia;65;480;18/6/2009
+297;Store;Contoso Moscow  No.2 Store;Europe;Moscow;Moskovskaya oblast;Russia;95;480;18/6/2009
+239;Store;Contoso Munich Store;Europe;Munich;Bavaria;Germany;18;500;16/6/2009
+220;Store;Contoso Nantes Store;Europe;Nantes;Pays de la Loire;France;11;680;17/6/2009
+219;Store;Contoso Nice Store;Europe;Nice;Alpes-Maritimes;France;32;680;16/6/2009
+305;Store;Contoso Nizhny Novgorod Store;Europe;Nizhny Novgorod;Nizhny Novgorod Oblast;Russia;95;480;20/6/2009
+238;Store;Contoso obamberg Store;Europe;Bamberg;Bavaria;Germany;29;500;18/6/2009
+235;Store;Contoso Ramstein Store;Europe;Ramstein;Rhineland-Palatinate;Germany;15;500;17/6/2009
+222;Store;Contoso Roma Store;Europe;Roma;Roma;Italy;43;490;17/6/2009
+304;Store;Contoso Saint Petersburg Store;Europe;Saint Petersburg;Northwestern;Russia;95;480;19/6/2009
+242;Store;Contoso Stockholm Store;Europe;Stockholm;Stockholms;Sweden;33;680;17/6/2009
+211;Store;Contoso Stockport Store;Europe;Stockport;England;United Kingdom;34;680;16/6/2009
+221;Store;Contoso Strasbourg Store;Europe;Strasbourg;Bas-Rhin;France;10;630;16/6/2009
+225;Store;Contoso Torino Store;Europe;Torino;Province of Turin;Italy;24;500;17/6/2009
+218;Store;Contoso Toulouse Store;Europe;Toulouse;Midi-Pyrenees;France;23;680;18/6/2009
+248;Store;Contoso Valletta Store;Europe;Valletta;Valletta;Malta;42;680;18/6/2009
+223;Store;Contoso Venezia Store;Europe;Venezia;Venice;Italy;11;500;18/6/2009
+247;Store;Contoso Warsaw Store;Europe;Warsaw;Warszawa;Poland;15;680;17/6/2009
+208;Store;Contoso West Yorkshire Store;Europe;West Yorkshire;England;United Kingdom;90;680;18/6/2009
+287;Store;Contoso Montreal No.1 Store;North America;Montreal;Quebec;Canada;95;480;18/6/2009
+288;Store;Contoso Montreal No.2 Store;North America;Montreal;Quebec;Canada;95;480;18/6/2009
+282;Store;Contoso Ottawa No.1 Store;North America;Ottawa;Ontario;Canada;95;480;18/6/2009
+283;Store;Contoso Ottawa No.2 Store;North America;Ottawa;Ontario;Canada;95;480;18/6/2009
+284;Store;Contoso Toronto No.1 Store;North America;Toronto;Ontario;Canada;95;480;18/6/2009
+285;Store;Contoso Toronto No.2 Store;North America;Toronto;Ontario;Canada;95;480;18/6/2009
+286;Store;Contoso Toronto No.3 Store;North America;Toronto;Ontario;Canada;95;480;18/6/2009

@@ -1,0 +1,45 @@
+ProductSubcategoryKey;Subcategory;ProductCategoryKey
+1;MP4&MP3;1
+2;Recorder;1
+3;Radio;1
+4;Recording Pen;1
+5;Headphones;1
+6;Bluetooth Headphones;1
+7;Speakers;1
+8;Audio Accessories;1
+9;Televisions;2
+10;VCD & DVD;2
+11;Home Theater System;2
+13;Car Video;2
+14;TV & Video Accessories;2
+15;Laptops;3
+16;Netbooks;3
+17;Desktops;3
+18;Monitors;3
+19;Projectors & Screens;3
+20;Printers, Scanners & Fax;3
+21;Computer Setup & Service;3
+22;Computers Accessories;3
+23;Digital Cameras;4
+24;Digital SLR Cameras;4
+25;Film Cameras;4
+27;Camcorders;4
+28;Cameras & Camcorders Accessories;4
+29;Home & Office Phones;5
+31;Touch Screen Phones;5
+32;Smart phones & PDAs;5
+33;Cell phones Accessories;5
+34;Music CD;6
+35;Movie DVD;6
+36;Audio Books;6
+38;Boxed Games;7
+39;Download Games;7
+40;Games Accessories;7
+41;Washers & Dryers;8
+42;Refrigerators;8
+43;Microwaves;8
+44;Water Heaters;8
+45;Coffee Machines;8
+46;Lamps;8
+47;Air Conditioners;8
+48;Fans;8
