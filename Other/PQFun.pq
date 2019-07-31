@@ -2,7 +2,7 @@
 let
     TextAsNumber = (valor as number)  => 
         let
-            Mostra = Text.From(valor)
+            Mostra = "This number is: "&Text.From(valor)
         in
 
     Mostra
