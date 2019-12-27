@@ -1,0 +1,4822 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<NotepadPlus>
+<AutoComplete language="M">
+<Environment ignoreCase="no" startFunc="(" stopFunc=")" paramSeparator="," additionalWordChar="." />
+
+<KeyWord name="Access.Database" func="yes" >
+<Overload retVal = "table" descr="Returns a structural representation of an Access database.">
+<Param name="database as binary" />
+<Param name="optional options as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="ActiveDirectory.Domains" func="yes" >
+<Overload retVal = "table" descr="Returns a list of Active Directory domains in the same forest as the specified domain or of the current machine's domain if none is specified.">
+<Param name="optional forestRootDomainName as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="AdobeAnalytics.Cubes" func="yes" >
+<Overload retVal = "table" descr="Returns the report suites in Adobe Analytics.">
+<Param name="optional options as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="AdoDotNet.DataSource" func="yes" >
+<Overload retVal = "table" descr="Returns the schema collection for an ADO.NET data source.">
+<Param name="providerName as text" />
+<Param name="connectionString as any" />
+<Param name="optional options as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="AdoDotNet.Query" func="yes" >
+<Overload retVal = "table" descr="Returns the result of running a native query on an ADO.NET data source.">
+<Param name="providerName as text" />
+<Param name="connectionString as any" />
+<Param name="query as text" />
+<Param name="optional options as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="AmazonRedshift.Database" func="yes" >
+<Overload retVal = "table" descr="Import data from an Amazon Redshift database.">
+<Param name="server as text" />
+<Param name="database as text" />
+<Param name="optional options as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="AnalysisServices.Database" func="yes" >
+<Overload retVal = "table" descr="Returns a table of multidimensional cubes or tabular models from the Analysis Services database.">
+<Param name="server as text" />
+<Param name="database as text" />
+<Param name="optional options as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="AnalysisServices.Databases" func="yes" >
+<Overload retVal = "table" descr="Returns the Analysis Services databases on a particular host.">
+<Param name="server as text" />
+<Param name="optional options as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="ApacheSpark.Tables" func="yes" >
+<Overload retVal = "table" descr="Returns a table listing the tables on the specified Spark cluster.">
+<Param name="server as text" />
+<Param name="protocol as number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="appFigures.Content" func="yes" >
+<Overload retVal = "any" descr="null">
+<Param name="path as text" />
+<Param name="params as record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="appFigures.Tables" func="yes" >
+<Overload retVal = "table" descr="null">
+</Overload>
+</KeyWord>
+
+<KeyWord name="AzureEnterprise.Contents" func="yes" >
+<Overload retVal = "binary" descr="Enter the URL of the Azure Enterprise REST API endpoint associated with your enrollment">
+<Param name="url as text" />
+<Param name="optional query as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="AzureEnterprise.Tables" func="yes" >
+<Overload retVal = "table" descr="Enter the URL of the Azure Enterprise REST API endpoint associated with your enrollment">
+<Param name="url as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="AzureHiveLLAP.Database" func="yes" >
+<Overload retVal = "table" descr="Import data from HDInsight Interactive Query">
+<Param name="server as text" />
+<Param name="database as text" />
+<Param name="optional options as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="AzureSpark.Tables" func="yes" >
+<Overload retVal = "table" descr="List the tables in an Azure Spark instance.">
+<Param name="server as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="AzureStorage.BlobContents" func="yes" >
+<Overload retVal = "binary" descr="Returns the content of the specified blob from an Azure storage vault.">
+<Param name="url as text" />
+<Param name="optional options as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="AzureStorage.Blobs" func="yes" >
+<Overload retVal = "table" descr="Returns a navigational table containing the containers found in the specified account from an Azure storage vault.">
+<Param name="account as text" />
+<Param name="optional options as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="AzureStorage.Tables" func="yes" >
+<Overload retVal = "table" descr="Returns a navigational table containing the tables found in the specified account from an Azure storage vault.">
+<Param name="account as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Binary.Buffer" func="yes" >
+<Overload retVal = "nullable binary" descr="Buffers the binary value in memory.">
+<Param name="binary as nullable binary" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Binary.Combine" func="yes" >
+<Overload retVal = "binary" descr="Combines a list of binaries into a single binary.">
+<Param name="binaries as list" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Binary.Compress" func="yes" >
+<Overload retVal = "nullable binary" descr="Compresses a binary value using the given compression type.">
+<Param name="binary as nullable binary" />
+<Param name="compressionType as number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Binary.Decompress" func="yes" >
+<Overload retVal = "nullable binary" descr="Decompresses a binary value using the given compression type.">
+<Param name="binary as nullable binary" />
+<Param name="compressionType as number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Binary.From" func="yes" >
+<Overload retVal = "nullable binary" descr="Creates a binary from the given value">
+<Param name="value as any" />
+<Param name="optional encoding as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Binary.FromList" func="yes" >
+<Overload retVal = "binary" descr="Converts a list of numbers into a binary value.">
+<Param name="list as list" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Binary.FromText" func="yes" >
+<Overload retVal = "nullable binary" descr="Decodes data from a text form into binary.">
+<Param name="text as nullable text" />
+<Param name="optional encoding as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Binary.InferContentType" func="yes" >
+<Overload retVal = "record" descr="Reads the binary stream and tries to determine the content type and format information of the stream.">
+<Param name="source as binary" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Binary.Length" func="yes" >
+<Overload retVal = "nullable number" descr="Returns the number of characters.">
+<Param name="binary as nullable binary" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Binary.ToList" func="yes" >
+<Overload retVal = "list" descr="Converts a binary value into a list of numbers.">
+<Param name="binary as binary" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Binary.ToText" func="yes" >
+<Overload retVal = "nullable text" descr="Encodes binary data into a text form.">
+<Param name="binary as nullable binary" />
+<Param name="optional encoding as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="BinaryFormat.7BitEncodedSignedInteger" func="yes" >
+<Overload retVal = "any" descr="A binary format that reads a 64-bit signed integer that was encoded using a 7-bit variable-length encoding.">
+<Param name="binary as binary" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="BinaryFormat.7BitEncodedUnsignedInteger" func="yes" >
+<Overload retVal = "any" descr="A binary format that reads a 64-bit unsigned integer that was encoded using a 7-bit variable-length encoding.">
+<Param name="binary as binary" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="BinaryFormat.Binary" func="yes" >
+<Overload retVal = "function" descr="Returns a binary format that reads a binary value.">
+<Param name="optional length as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="BinaryFormat.Byte" func="yes" >
+<Overload retVal = "any" descr="A binary format that reads an 8-bit unsigned integer.">
+<Param name="binary as binary" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="BinaryFormat.ByteOrder" func="yes" >
+<Overload retVal = "function" descr="Returns a binary format with the byte order specified by a function.">
+<Param name="binaryFormat as function" />
+<Param name="byteOrder as number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="BinaryFormat.Choice" func="yes" >
+<Overload retVal = "function" descr="Returns a binary format that chooses the next binary format based on a value that has already been read.">
+<Param name="binaryFormat as function" />
+<Param name="chooseFunction as function" />
+<Param name="optional type as nullable type" />
+<Param name="optional combineFunction as nullable function" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="BinaryFormat.Decimal" func="yes" >
+<Overload retVal = "any" descr="A binary format that reads a .NET 16-byte decimal value.">
+<Param name="binary as binary" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="BinaryFormat.Double" func="yes" >
+<Overload retVal = "any" descr="A binary format that reads an 8-byte IEEE double-precision floating point value.">
+<Param name="binary as binary" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="BinaryFormat.Group" func="yes" >
+<Overload retVal = "function" descr="Returns a binary format that reads a group of items.">
+<Param name="binaryFormat as function" />
+<Param name="group as list" />
+<Param name="optional extra as nullable function" />
+<Param name="optional lastKey as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="BinaryFormat.Length" func="yes" >
+<Overload retVal = "function" descr="Returns a binary format that limits the amount of data that can be read.">
+<Param name="binaryFormat as function" />
+<Param name="length as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="BinaryFormat.List" func="yes" >
+<Overload retVal = "function" descr="Returns a binary format that reads a sequence of items and returns a list.">
+<Param name="binaryFormat as function" />
+<Param name="optional countOrCondition as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="BinaryFormat.Null" func="yes" >
+<Overload retVal = "any" descr="A binary format that reads zero bytes and returns null.">
+<Param name="binary as binary" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="BinaryFormat.Record" func="yes" >
+<Overload retVal = "function" descr="Returns a binary format that reads a record.">
+<Param name="record as record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="BinaryFormat.SignedInteger16" func="yes" >
+<Overload retVal = "any" descr="A binary format that reads a 16-bit signed integer.">
+<Param name="binary as binary" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="BinaryFormat.SignedInteger32" func="yes" >
+<Overload retVal = "any" descr="A binary format that reads a 32-bit signed integer.">
+<Param name="binary as binary" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="BinaryFormat.SignedInteger64" func="yes" >
+<Overload retVal = "any" descr="A binary format that reads a 64-bit signed integer.">
+<Param name="binary as binary" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="BinaryFormat.Single" func="yes" >
+<Overload retVal = "any" descr="A binary format that reads a 4-byte IEEE single-precision floating point value.">
+<Param name="binary as binary" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="BinaryFormat.Text" func="yes" >
+<Overload retVal = "function" descr="Returns a binary format that reads a text value.">
+<Param name="length as any" />
+<Param name="optional encoding as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="BinaryFormat.Transform" func="yes" >
+<Overload retVal = "function" descr="Returns a binary format that will transform the values read by another binary format.">
+<Param name="binaryFormat as function" />
+<Param name="function as function" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="BinaryFormat.UnsignedInteger16" func="yes" >
+<Overload retVal = "any" descr="A binary format that reads a 16-bit unsigned integer.">
+<Param name="binary as binary" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="BinaryFormat.UnsignedInteger32" func="yes" >
+<Overload retVal = "any" descr="A binary format that reads a 32-bit unsigned integer.">
+<Param name="binary as binary" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="BinaryFormat.UnsignedInteger64" func="yes" >
+<Overload retVal = "any" descr="A binary format that reads a 64-bit unsigned integer.">
+<Param name="binary as binary" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Byte.From" func="yes" >
+<Overload retVal = "nullable number" descr="Creates a 8-bit integer from the given value.">
+<Param name="value as any" />
+<Param name="optional culture as nullable text" />
+<Param name="optional roundingMode as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Cdm.MapToEntity" func="yes" >
+<Overload retVal = "table" descr="Returns a table with columns mapped to the attributes of an entity in the Common Data Model, including data types.">
+<Param name="table as table" />
+<Param name="mapping as record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Cds.Contents" func="yes" >
+<Overload retVal = "table" descr="null">
+<Param name="url as text" />
+<Param name="optional options as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Character.FromNumber" func="yes" >
+<Overload retVal = "nullable text" descr="Converts the number to its character value.">
+<Param name="number as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Character.ToNumber" func="yes" >
+<Overload retVal = "nullable number" descr="Converts a character to its number value.">
+<Param name="character as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Combiner.CombineTextByDelimiter" func="yes" >
+<Overload retVal = "function" descr="Returns a function that combines a list of text into a single text using the specified delimiter.">
+<Param name="delimiter as text" />
+<Param name="optional quoteStyle as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Combiner.CombineTextByEachDelimiter" func="yes" >
+<Overload retVal = "function" descr="Returns a function that combines a list of text into a single text using each specified delimiter in sequence.">
+<Param name="delimiters as list" />
+<Param name="optional quoteStyle as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Combiner.CombineTextByLengths" func="yes" >
+<Overload retVal = "function" descr="Returns a function that combines a list of text into a single text using the specified lengths.">
+<Param name="lengths as list" />
+<Param name="optional template as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Combiner.CombineTextByPositions" func="yes" >
+<Overload retVal = "function" descr="Returns a function that combines a list of text into a single text using the specified positions.">
+<Param name="positions as list" />
+<Param name="optional template as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Combiner.CombineTextByRanges" func="yes" >
+<Overload retVal = "function" descr="Returns a function that combines a list of text into a single text using the specified positions and lengths.">
+<Param name="ranges as list" />
+<Param name="optional template as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Comparer.Equals" func="yes" >
+<Overload retVal = "logical" descr="Returns a logical value based on the equality check over the two given values.">
+<Param name="comparer as function" />
+<Param name="x as any" />
+<Param name="y as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Comparer.FromCulture" func="yes" >
+<Overload retVal = "function" descr="Returns a comparer function given the culture and a logical value for case sensitivity for the comparison.">
+<Param name="culture as text" />
+<Param name="optional ignoreCase as nullable logical" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Comparer.Ordinal" func="yes" >
+<Overload retVal = "number" descr="Returns a comparer function which uses Ordinal rules to compare values.">
+<Param name="x as any" />
+<Param name="y as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Comparer.OrdinalIgnoreCase" func="yes" >
+<Overload retVal = "number" descr="Returns a case-insensitive comparer function which uses Ordinal rules to compare values.">
+<Param name="x as any" />
+<Param name="y as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="comScore.GetReport" func="yes" >
+<Overload retVal = "table" descr="This is an advanced function that wraps the comScore API. See comScore API documentation for detailed usage information.">
+<Param name="datacenter as text" />
+<Param name="client as text" />
+<Param name="itemId as text" />
+<Param name="site as text" />
+<Param name="optional startDate as nullable date" />
+<Param name="optional endDate as nullable date" />
+<Param name="optional SegmentId as nullable text" />
+<Param name="optional VisitFilterId as nullable text" />
+<Param name="optional EventFilterId as nullable text" />
+<Param name="optional fullUrlString as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="comScore.NavTable" func="yes" >
+<Overload retVal = "table" descr="">
+<Param name="datacenter as text" />
+<Param name="client as text" />
+<Param name="optional startDate as nullable date" />
+<Param name="optional endDate as nullable date" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="comScore.ReportItems" func="yes" >
+<Overload retVal = "table" descr="This is an advanced function that wraps the comScore API. See comScore API documentation for detailed usage information.">
+<Param name="datacenter as text" />
+<Param name="client as text" />
+<Param name="itemId as text" />
+<Param name="site as text" />
+<Param name="optional startDate as nullable date" />
+<Param name="optional endDate as nullable date" />
+<Param name="optional SegmentId as nullable text" />
+<Param name="optional VisitFilterId as nullable text" />
+<Param name="" />
+<Param name="optional fullUrlString as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Csv.Document" func="yes" >
+<Overload retVal = "table" descr="Returns the contents of the CSV document as a table.">
+<Param name="source as any" />
+<Param name="optional columns as any" />
+<Param name="optional delimiter as any" />
+<Param name="optional extraValues as nullable number" />
+<Param name="optional encoding as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Cube.AddAndExpandDimensionColumn" func="yes" >
+<Overload retVal = "table" descr="Merges the specified dimension table into the cube’s filter context and changes the dimensional granularity of the filter context by expanding the specified set of dimension attributes.">
+<Param name="cube as table" />
+<Param name="dimensionSelector as any" />
+<Param name="attributeNames as list" />
+<Param name="optional newColumnNames as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Cube.AddMeasureColumn" func="yes" >
+<Overload retVal = "table" descr="Adds a column to the cube that contains the results of the measure applied in the row context of each row.">
+<Param name="cube as table" />
+<Param name="column as text" />
+<Param name="measureSelector as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Cube.ApplyParameter" func="yes" >
+<Overload retVal = "table" descr="Returns a cube after applying a parameter to it.">
+<Param name="cube as table" />
+<Param name="parameter as any" />
+<Param name="optional arguments as nullable list" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Cube.AttributeMemberId" func="yes" >
+<Overload retVal = "any" descr="Returns the unique member identifier from members property value.">
+<Param name="attribute as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Cube.AttributeMemberProperty" func="yes" >
+<Overload retVal = "any" descr="Returns a property of a dimension attribute.">
+<Param name="attribute as any" />
+<Param name="propertyName as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Cube.CollapseAndRemoveColumns" func="yes" >
+<Overload retVal = "table" descr="Changes the dimensional granularity of the filter context for the cube by collapsing the attributes mapped to the specified columns.">
+<Param name="cube as table" />
+<Param name="columnNames as list" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Cube.Dimensions" func="yes" >
+<Overload retVal = "table" descr="Returns a table containing the set of available dimensions.">
+<Param name="cube as table" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Cube.DisplayFolders" func="yes" >
+<Overload retVal = "table" descr="Returns a nested tree of tables representing the display folder hierarchy of the objects (e.g. dimensions and measures).">
+<Param name="cube as table" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Cube.Measures" func="yes" >
+<Overload retVal = "table" descr="Returns a table containing the set of available measures.">
+<Param name="cube as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Cube.Parameters" func="yes" >
+<Overload retVal = "table" descr="Returns a table containing the set of parameters that can be applied to the cube.">
+<Param name="cube as table" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Cube.Properties" func="yes" >
+<Overload retVal = "table" descr="Returns a table containing the set of available properties for dimensions that are expanded in the cube.">
+<Param name="cube as table" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Cube.PropertyKey" func="yes" >
+<Overload retVal = "any" descr="Returns the key of a property.">
+<Param name="property as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Cube.ReplaceDimensions" func="yes" >
+<Overload retVal = "table" descr="Cube.ReplaceDimensions">
+<Param name="cube as table" />
+<Param name="dimensions as table" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Cube.Transform" func="yes" >
+<Overload retVal = "table" descr="Applies a list of cube functions.">
+<Param name="cube as table" />
+<Param name="transforms as list" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Currency.From" func="yes" >
+<Overload retVal = "nullable number" descr="Returns a currency value from the given value.">
+<Param name="value as any" />
+<Param name="optional culture as nullable text" />
+<Param name="optional roundingMode as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="CustomerInsights.Tables" func="yes" >
+<Overload retVal = "table" descr="Enter the URL for your Customer Insights account">
+<Param name="url as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="DataLake.Contents" func="yes" >
+<Overload retVal = "table" descr="Enter the URL of your Azure Data Lake Store account.">
+<Param name="url as text" />
+<Param name="optional options as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="DataLake.Files" func="yes" >
+<Overload retVal = "table" descr="Enter the URL of your Azure Data Lake Store account.">
+<Param name="url as text" />
+<Param name="optional options as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="DataWorld.Contents" func="yes" >
+<Overload retVal = "table" descr="null">
+</Overload>
+</KeyWord>
+
+<KeyWord name="DataWorld.Dataset" func="yes" >
+<Overload retVal = "table" descr="null">
+<Param name="owner as text" />
+<Param name="id as text" />
+<Param name="optional query as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.AddDays" func="yes" >
+<Overload retVal = "any" descr="Adds the specified days to the date.">
+<Param name="dateTime as any" />
+<Param name="numberOfDays as number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.AddMonths" func="yes" >
+<Overload retVal = "any" descr="Adds the specified months to the date.">
+<Param name="dateTime as any" />
+<Param name="numberOfMonths as number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.AddQuarters" func="yes" >
+<Overload retVal = "any" descr="Adds the specified quarters to the date.">
+<Param name="dateTime as any" />
+<Param name="numberOfQuarters as number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.AddWeeks" func="yes" >
+<Overload retVal = "any" descr="Adds the specified weeks to the date.">
+<Param name="dateTime as any" />
+<Param name="numberOfWeeks as number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.AddYears" func="yes" >
+<Overload retVal = "any" descr="Adds the specified years to the date.">
+<Param name="dateTime as any" />
+<Param name="numberOfYears as number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.Day" func="yes" >
+<Overload retVal = "nullable number" descr="Returns the day component.">
+<Param name="dateTime as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.DayOfWeek" func="yes" >
+<Overload retVal = "nullable number" descr="Returns a number from 1 to 7 representing the day of the week.">
+<Param name="dateTime as any" />
+<Param name="optional firstDayOfWeek as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.DayOfWeekName" func="yes" >
+<Overload retVal = "nullable text" descr="Returns the day of the week name.">
+<Param name="date as any" />
+<Param name="optional culture as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.DayOfYear" func="yes" >
+<Overload retVal = "nullable number" descr="Returns a number from 1 to 366 representing the day of the year.">
+<Param name="dateTime as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.DaysInMonth" func="yes" >
+<Overload retVal = "nullable number" descr="Returns a number from 28 to 31 indicating the number of days in the month.">
+<Param name="dateTime as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.EndOfDay" func="yes" >
+<Overload retVal = "any" descr="Returns the last value of the day.">
+<Param name="dateTime as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.EndOfMonth" func="yes" >
+<Overload retVal = "any" descr="Returns the last day of the month.">
+<Param name="dateTime as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.EndOfQuarter" func="yes" >
+<Overload retVal = "any" descr="Returns the last value of the quarter.">
+<Param name="dateTime as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.EndOfWeek" func="yes" >
+<Overload retVal = "any" descr="Returns the last day of the week.">
+<Param name="dateTime as any" />
+<Param name="optional firstDayOfWeek as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.EndOfYear" func="yes" >
+<Overload retVal = "any" descr="Returns the last datetime value of the year.">
+<Param name="dateTime as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.From" func="yes" >
+<Overload retVal = "nullable date" descr="Creates a date from the given value.">
+<Param name="value as any" />
+<Param name="optional culture as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.FromText" func="yes" >
+<Overload retVal = "nullable date" descr="Creates a Date from local and universal Date formats.">
+<Param name="text as nullable text" />
+<Param name="optional culture as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.IsInCurrentDay" func="yes" >
+<Overload retVal = "nullable logical" descr="Indicates whether this date occurs during the current day, as determined by the current date and time on the system.">
+<Param name="dateTime as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.IsInCurrentMonth" func="yes" >
+<Overload retVal = "nullable logical" descr="Indicates whether this date occurs during the current month, as determined by the current date and time on the system.">
+<Param name="dateTime as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.IsInCurrentQuarter" func="yes" >
+<Overload retVal = "nullable logical" descr="Indicates whether this date occurs during the current quarter, as determined by the current date and time on the system.">
+<Param name="dateTime as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.IsInCurrentWeek" func="yes" >
+<Overload retVal = "nullable logical" descr="Indicates whether this date occurs during the current week, as determined by the current date and time on the system.">
+<Param name="dateTime as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.IsInCurrentYear" func="yes" >
+<Overload retVal = "nullable logical" descr="Indicates whether this date occurs during the current year, as determined by the current date and time on the system.">
+<Param name="dateTime as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.IsInNextDay" func="yes" >
+<Overload retVal = "nullable logical" descr="Indicates whether this date occurs during the next day, as determined by the current date and time on the system.">
+<Param name="dateTime as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.IsInNextMonth" func="yes" >
+<Overload retVal = "nullable logical" descr="Indicates whether this date occurs during the next month, as determined by the current date and time on the system.">
+<Param name="dateTime as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.IsInNextNDays" func="yes" >
+<Overload retVal = "nullable logical" descr="Indicates whether this date occurs during the next number of days, as determined by the current date and time on the system.">
+<Param name="dateTime as any" />
+<Param name="days as number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.IsInNextNMonths" func="yes" >
+<Overload retVal = "nullable logical" descr="Indicates whether this date occurs during the next number of months, as determined by the current date and time on the system.">
+<Param name="dateTime as any" />
+<Param name="months as number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.IsInNextNQuarters" func="yes" >
+<Overload retVal = "nullable logical" descr="Indicates whether this date occurs during the next number of quarters, as determined by the current date and time on the system.">
+<Param name="dateTime as any" />
+<Param name="quarters as number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.IsInNextNWeeks" func="yes" >
+<Overload retVal = "nullable logical" descr="Indicates whether this date occurs during the next number of weeks, as determined by the current date and time on the system.">
+<Param name="dateTime as any" />
+<Param name="weeks as number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.IsInNextNYears" func="yes" >
+<Overload retVal = "nullable logical" descr="Indicates whether this date occurs during the next number of years, as determined by the current date and time on the system.">
+<Param name="dateTime as any" />
+<Param name="years as number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.IsInNextQuarter" func="yes" >
+<Overload retVal = "nullable logical" descr="Indicates whether this date occurs during the next quarter, as determined by the current date and time on the system.">
+<Param name="dateTime as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.IsInNextWeek" func="yes" >
+<Overload retVal = "nullable logical" descr="Indicates whether this date occurs during the next week, as determined by the current date and time on the system.">
+<Param name="dateTime as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.IsInNextYear" func="yes" >
+<Overload retVal = "nullable logical" descr="Indicates whether this date occurs during the next year, as determined by the current date and time on the system.">
+<Param name="dateTime as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.IsInPreviousDay" func="yes" >
+<Overload retVal = "nullable logical" descr="Indicates whether this date occurs during the previous day, as determined by the current date and time on the system.">
+<Param name="dateTime as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.IsInPreviousMonth" func="yes" >
+<Overload retVal = "nullable logical" descr="Indicates whether this date occurs during the previous month, as determined by the current date and time on the system.">
+<Param name="dateTime as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.IsInPreviousNDays" func="yes" >
+<Overload retVal = "nullable logical" descr="Indicates whether this date occurs during the previous number of days, as determined by the current date and time on the system.">
+<Param name="dateTime as any" />
+<Param name="days as number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.IsInPreviousNMonths" func="yes" >
+<Overload retVal = "nullable logical" descr="Indicates whether this date occurs during the previous number of months, as determined by the current date and time on the system.">
+<Param name="dateTime as any" />
+<Param name="months as number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.IsInPreviousNQuarters" func="yes" >
+<Overload retVal = "nullable logical" descr="Indicates whether this date occurs during the previous number of quarters, as determined by the current date and time on the system.">
+<Param name="dateTime as any" />
+<Param name="quarters as number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.IsInPreviousNWeeks" func="yes" >
+<Overload retVal = "nullable logical" descr="Indicates whether this date occurs during the previous number of weeks, as determined by the current date and time on the system.">
+<Param name="dateTime as any" />
+<Param name="weeks as number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.IsInPreviousNYears" func="yes" >
+<Overload retVal = "nullable logical" descr="Indicates whether this date occurs during the previous number of years, as determined by the current date and time on the system.">
+<Param name="dateTime as any" />
+<Param name="years as number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.IsInPreviousQuarter" func="yes" >
+<Overload retVal = "nullable logical" descr="Indicates whether this date occurs during the previous quarter, as determined by the current date and time on the system.">
+<Param name="dateTime as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.IsInPreviousWeek" func="yes" >
+<Overload retVal = "nullable logical" descr="Indicates whether this date occurs during the previous week, as determined by the current date and time on the system.">
+<Param name="dateTime as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.IsInPreviousYear" func="yes" >
+<Overload retVal = "nullable logical" descr="Indicates whether this date occurs during the previous year, as determined by the current date and time on the system.">
+<Param name="dateTime as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.IsInYearToDate" func="yes" >
+<Overload retVal = "nullable logical" descr="Indicates whether this date occurs during the current year and is on or before the current day, as determined by the current date and time on the system.">
+<Param name="dateTime as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.IsLeapYear" func="yes" >
+<Overload retVal = "nullable logical" descr="Indicates whether this date falls in a leap year.">
+<Param name="dateTime as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.Month" func="yes" >
+<Overload retVal = "nullable number" descr="Returns the month component.">
+<Param name="dateTime as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.MonthName" func="yes" >
+<Overload retVal = "nullable text" descr="Returns the name of the month component.">
+<Param name="date as any" />
+<Param name="optional culture as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.QuarterOfYear" func="yes" >
+<Overload retVal = "nullable number" descr="Returns a number indicating which quarter of the year the date falls in.">
+<Param name="dateTime as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.StartOfDay" func="yes" >
+<Overload retVal = "any" descr="Returns the first value of the day.">
+<Param name="dateTime as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.StartOfMonth" func="yes" >
+<Overload retVal = "any" descr="Returns the first value of the month.">
+<Param name="dateTime as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.StartOfQuarter" func="yes" >
+<Overload retVal = "any" descr="Returns the first value of the quarter.">
+<Param name="dateTime as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.StartOfWeek" func="yes" >
+<Overload retVal = "any" descr="Returns the first value of the week.">
+<Param name="dateTime as any" />
+<Param name="optional firstDayOfWeek as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.StartOfYear" func="yes" >
+<Overload retVal = "any" descr="Returns the first value of the year.">
+<Param name="dateTime as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.ToRecord" func="yes" >
+<Overload retVal = "record" descr="Returns a record containing parts of the date value.">
+<Param name="date as date" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.ToText" func="yes" >
+<Overload retVal = "nullable text" descr="Returns a textual representation of the Date value.">
+<Param name="date as nullable date" />
+<Param name="optional format as nullable text" />
+<Param name="optional culture as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.WeekOfMonth" func="yes" >
+<Overload retVal = "nullable number" descr="Returns a number from 1 to 5 indicating which week of the month this date falls in.">
+<Param name="dateTime as any" />
+<Param name="optional firstDayOfWeek as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.WeekOfYear" func="yes" >
+<Overload retVal = "nullable number" descr="Returns a number from 1 to 54 indicating which week of the year this date falls in.">
+<Param name="dateTime as any" />
+<Param name="optional firstDayOfWeek as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Date.Year" func="yes" >
+<Overload retVal = "nullable number" descr="Returns the year component.">
+<Param name="dateTime as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="DateTime.AddZone" func="yes" >
+<Overload retVal = "nullable datetimezone" descr="Sets timezone information on the datetime value.">
+<Param name="dateTime as nullable datetime" />
+<Param name="timezoneHours as number" />
+<Param name="optional timezoneMinutes as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="DateTime.Date" func="yes" >
+<Overload retVal = "nullable date" descr="Returns the date component of the given date, datetime, or datetimezone value.">
+<Param name="dateTime as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="DateTime.FixedLocalNow" func="yes" >
+<Overload retVal = "datetime" descr="Returns the current date and time in the local timezone. This value is fixed and will not change with successive calls.">
+</Overload>
+</KeyWord>
+
+<KeyWord name="DateTime.From" func="yes" >
+<Overload retVal = "nullable datetime" descr="Creates a datetime from the given value.">
+<Param name="value as any" />
+<Param name="optional culture as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="DateTime.FromFileTime" func="yes" >
+<Overload retVal = "nullable datetime" descr="Creates a datetime from a 64 bits long number.">
+<Param name="fileTime as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="DateTime.FromText" func="yes" >
+<Overload retVal = "nullable datetime" descr="Creates a datetime from local and universal datetime formats.">
+<Param name="text as nullable text" />
+<Param name="optional culture as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="DateTime.IsInCurrentHour" func="yes" >
+<Overload retVal = "nullable logical" descr="Indicates whether this datetime occurs during the current hour, as determined by the current date and time on the system.">
+<Param name="dateTime as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="DateTime.IsInCurrentMinute" func="yes" >
+<Overload retVal = "nullable logical" descr="Indicates whether this datetime occurs during the current minute, as determined by the current date and time on the system.">
+<Param name="dateTime as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="DateTime.IsInCurrentSecond" func="yes" >
+<Overload retVal = "nullable logical" descr="Indicates whether this datetime occurs during the current second, as determined by the current date and time on the system.">
+<Param name="dateTime as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="DateTime.IsInNextHour" func="yes" >
+<Overload retVal = "nullable logical" descr="Indicates whether this datetime occurs during the next hour, as determined by the current date and time on the system.">
+<Param name="dateTime as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="DateTime.IsInNextMinute" func="yes" >
+<Overload retVal = "nullable logical" descr="Indicates whether this datetime occurs during the next minute, as determined by the current date and time on the system.">
+<Param name="dateTime as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="DateTime.IsInNextNHours" func="yes" >
+<Overload retVal = "nullable logical" descr="Indicates whether this datetime occurs during the next number of hours, as determined by the current date and time on the system.">
+<Param name="dateTime as any" />
+<Param name="hours as number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="DateTime.IsInNextNMinutes" func="yes" >
+<Overload retVal = "nullable logical" descr="Indicates whether this datetime occurs during the next number of minutes, as determined by the current date and time on the system.">
+<Param name="dateTime as any" />
+<Param name="minutes as number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="DateTime.IsInNextNSeconds" func="yes" >
+<Overload retVal = "nullable logical" descr="Indicates whether this datetime occurs during the next number of seconds, as determined by the current date and time on the system.">
+<Param name="dateTime as any" />
+<Param name="seconds as number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="DateTime.IsInNextSecond" func="yes" >
+<Overload retVal = "nullable logical" descr="Indicates whether this datetime occurs during the next second, as determined by the current date and time on the system.">
+<Param name="dateTime as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="DateTime.IsInPreviousHour" func="yes" >
+<Overload retVal = "nullable logical" descr="Indicates whether this datetime occurs during the previous hour, as determined by the current date and time on the system.">
+<Param name="dateTime as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="DateTime.IsInPreviousMinute" func="yes" >
+<Overload retVal = "nullable logical" descr="Indicates whether this datetime occurs during the previous minute, as determined by the current date and time on the system.">
+<Param name="dateTime as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="DateTime.IsInPreviousNHours" func="yes" >
+<Overload retVal = "nullable logical" descr="Indicates whether this datetime occurs during the previous number of hours, as determined by the current date and time on the system.">
+<Param name="dateTime as any" />
+<Param name="hours as number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="DateTime.IsInPreviousNMinutes" func="yes" >
+<Overload retVal = "nullable logical" descr="Indicates whether this datetime occurs during the previous number of minutes, as determined by the current date and time on the system.">
+<Param name="dateTime as any" />
+<Param name="minutes as number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="DateTime.IsInPreviousNSeconds" func="yes" >
+<Overload retVal = "nullable logical" descr="Indicates whether this datetime occurs during the previous number of seconds, as determined by the current date and time on the system.">
+<Param name="dateTime as any" />
+<Param name="seconds as number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="DateTime.IsInPreviousSecond" func="yes" >
+<Overload retVal = "nullable logical" descr="Indicates whether this datetime occurs during the previous second, as determined by the current date and time on the system.">
+<Param name="dateTime as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="DateTime.LocalNow" func="yes" >
+<Overload retVal = "datetime" descr="Returns the current date and time in the local timezone.">
+</Overload>
+</KeyWord>
+
+<KeyWord name="DateTime.Time" func="yes" >
+<Overload retVal = "nullable time" descr="Returns the time part of the given datetime value.">
+<Param name="dateTime as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="DateTime.ToRecord" func="yes" >
+<Overload retVal = "record" descr="Returns a record containing the datetime value's parts.">
+<Param name="dateTime as datetime" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="DateTime.ToText" func="yes" >
+<Overload retVal = "nullable text" descr="Returns a textual representation of the datetime value.">
+<Param name="dateTime as nullable datetime" />
+<Param name="optional format as nullable text" />
+<Param name="optional culture as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="DateTimeZone.FixedLocalNow" func="yes" >
+<Overload retVal = "datetimezone" descr="Returns the current date & time in the local timezone. This value is fixed and will not change with successive calls.">
+</Overload>
+</KeyWord>
+
+<KeyWord name="DateTimeZone.FixedUtcNow" func="yes" >
+<Overload retVal = "datetimezone" descr="Returns the current date and time in UTC (the GMT timezone). This value is fixed and will not change with successive calls.">
+</Overload>
+</KeyWord>
+
+<KeyWord name="DateTimeZone.From" func="yes" >
+<Overload retVal = "nullable datetimezone" descr="Creates a datetimezone from the given value.">
+<Param name="value as any" />
+<Param name="optional culture as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="DateTimeZone.FromFileTime" func="yes" >
+<Overload retVal = "nullable datetimezone" descr="Creates a datetimezone from a 64 bits long number.">
+<Param name="fileTime as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="DateTimeZone.FromText" func="yes" >
+<Overload retVal = "nullable datetimezone" descr="Creates a datetimezone from local and universal datetime formats.">
+<Param name="text as nullable text" />
+<Param name="optional culture as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="DateTimeZone.LocalNow" func="yes" >
+<Overload retVal = "datetimezone" descr="Returns the current date & time in the local timezone.">
+</Overload>
+</KeyWord>
+
+<KeyWord name="DateTimeZone.RemoveZone" func="yes" >
+<Overload retVal = "nullable datetime" descr="Removes timezone information from the given datetimezone value.">
+<Param name="dateTimeZone as nullable datetimezone" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="DateTimeZone.SwitchZone" func="yes" >
+<Overload retVal = "nullable datetimezone" descr="Changes the timezone of the value.">
+<Param name="dateTimeZone as nullable datetimezone" />
+<Param name="timezoneHours as number" />
+<Param name="optional timezoneMinutes as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="DateTimeZone.ToLocal" func="yes" >
+<Overload retVal = "nullable datetimezone" descr="Converts the timezone component to the local timezone.">
+<Param name="dateTimeZone as nullable datetimezone" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="DateTimeZone.ToRecord" func="yes" >
+<Overload retVal = "record" descr="Returns a record containing the datetimezone value's parts.">
+<Param name="dateTimeZone as datetimezone" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="DateTimeZone.ToText" func="yes" >
+<Overload retVal = "nullable text" descr="Returns a textual representation of the datetimezone value.">
+<Param name="dateTimeZone as nullable datetimezone" />
+<Param name="optional format as nullable text" />
+<Param name="optional culture as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="DateTimeZone.ToUtc" func="yes" >
+<Overload retVal = "nullable datetimezone" descr="Converts the timezone component to UTC timezone.">
+<Param name="dateTimeZone as nullable datetimezone" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="DateTimeZone.UtcNow" func="yes" >
+<Overload retVal = "datetimezone" descr="Returns the current date and time in UTC (the GMT timezone).">
+</Overload>
+</KeyWord>
+
+<KeyWord name="DateTimeZone.ZoneHours" func="yes" >
+<Overload retVal = "nullable number" descr="Changes the timezone of the value.">
+<Param name="dateTimeZone as nullable datetimezone" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="DateTimeZone.ZoneMinutes" func="yes" >
+<Overload retVal = "nullable number" descr="Changes the timezone of the value.">
+<Param name="dateTimeZone as nullable datetimezone" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="DB2.Database" func="yes" >
+<Overload retVal = "table" descr="Returns a table of SQL tables and views available in a DB2 database.">
+<Param name="server as text" />
+<Param name="database as text" />
+<Param name="optional options as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Decimal.From" func="yes" >
+<Overload retVal = "nullable number" descr="Creates a Decimal from the given value.">
+<Param name="value as any" />
+<Param name="optional culture as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Diagnostics.ActivityId" func="yes" >
+<Overload retVal = "nullable text" descr="Returns an opaque identifier for the currently-running evaluation.">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Diagnostics.Trace" func="yes" >
+<Overload retVal = "any" descr="Writes a trace entry, if tracing is enabled, and returns the value.">
+<Param name="traceLevel as number" />
+<Param name="message as text" />
+<Param name="value as any" />
+<Param name="optional delayed as nullable logical" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="DirectQueryCapabilities.From" func="yes" >
+<Overload retVal = "table" descr="DirectQueryCapabilities.From">
+<Param name="value as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="DocumentDB.Contents" func="yes" >
+<Overload retVal = "table" descr="Enter the URL of an Azure Cosmos DB account.">
+<Param name="url as text" />
+<Param name="optional database as nullable text" />
+<Param name="optional collection as nullable text" />
+<Param name="optional options as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Double.From" func="yes" >
+<Overload retVal = "nullable number" descr="Creates a Double from the given value.">
+<Param name="value as any" />
+<Param name="optional culture as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Duration.Days" func="yes" >
+<Overload retVal = "nullable number" descr="Returns the days part of this duration.">
+<Param name="duration as nullable duration" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Duration.From" func="yes" >
+<Overload retVal = "nullable duration" descr="Creates a duration from the given value.">
+<Param name="value as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Duration.FromText" func="yes" >
+<Overload retVal = "nullable duration" descr="Returns a duration value from textual elapsed time forms (d.h:m:s).">
+<Param name="text as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Duration.Hours" func="yes" >
+<Overload retVal = "nullable number" descr="Returns the hours part of this duration.">
+<Param name="duration as nullable duration" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Duration.Minutes" func="yes" >
+<Overload retVal = "nullable number" descr="Returns the minutes part of this duration.">
+<Param name="duration as nullable duration" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Duration.Seconds" func="yes" >
+<Overload retVal = "nullable number" descr="Returns the seconds part of this duration.">
+<Param name="duration as nullable duration" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Duration.ToRecord" func="yes" >
+<Overload retVal = "record" descr="Returns a record containing the parts of the duration.">
+<Param name="duration as duration" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Duration.TotalDays" func="yes" >
+<Overload retVal = "nullable number" descr="Returns the total days this duration spans.">
+<Param name="duration as nullable duration" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Duration.TotalHours" func="yes" >
+<Overload retVal = "nullable number" descr="Returns the total hours this duration spans.">
+<Param name="duration as nullable duration" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Duration.TotalMinutes" func="yes" >
+<Overload retVal = "nullable number" descr="Returns the total minutes this duration spans.">
+<Param name="duration as nullable duration" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Duration.TotalSeconds" func="yes" >
+<Overload retVal = "nullable number" descr="Returns the total seconds this duration spans.">
+<Param name="duration as nullable duration" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Duration.ToText" func="yes" >
+<Overload retVal = "nullable text" descr="Returns the text of the form d.h:m:s.">
+<Param name="duration as nullable duration" />
+<Param name="optional format as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Dynamics365BusinessCentral.Contents" func="yes" >
+<Overload retVal = "table" descr="Enter your Microsoft Dynamics 365 Business Central company.">
+<Param name="optional company as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Dynamics365Financials.Contents" func="yes" >
+<Overload retVal = "table" descr="Enter your Dynamics 365 for Financials company.">
+<Param name="optional company as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="DynamicsNav.Contents" func="yes" >
+<Overload retVal = "table" descr="Enter the URL of your Dynamics NAV OData service endpoint.">
+<Param name="url as text" />
+<Param name="optional company as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Embedded.Value" func="yes" >
+<Overload retVal = "any" descr="Accesses a value by name in an embedded mashup.">
+<Param name="value as any" />
+<Param name="path as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Error.Record" func="yes" >
+<Overload retVal = "record" descr="Returns an error record from the provided text values for reason, message and detail.">
+<Param name="reason as text" />
+<Param name="optional message as nullable text" />
+<Param name="optional detail as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Exasol.Database" func="yes" >
+<Overload retVal = "table" descr="null">
+<Param name="server as text" />
+<Param name="encrypted as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Excel.CurrentWorkbook" func="yes" >
+<Overload retVal = "table" descr="Returns the tables in the current Excel Workbook.">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Excel.Workbook" func="yes" >
+<Overload retVal = "table" descr="Returns a record of Sheets from the Excel workbook.">
+<Param name="workbook as binary" />
+<Param name="optional useHeaders as nullable logical" />
+<Param name="optional delayTypes as nullable logical" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Exchange.Contents" func="yes" >
+<Overload retVal = "table" descr="Returns a table of contents from a Microsoft Exchange account.">
+<Param name="optional mailboxAddress as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Expression.Constant" func="yes" >
+<Overload retVal = "text" descr="Expression.Constant">
+<Param name="value as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Expression.Evaluate" func="yes" >
+<Overload retVal = "any" descr="Expression.Evaluate">
+<Param name="document as text" />
+<Param name="optional environment as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Expression.Identifier" func="yes" >
+<Overload retVal = "text" descr="Expression.Identifier">
+<Param name="name as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Facebook.Graph" func="yes" >
+<Overload retVal = "any" descr="Returns a record containing content from the Facebook graph.">
+<Param name="url as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="File.Contents" func="yes" >
+<Overload retVal = "binary" descr="Returns the contents of the specified file as binary.">
+<Param name="path as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Folder.Contents" func="yes" >
+<Overload retVal = "table" descr="Returns a table containing the properties and contents of the files and folders found in the specifed folder.">
+<Param name="path as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Folder.Files" func="yes" >
+<Overload retVal = "table" descr="Returns a table containing the properties and contents of the files found in the specified folder and subfolders.">
+<Param name="path as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Function.From" func="yes" >
+<Overload retVal = "function" descr="Creates a function with a specific parameter signature on top of a function that takes a single list argument">
+<Param name="functionType as type" />
+<Param name="function as function" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Function.Invoke" func="yes" >
+<Overload retVal = "any" descr="Invokes the given function">
+<Param name="function as function" />
+<Param name="args as list" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Function.InvokeAfter" func="yes" >
+<Overload retVal = "any" descr="Invokes the given function after the specified duration has passed.">
+<Param name="function as function" />
+<Param name="delay as duration" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Function.IsDataSource" func="yes" >
+<Overload retVal = "logical" descr="Returns whether or not a particular function is considered a data source.">
+<Param name="function as function" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Github.Contents" func="yes" >
+<Overload retVal = "any" descr="null">
+<Param name="url as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Github.PagedTable" func="yes" >
+<Overload retVal = "any" descr="null">
+<Param name="url as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Github.Tables" func="yes" >
+<Overload retVal = "table" descr="Enter the GitHub repository owner and the repository name.">
+<Param name="RepositoryOwner as text" />
+<Param name="Repository as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="GoogleAnalytics.Accounts" func="yes" >
+<Overload retVal = "table" descr="Returns Google Analytics accounts.">
+</Overload>
+</KeyWord>
+
+<KeyWord name="GoogleBigQuery.Database" func="yes" >
+<Overload retVal = "table" descr="Import data from a Google BigQuery database.">
+<Param name="optional options as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Guid.From" func="yes" >
+<Overload retVal = "nullable text" descr="Returns a guid value from the given value.">
+<Param name="value as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Hdfs.Contents" func="yes" >
+<Overload retVal = "table" descr="Returns a table containing the properties and contents of the files and folders found in the specified folder from a Hadoop file system.">
+<Param name="url as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Hdfs.Files" func="yes" >
+<Overload retVal = "table" descr="Returns a table containing the properties and contents of the files found in the specified folder and subfolders from a Hadoop file system.">
+<Param name="url as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="HdInsight.Containers" func="yes" >
+<Overload retVal = "table" descr="Returns a navigational table containing the containers found in the specified account from an Azure storage vault.">
+<Param name="account as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="HdInsight.Contents" func="yes" >
+<Overload retVal = "table" descr="Returns a navigational table containing the containers found in the specified account from an Azure storage vault.">
+<Param name="account as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="HdInsight.Files" func="yes" >
+<Overload retVal = "table" descr="Returns a table containing the properties and contents of the blobs found in the specified container from an Azure storage vault.">
+<Param name="account as text" />
+<Param name="containerName as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Html.Table" func="yes" >
+<Overload retVal = "table" descr="Html.Table">
+<Param name="html as any" />
+<Param name="columnNameSelectorPairs as list" />
+<Param name="optional options as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Impala.Database" func="yes" >
+<Overload retVal = "table" descr="Import data from an Impala cluster">
+<Param name="server as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Informix.Database" func="yes" >
+<Overload retVal = "table" descr="Returns a table of SQL tables and views available in an Informix database.">
+<Param name="server as text" />
+<Param name="database as text" />
+<Param name="optional options as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Int16.From" func="yes" >
+<Overload retVal = "nullable number" descr="Creates a 16-bit integer from the given value.">
+<Param name="value as any" />
+<Param name="optional culture as nullable text" />
+<Param name="optional roundingMode as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Int32.From" func="yes" >
+<Overload retVal = "nullable number" descr="Creates a 32-bit integer from the given value.">
+<Param name="value as any" />
+<Param name="optional culture as nullable text" />
+<Param name="optional roundingMode as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Int64.From" func="yes" >
+<Overload retVal = "nullable number" descr="Creates a 64-bit integer from the given value.">
+<Param name="value as any" />
+<Param name="optional culture as nullable text" />
+<Param name="optional roundingMode as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Int8.From" func="yes" >
+<Overload retVal = "nullable number" descr="Creates a signed 8-bit integer from the given value.">
+<Param name="value as any" />
+<Param name="optional culture as nullable text" />
+<Param name="optional roundingMode as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="ItemExpression.From" func="yes" >
+<Overload retVal = "record" descr="Returns the AST for the body of a function.">
+<Param name="function as function" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="JethroODBC.Database" func="yes" >
+<Overload retVal = "table" descr="null">
+<Param name="server as text" />
+<Param name="database as text" />
+<Param name="optional options as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Json.Document" func="yes" >
+<Overload retVal = "any" descr="Returns the content of the JSON document.">
+<Param name="jsonText as any" />
+<Param name="optional encoding as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Json.FromValue" func="yes" >
+<Overload retVal = "binary" descr="Produces a JSON representation of a given value.">
+<Param name="value as any" />
+<Param name="optional encoding as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Kusto.Contents" func="yes" >
+<Overload retVal = "table" descr="Imports data from Azure KustoDB">
+<Param name="cluster as text" />
+<Param name="optional database as nullable text" />
+<Param name="optional tableOrQuery as nullable text" />
+<Param name="optional options as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Kusto.Databases" func="yes" >
+<Overload retVal = "list" descr="null">
+<Param name="cluster as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Lines.FromBinary" func="yes" >
+<Overload retVal = "list" descr="Converts a binary value to a list of text values split at lines breaks.  If a quote style is specified, then line breaks may appear within quotes.  If includeLineSeparators is true, then the line break characters are included in the text.">
+<Param name="binary as binary" />
+<Param name="optional quoteStyle as nullable number" />
+<Param name="optional includeLineSeparators as nullable logical" />
+<Param name="optional encoding as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Lines.FromText" func="yes" >
+<Overload retVal = "list" descr="Converts a text value to a list of text values split at lines breaks. If includeLineSeparators is true, then the line break characters are included in the text.">
+<Param name="text as text" />
+<Param name="optional quoteStyle as nullable number" />
+<Param name="optional includeLineSeparators as nullable logical" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Lines.ToBinary" func="yes" >
+<Overload retVal = "binary" descr="Converts a list of text into a binary value using the specified encoding and lineSeparator.The specified lineSeparator is appended to each line.  If not specified then the carriage return and line feed characters are used.">
+<Param name="lines as list" />
+<Param name="optional lineSeparator as nullable text" />
+<Param name="optional encoding as nullable number" />
+<Param name="optional includeByteOrderMark as nullable logical" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Lines.ToText" func="yes" >
+<Overload retVal = "text" descr="Converts a list of text into a single text.  The specified lineSeparator is appended to each line.  If not specified then the carriage return and line feed characters are used.">
+<Param name="lines as list" />
+<Param name="optional lineSeparator as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.Accumulate" func="yes" >
+<Overload retVal = "any" descr="Accumulates a summary value from the items in the list.">
+<Param name="list as list" />
+<Param name="seed as any" />
+<Param name="accumulator as function" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.AllTrue" func="yes" >
+<Overload retVal = "logical" descr="Returns true if all expressions are true.">
+<Param name="list as list" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.Alternate" func="yes" >
+<Overload retVal = "list" descr="Returns a list comprised of all the odd numbered offset elements in a list.">
+<Param name="list as list" />
+<Param name="count as number" />
+<Param name="optional repeatInterval as nullable number" />
+<Param name="optional offset as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.AnyTrue" func="yes" >
+<Overload retVal = "logical" descr="Returns true if any expression is true.">
+<Param name="list as list" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.Average" func="yes" >
+<Overload retVal = "any" descr="Returns the average of the values. Works with number, date, datetime, datetimezone and duration values.">
+<Param name="list as list" />
+<Param name="optional precision as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.Buffer" func="yes" >
+<Overload retVal = "list" descr="Buffers a list.">
+<Param name="list as list" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.Combine" func="yes" >
+<Overload retVal = "list" descr="Returns a single list by combining multiple lists.">
+<Param name="lists as list" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.Contains" func="yes" >
+<Overload retVal = "logical" descr="Indicates whether the list contains the value.">
+<Param name="list as list" />
+<Param name="value as any" />
+<Param name="optional equationCriteria as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.ContainsAll" func="yes" >
+<Overload retVal = "logical" descr="Indicates where a list includes all the values in another list.">
+<Param name="list as list" />
+<Param name="values as list" />
+<Param name="optional equationCriteria as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.ContainsAny" func="yes" >
+<Overload retVal = "logical" descr="Indicates where a list includes any of the values in another list.">
+<Param name="list as list" />
+<Param name="values as list" />
+<Param name="optional equationCriteria as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.Count" func="yes" >
+<Overload retVal = "number" descr="Returns the number of items in the list.">
+<Param name="list as list" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.Covariance" func="yes" >
+<Overload retVal = "nullable number" descr="Returns the covariance between the two lists of numbers.">
+<Param name="numberList1 as list" />
+<Param name="numberList2 as list" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.Dates" func="yes" >
+<Overload retVal = "list" descr="Generates a list of date values given an initial value, count, and incremental duration value.">
+<Param name="start as date" />
+<Param name="count as number" />
+<Param name="step as duration" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.DateTimes" func="yes" >
+<Overload retVal = "list" descr="Generates a list of datetime values given an initial value, count, and incremental duration value.">
+<Param name="start as datetime" />
+<Param name="count as number" />
+<Param name="step as duration" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.DateTimeZones" func="yes" >
+<Overload retVal = "list" descr="Generates a list of datetimezone values given an initial value, count, and incremental duration value.">
+<Param name="start as datetimezone" />
+<Param name="count as number" />
+<Param name="step as duration" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.Difference" func="yes" >
+<Overload retVal = "list" descr="Returns the difference of the two given lists.">
+<Param name="list1 as list" />
+<Param name="list2 as list" />
+<Param name="optional equationCriteria as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.Distinct" func="yes" >
+<Overload retVal = "list" descr="Returns a list of values with duplicates removed.">
+<Param name="list as list" />
+<Param name="optional equationCriteria as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.Durations" func="yes" >
+<Overload retVal = "list" descr="Generates a list of duration values given an initial value, count, and incremental duration value.">
+<Param name="start as duration" />
+<Param name="count as number" />
+<Param name="step as duration" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.FindText" func="yes" >
+<Overload retVal = "list" descr="Returns a list of values (including record fields) that contain the specified text.">
+<Param name="list as list" />
+<Param name="text as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.First" func="yes" >
+<Overload retVal = "any" descr="Returns the first value of the list or the specified default if empty.">
+<Param name="list as list" />
+<Param name="optional defaultValue as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.FirstN" func="yes" >
+<Overload retVal = "any" descr="Returns the first set of items in the list by specifying how many items to return or a qualifying condition.">
+<Param name="list as list" />
+<Param name="countOrCondition as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.Generate" func="yes" >
+<Overload retVal = "list" descr="Generates a list given an initial value function, a condition function, a next function, and an optional transformation function on the values.">
+<Param name="initial as function" />
+<Param name="condition as function" />
+<Param name="next as function" />
+<Param name="optional selector as nullable function" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.InsertRange" func="yes" >
+<Overload retVal = "list" descr="Inserts values into a list at the given index.">
+<Param name="list as list" />
+<Param name="index as number" />
+<Param name="values as list" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.Intersect" func="yes" >
+<Overload retVal = "list" descr="Returns the intersection of the list values found in the input.">
+<Param name="lists as list" />
+<Param name="optional equationCriteria as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.IsDistinct" func="yes" >
+<Overload retVal = "logical" descr="Indicates whether there are duplicates in the list.">
+<Param name="list as list" />
+<Param name="optional equationCriteria as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.IsEmpty" func="yes" >
+<Overload retVal = "logical" descr="Returns true if the list is empty.">
+<Param name="list as list" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.Last" func="yes" >
+<Overload retVal = "any" descr="Returns the last value of the list or the specified default if empty.">
+<Param name="list as list" />
+<Param name="optional defaultValue as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.LastN" func="yes" >
+<Overload retVal = "any" descr="Returns the last value in the list.  Can optionally specify how many values to return or a qualifying condition.">
+<Param name="list as list" />
+<Param name="optional countOrCondition as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.MatchesAll" func="yes" >
+<Overload retVal = "logical" descr="Returns true if the condition function is satisfied by all values in the list.">
+<Param name="list as list" />
+<Param name="condition as function" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.MatchesAny" func="yes" >
+<Overload retVal = "logical" descr="Returns true if the condition function is satisfied by any value.">
+<Param name="list as list" />
+<Param name="condition as function" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.Max" func="yes" >
+<Overload retVal = "any" descr="Returns the maximum value or the default value for an empty list.">
+<Param name="list as list" />
+<Param name="optional default as any" />
+<Param name="optional comparisonCriteria as any" />
+<Param name="optional includeNulls as nullable logical" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.MaxN" func="yes" >
+<Overload retVal = "list" descr="Returns the maximum value(s) in the list. The number of values to return or filtering condition must be specified.">
+<Param name="list as list" />
+<Param name="countOrCondition as any" />
+<Param name="optional comparisonCriteria as any" />
+<Param name="optional includeNulls as nullable logical" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.Median" func="yes" >
+<Overload retVal = "any" descr="Returns the median value in the list.">
+<Param name="list as list" />
+<Param name="optional comparisonCriteria as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.Min" func="yes" >
+<Overload retVal = "any" descr="Returns the minimum value or the default value for an empty list.">
+<Param name="list as list" />
+<Param name="optional default as any" />
+<Param name="optional comparisonCriteria as any" />
+<Param name="optional includeNulls as nullable logical" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.MinN" func="yes" >
+<Overload retVal = "list" descr="Returns the minimum value(s) in the list. The number of values to return or filtering condition may be specified.">
+<Param name="list as list" />
+<Param name="countOrCondition as any" />
+<Param name="optional comparisonCriteria as any" />
+<Param name="optional includeNulls as nullable logical" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.Mode" func="yes" >
+<Overload retVal = "any" descr="Returns the most frequent value in the list.">
+<Param name="list as list" />
+<Param name="optional equationCriteria as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.Modes" func="yes" >
+<Overload retVal = "list" descr="Returns a list of the most frequent values in the list.">
+<Param name="list as list" />
+<Param name="optional equationCriteria as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.NonNullCount" func="yes" >
+<Overload retVal = "number" descr="Returns the number of non-null items in the list.">
+<Param name="list as list" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.Numbers" func="yes" >
+<Overload retVal = "list" descr="Returns a list of numbers given an initial value, count, and optional increment value.">
+<Param name="start as number" />
+<Param name="count as number" />
+<Param name="optional increment as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.PositionOf" func="yes" >
+<Overload retVal = "any" descr="Returns the offset(s) of a value in a list.">
+<Param name="list as list" />
+<Param name="value as any" />
+<Param name="optional occurrence as nullable number" />
+<Param name="optional equationCriteria as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.PositionOfAny" func="yes" >
+<Overload retVal = "any" descr="Returns the first offset of a value in a list.">
+<Param name="list as list" />
+<Param name="values as list" />
+<Param name="optional occurrence as nullable number" />
+<Param name="optional equationCriteria as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.Positions" func="yes" >
+<Overload retVal = "list" descr="Returns a list of offsets for the input.">
+<Param name="list as list" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.Product" func="yes" >
+<Overload retVal = "nullable number" descr="Returns the product of the numbers in the list.">
+<Param name="numbersList as list" />
+<Param name="optional precision as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.Random" func="yes" >
+<Overload retVal = "list" descr="Returns a list of random numbers.">
+<Param name="count as number" />
+<Param name="optional seed as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.Range" func="yes" >
+<Overload retVal = "list" descr="Returns a subset of the list beginning at an offset.">
+<Param name="list as list" />
+<Param name="offset as number" />
+<Param name="optional count as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.RemoveFirstN" func="yes" >
+<Overload retVal = "list" descr="Returns a list that skips the specified number of elements at the beginning of the list.">
+<Param name="list as list" />
+<Param name="optional countOrCondition as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.RemoveItems" func="yes" >
+<Overload retVal = "list" descr="Removes items from list1 that are present in list.">
+<Param name="list1 as list" />
+<Param name="list2 as list" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.RemoveLastN" func="yes" >
+<Overload retVal = "list" descr="Returns a list that removes the specified number of elements from the end of the list.">
+<Param name="list as list" />
+<Param name="optional countOrCondition as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.RemoveMatchingItems" func="yes" >
+<Overload retVal = "list" descr="Removes all occurrences of the input values.">
+<Param name="list1 as list" />
+<Param name="list2 as list" />
+<Param name="optional equationCriteria as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.RemoveNulls" func="yes" >
+<Overload retVal = "list" descr="Removes all null values from the specified list.">
+<Param name="list as list" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.RemoveRange" func="yes" >
+<Overload retVal = "list" descr="Removes count number of values starting at the specified position.">
+<Param name="list as list" />
+<Param name="index as number" />
+<Param name="optional count as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.Repeat" func="yes" >
+<Overload retVal = "list" descr="Returns a list that is count repetitions of the original list.">
+<Param name="list as list" />
+<Param name="count as number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.ReplaceMatchingItems" func="yes" >
+<Overload retVal = "list" descr="Applies each replacement of { old, new }.">
+<Param name="list as list" />
+<Param name="replacements as list" />
+<Param name="optional equationCriteria as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.ReplaceRange" func="yes" >
+<Overload retVal = "list" descr="Replaces count number of values starting at position with the replacement values.">
+<Param name="list as list" />
+<Param name="index as number" />
+<Param name="count as number" />
+<Param name="replaceWith as list" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.ReplaceValue" func="yes" >
+<Overload retVal = "list" descr="Searches a list for the specified value and replaces it.">
+<Param name="list as list" />
+<Param name="oldValue as any" />
+<Param name="newValue as any" />
+<Param name="replacer as function" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.Reverse" func="yes" >
+<Overload retVal = "list" descr="Reverses the order of values in the list.">
+<Param name="list as list" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.Select" func="yes" >
+<Overload retVal = "list" descr="Returns a list of values that match the condition.">
+<Param name="list as list" />
+<Param name="selection as function" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.Single" func="yes" >
+<Overload retVal = "any" descr="Returns the one list item for a list of length one, otherwise throws an exception.">
+<Param name="list as list" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.SingleOrDefault" func="yes" >
+<Overload retVal = "any" descr="Returns the one list item for a list of length one and the default value for an empty list.">
+<Param name="list as list" />
+<Param name="optional default as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.Skip" func="yes" >
+<Overload retVal = "list" descr="Returns a list that skips the specified number of elements at the beginning of the list.">
+<Param name="list as list" />
+<Param name="optional countOrCondition as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.Sort" func="yes" >
+<Overload retVal = "list" descr="Sorts a list of data according to the criteria specified.">
+<Param name="list as list" />
+<Param name="optional comparisonCriteria as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.Split" func="yes" >
+<Overload retVal = "list" descr="Splits the specified list into a list of lists using the specified page size.">
+<Param name="list as list" />
+<Param name="pageSize as number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.StandardDeviation" func="yes" >
+<Overload retVal = "nullable number" descr="Returns a sample based estimate of the standard deviation.">
+<Param name="numbersList as list" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.Sum" func="yes" >
+<Overload retVal = "any" descr="Returns the sum of the items in the list.">
+<Param name="list as list" />
+<Param name="optional precision as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.Times" func="yes" >
+<Overload retVal = "list" descr="Generates a list of time values given an initial value, count, and incremental duration value.">
+<Param name="start as time" />
+<Param name="count as number" />
+<Param name="step as duration" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.Transform" func="yes" >
+<Overload retVal = "list" descr="Returns a new list of values computed from this list.">
+<Param name="list as list" />
+<Param name="transform as function" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.TransformMany" func="yes" >
+<Overload retVal = "list" descr="Returns a list whose elements are transformed from the input list using specified functions.">
+<Param name="list as list" />
+<Param name="collectionTransform as function" />
+<Param name="resultTransform as function" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.Union" func="yes" >
+<Overload retVal = "list" descr="Returns the union of the list values found in the input.">
+<Param name="lists as list" />
+<Param name="optional equationCriteria as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="List.Zip" func="yes" >
+<Overload retVal = "list" descr="Returns a list of lists by combining items at the same position in multiple lists.">
+<Param name="lists as list" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Logical.From" func="yes" >
+<Overload retVal = "nullable logical" descr="Creates a logical from the given value.">
+<Param name="value as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Logical.FromText" func="yes" >
+<Overload retVal = "nullable logical" descr="Creates a logical value from the text values true and false.">
+<Param name="text as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Logical.ToText" func="yes" >
+<Overload retVal = "nullable text" descr="Returns the text true or false given a logical value.">
+<Param name="logicalValue as nullable logical" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="MailChimp.Collection" func="yes" >
+<Overload retVal = "table" descr="Returns a table with data from a MailChimp endpoint.">
+<Param name="path as text" />
+<Param name="optional entityName as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="MailChimp.Instance" func="yes" >
+<Overload retVal = "table" descr="Returns raw response results from a MailChimp API endpoint.">
+<Param name="path as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="MailChimp.Tables" func="yes" >
+<Overload retVal = "table" descr="null">
+</Overload>
+</KeyWord>
+
+<KeyWord name="MailChimp.TablesV2" func="yes" >
+<Overload retVal = "table" descr="Returns a table with key MailChimp data.">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Marketo.Activities" func="yes" >
+<Overload retVal = "table" descr="Returns a table with lead activities.">
+<Param name="url as text" />
+<Param name="startTime as date" />
+<Param name="activityIds as list" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Marketo.Leads" func="yes" >
+<Overload retVal = "table" descr="Returns a table with lead details.">
+<Param name="url as text" />
+<Param name="leadIds as list" />
+<Param name="optional options as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Marketo.Tables" func="yes" >
+<Overload retVal = "table" descr="Enter the URL of the Marketo REST API endpoint associated with your account.">
+<Param name="url as text" />
+<Param name="QueryStart as date" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="MicrosoftAzureConsumptionInsights.Contents" func="yes" >
+<Overload retVal = "table" descr="Provide advanced query functions.">
+<Param name="enrollmentNumber as anynonnull" />
+<Param name="optional parameters as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="MicrosoftAzureConsumptionInsights.Tables" func="yes" >
+<Overload retVal = "table" descr="Microsoft Azure Consumption Insights">
+<Param name="enrollmentNumber as anynonnull" />
+<Param name="optional parameters as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="MicrosoftAzureConsumptionInsights.Test" func="yes" >
+<Overload retVal = "any" descr="null">
+<Param name="enrollmentNumber as anynonnull" />
+<Param name="optional parameters as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Mixpanel.Contents" func="yes" >
+<Overload retVal = "any" descr="null">
+<Param name="url as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Mixpanel.Export" func="yes" >
+<Overload retVal = "any" descr="null">
+<Param name="fromDate as text" />
+<Param name="toDate as text" />
+<Param name="optional events as nullable list" />
+<Param name="optional bucket as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Mixpanel.FunnelById" func="yes" >
+<Overload retVal = "any" descr="null">
+<Param name="funnelId as number" />
+<Param name="optional fromDate as nullable text" />
+<Param name="optional toDate as nullable text" />
+<Param name="optional length as nullable number" />
+<Param name="optional interval as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Mixpanel.FunnelByName" func="yes" >
+<Overload retVal = "any" descr="null">
+<Param name="funnelName as text" />
+<Param name="optional fromDate as nullable text" />
+<Param name="optional toDate as nullable text" />
+<Param name="optional length as nullable number" />
+<Param name="optional interval as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Mixpanel.Funnels" func="yes" >
+<Overload retVal = "any" descr="null">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Mixpanel.Segmentation" func="yes" >
+<Overload retVal = "any" descr="null">
+<Param name="event as text" />
+<Param name="fromDate as text" />
+<Param name="toDate as text" />
+<Param name="optional whereClause as nullable text" />
+<Param name="optional unit as nullable text" />
+<Param name="optional interval as nullable number" />
+<Param name="optional countType as nullable text" />
+<Param name="optional onProperty as nullable text" />
+<Param name="optional limit as nullable number" />
+<Param name="optional where as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Mixpanel.Tables" func="yes" >
+<Overload retVal = "any" descr="null">
+</Overload>
+</KeyWord>
+
+<KeyWord name="MySQL.Database" func="yes" >
+<Overload retVal = "table" descr="Returns a table of SQL tables, views, and stored scalar functions available in a MySQL database.">
+<Param name="server as text" />
+<Param name="database as text" />
+<Param name="optional options as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Netezza.Database" func="yes" >
+<Overload retVal = "table" descr="Import data from an IBM Netezza database.">
+<Param name="server as text" />
+<Param name="database as text" />
+<Param name="optional options as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Number.Abs" func="yes" >
+<Overload retVal = "nullable number" descr="Returns the absolute value of the number.">
+<Param name="number as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Number.Acos" func="yes" >
+<Overload retVal = "nullable number" descr="Returns the arccosine of the number.">
+<Param name="number as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Number.Asin" func="yes" >
+<Overload retVal = "nullable number" descr="Returns the arcsine of the number.">
+<Param name="number as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Number.Atan" func="yes" >
+<Overload retVal = "nullable number" descr="Returns the arctangent of the number.">
+<Param name="number as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Number.Atan2" func="yes" >
+<Overload retVal = "nullable number" descr="Returns the arctangent of the division of the two numbers.">
+<Param name="y as nullable number" />
+<Param name="x as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Number.BitwiseAnd" func="yes" >
+<Overload retVal = "nullable number" descr="Returns the result of performing a bitwise And operation between the two inputs.">
+<Param name="number1 as nullable number" />
+<Param name="number2 as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Number.BitwiseNot" func="yes" >
+<Overload retVal = "any" descr="Returns a byte where each bit is the opposite of the input.">
+<Param name="number as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Number.BitwiseOr" func="yes" >
+<Overload retVal = "nullable number" descr="Returns the result of performing a bitwise Or between the two inputs.">
+<Param name="number1 as nullable number" />
+<Param name="number2 as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Number.BitwiseShiftLeft" func="yes" >
+<Overload retVal = "nullable number" descr="Shifts the bits set to the left.">
+<Param name="number1 as nullable number" />
+<Param name="number2 as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Number.BitwiseShiftRight" func="yes" >
+<Overload retVal = "nullable number" descr="Shifts the bits set to the right.">
+<Param name="number1 as nullable number" />
+<Param name="number2 as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Number.BitwiseXor" func="yes" >
+<Overload retVal = "nullable number" descr="Returns the result of performing a bitwise XOR (Exclusive-OR) between the two inputs.">
+<Param name="number1 as nullable number" />
+<Param name="number2 as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Number.Combinations" func="yes" >
+<Overload retVal = "nullable number" descr="Returns the number of unique combinations.">
+<Param name="setSize as nullable number" />
+<Param name="combinationSize as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Number.Cos" func="yes" >
+<Overload retVal = "nullable number" descr="Returns the cosine of the number.">
+<Param name="number as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Number.Cosh" func="yes" >
+<Overload retVal = "nullable number" descr="Returns the hyperbolic cosine of the number.">
+<Param name="number as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Number.Exp" func="yes" >
+<Overload retVal = "nullable number" descr="Raises e to the given power.">
+<Param name="number as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Number.Factorial" func="yes" >
+<Overload retVal = "nullable number" descr="Returns the factorial of the number.">
+<Param name="number as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Number.From" func="yes" >
+<Overload retVal = "nullable number" descr="Creates a number from the given value.">
+<Param name="value as any" />
+<Param name="optional culture as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Number.FromText" func="yes" >
+<Overload retVal = "nullable number" descr="Creates numbers from common text formats (15, 3,423.10, 5.0E-10).">
+<Param name="text as nullable text" />
+<Param name="optional culture as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Number.IntegerDivide" func="yes" >
+<Overload retVal = "nullable number" descr="Divides two numbers and returns the integer portion of the result.">
+<Param name="number1 as nullable number" />
+<Param name="number2 as nullable number" />
+<Param name="optional precision as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Number.IsEven" func="yes" >
+<Overload retVal = "logical" descr="Indicates if the value is even.">
+<Param name="number as number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Number.IsNaN" func="yes" >
+<Overload retVal = "logical" descr="Indicates if the value is NaN (Not a number).">
+<Param name="number as number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Number.IsOdd" func="yes" >
+<Overload retVal = "logical" descr="Indicates if the value is odd.">
+<Param name="number as number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Number.Ln" func="yes" >
+<Overload retVal = "nullable number" descr="Returns the natural logarithm of the number.">
+<Param name="number as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Number.Log" func="yes" >
+<Overload retVal = "nullable number" descr="Returns the logarithm of the number to the specified base (default e).">
+<Param name="number as nullable number" />
+<Param name="optional base as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Number.Log10" func="yes" >
+<Overload retVal = "nullable number" descr="Returns the base 10 logarithm of the number.">
+<Param name="number as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Number.Mod" func="yes" >
+<Overload retVal = "nullable number" descr="Integer divides two numbers and returns the remainder.">
+<Param name="number as nullable number" />
+<Param name="divisor as nullable number" />
+<Param name="optional precision as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Number.Permutations" func="yes" >
+<Overload retVal = "nullable number" descr="Returns the number of permutations.">
+<Param name="setSize as nullable number" />
+<Param name="permutationSize as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Number.Power" func="yes" >
+<Overload retVal = "nullable number" descr="Raises a number to the given power.">
+<Param name="number as nullable number" />
+<Param name="power as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Number.Random" func="yes" >
+<Overload retVal = "number" descr="Returns a random number.">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Number.RandomBetween" func="yes" >
+<Overload retVal = "number" descr="Returns a random number between two numbers.">
+<Param name="bottom as number" />
+<Param name="top as number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Number.Round" func="yes" >
+<Overload retVal = "nullable number" descr="Returns the rounded number. The number of digits and rounding mode can be specified.">
+<Param name="number as nullable number" />
+<Param name="optional digits as nullable number" />
+<Param name="optional roundingMode as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Number.RoundAwayFromZero" func="yes" >
+<Overload retVal = "nullable number" descr="Returns the result of rounding positive numbers up and negative numbers down. The number of digits can be specified.">
+<Param name="number as nullable number" />
+<Param name="optional digits as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Number.RoundDown" func="yes" >
+<Overload retVal = "nullable number" descr="Returns the highest previous number. The number of digits can be specified.">
+<Param name="number as nullable number" />
+<Param name="optional digits as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Number.RoundTowardZero" func="yes" >
+<Overload retVal = "nullable number" descr="Returns the result of rounding positive numbers down and negative numbers up. The number of digits can be specified.">
+<Param name="number as nullable number" />
+<Param name="optional digits as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Number.RoundUp" func="yes" >
+<Overload retVal = "nullable number" descr="Returns the next highest number. The number of digits can be specified.">
+<Param name="number as nullable number" />
+<Param name="optional digits as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Number.Sign" func="yes" >
+<Overload retVal = "nullable number" descr="Returns 1 if the number is positive, -1 if it is negative, and 0 if it is zero.">
+<Param name="number as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Number.Sin" func="yes" >
+<Overload retVal = "nullable number" descr="Returns the sine of the number.">
+<Param name="number as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Number.Sinh" func="yes" >
+<Overload retVal = "nullable number" descr="Returns the hyperbolic sine of the number.">
+<Param name="number as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Number.Sqrt" func="yes" >
+<Overload retVal = "nullable number" descr="Returns the square root of the number.">
+<Param name="number as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Number.Tan" func="yes" >
+<Overload retVal = "nullable number" descr="Returns the tangent of the number.">
+<Param name="number as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Number.Tanh" func="yes" >
+<Overload retVal = "nullable number" descr="Returns the hyperbolic tangent of the number.">
+<Param name="number as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Number.ToText" func="yes" >
+<Overload retVal = "nullable text" descr="Formats the given number as text.">
+<Param name="number as nullable number" />
+<Param name="optional format as nullable text" />
+<Param name="optional culture as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="OData.Feed" func="yes" >
+<Overload retVal = "any" descr="Returns a table of OData feeds offered by an OData service.">
+<Param name="serviceUri as text" />
+<Param name="optional headers as nullable record" />
+<Param name="optional options as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Odbc.DataSource" func="yes" >
+<Overload retVal = "table" descr="Returns a table of SQL tables and views from the ODBC data source. ">
+<Param name="connectionString as any" />
+<Param name="optional options as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Odbc.InferOptions" func="yes" >
+<Overload retVal = "record" descr="Returns the result of trying to infer SQL capabilities for an ODBC driver.">
+<Param name="connectionString as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Odbc.Query" func="yes" >
+<Overload retVal = "table" descr="Returns the result of running a native query on an ODBC data source.">
+<Param name="connectionString as any" />
+<Param name="query as text" />
+<Param name="optional options as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="OleDb.DataSource" func="yes" >
+<Overload retVal = "table" descr="Returns a table of SQL tables and views from the OLE DB data source.">
+<Param name="connectionString as any" />
+<Param name="optional options as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="OleDb.Query" func="yes" >
+<Overload retVal = "table" descr="Returns the result of running a native query on an OLE DB data source.">
+<Param name="connectionString as any" />
+<Param name="query as text" />
+<Param name="optional options as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Oracle.Database" func="yes" >
+<Overload retVal = "table" descr="Returns a table of SQL tables and views from the Oracle database.">
+<Param name="server as text" />
+<Param name="optional options as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Percentage.From" func="yes" >
+<Overload retVal = "nullable number" descr="Returns a percentage value from the given value.">
+<Param name="value as any" />
+<Param name="optional culture as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="PlanviewEnterprise.CallQueryService" func="yes" >
+<Overload retVal = "table" descr="Enter the URL, database name associated with your Enterprise One - Portfolio and Resource Management account and a SQL query.">
+<Param name="url as text" />
+<Param name="database as text" />
+<Param name="sqlQueryString as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="PlanviewEnterprise.Feed" func="yes" >
+<Overload retVal = "table" descr="Enter the URL and database name associated with your Enterprise One - Portfolio and Resource Management account.">
+<Param name="url as text" />
+<Param name="database as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="PostgreSQL.Database" func="yes" >
+<Overload retVal = "table" descr="Returns a table of SQL tables and views available in a PostgreSQL database.">
+<Param name="server as text" />
+<Param name="database as text" />
+<Param name="optional options as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Projectplace.Feed" func="yes" >
+<Overload retVal = "table" descr="Enter the URL of your Planview Projectplace account.">
+<Param name="ODataURL as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Python.Execute" func="yes" >
+<Overload retVal = "table" descr="Executes Python script and returns data frames">
+<Param name="script as text" />
+<Param name="optional arguments as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="QuickBooks.Query" func="yes" >
+<Overload retVal = "table" descr="null">
+<Param name="query as text" />
+<Param name="optional schema as nullable type" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="QuickBooks.Report" func="yes" >
+<Overload retVal = "table" descr="null">
+<Param name="urlFragment as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="QuickBooks.Tables" func="yes" >
+<Overload retVal = "any" descr="null">
+</Overload>
+</KeyWord>
+
+<KeyWord name="R.Execute" func="yes" >
+<Overload retVal = "table" descr="null">
+<Param name="script as text" />
+<Param name="optional arguments as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="RData.FromBinary" func="yes" >
+<Overload retVal = "any" descr="Returns a record of data frames from the RData file.">
+<Param name="stream as binary" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Record.AddField" func="yes" >
+<Overload retVal = "record" descr="Adds a field to a record.">
+<Param name="record as record" />
+<Param name="fieldName as text" />
+<Param name="value as any" />
+<Param name="optional delayed as nullable logical" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Record.Combine" func="yes" >
+<Overload retVal = "record" descr="Combines the records in the given list.">
+<Param name="records as list" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Record.Field" func="yes" >
+<Overload retVal = "any" descr="Returns the value of the specified field in a record.">
+<Param name="record as record" />
+<Param name="field as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Record.FieldCount" func="yes" >
+<Overload retVal = "number" descr="Returns the number of fields in the record.">
+<Param name="record as record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Record.FieldNames" func="yes" >
+<Overload retVal = "list" descr="Returns the names of the fields.">
+<Param name="record as record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Record.FieldOrDefault" func="yes" >
+<Overload retVal = "any" descr="Returns the value of the specified field in a record or the default value if the field is not found.">
+<Param name="record as record" />
+<Param name="field as text" />
+<Param name="optional defaultValue as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Record.FieldValues" func="yes" >
+<Overload retVal = "list" descr="Returns a list of the field values.">
+<Param name="record as record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Record.FromList" func="yes" >
+<Overload retVal = "record" descr="Returns a record given a list of field values and a set of fields.">
+<Param name="list as list" />
+<Param name="fields as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Record.FromTable" func="yes" >
+<Overload retVal = "record" descr="Creates a record from a table of the form {[Name = name, Value = value]}.">
+<Param name="table as table" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Record.HasFields" func="yes" >
+<Overload retVal = "logical" descr="Indicates whether the record has the specified fields.">
+<Param name="record as record" />
+<Param name="fields as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Record.RemoveFields" func="yes" >
+<Overload retVal = "record" descr="Removes the specified field(s) from the input record.">
+<Param name="record as record" />
+<Param name="fields as any" />
+<Param name="optional missingField as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Record.RenameFields" func="yes" >
+<Overload retVal = "record" descr="Applies rename(s) from a list in the form { old, new }.">
+<Param name="record as record" />
+<Param name="renames as list" />
+<Param name="optional missingField as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Record.ReorderFields" func="yes" >
+<Overload retVal = "record" descr="Reorders the field(s) specified into the new order.">
+<Param name="record as record" />
+<Param name="fieldOrder as list" />
+<Param name="optional missingField as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Record.SelectFields" func="yes" >
+<Overload retVal = "record" descr="Returns a record that contains only the specified fields.">
+<Param name="record as record" />
+<Param name="fields as any" />
+<Param name="optional missingField as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Record.ToList" func="yes" >
+<Overload retVal = "list" descr="Returns a list of values containing the field values of the input record.">
+<Param name="record as record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Record.ToTable" func="yes" >
+<Overload retVal = "table" descr="Returns a table with each row being a field name and value of the input record.">
+<Param name="record as record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Record.TransformFields" func="yes" >
+<Overload retVal = "record" descr="Returns a record after applying specified transformations.">
+<Param name="record as record" />
+<Param name="transformOperations as list" />
+<Param name="optional missingField as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Replacer.ReplaceText" func="yes" >
+<Overload retVal = "nullable text" descr="Replaces text within the provided input.">
+<Param name="text as nullable text" />
+<Param name="old as text" />
+<Param name="new as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Replacer.ReplaceValue" func="yes" >
+<Overload retVal = "any" descr="Replaces values within the provided input.">
+<Param name="value as any" />
+<Param name="old as any" />
+<Param name="new as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Resource.Access" func="yes" >
+<Overload retVal = "any" descr="Resource.Access">
+<Param name="resource as any" />
+<Param name="optional nativeQuery as nullable text" />
+<Param name="optional options as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="RowExpression.Column" func="yes" >
+<Overload retVal = "record" descr="Returns an AST that represents access to a column within a row expression.">
+<Param name="columnName as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="RowExpression.From" func="yes" >
+<Overload retVal = "record" descr="Returns the AST for the body of a function.">
+<Param name="function as function" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Salesforce.Data" func="yes" >
+<Overload retVal = "table" descr="Returns the objects from the Salesforce account.">
+<Param name="optional loginUrl as any" />
+<Param name="optional options as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Salesforce.Reports" func="yes" >
+<Overload retVal = "table" descr="Returns the reports from the Salesforce account.">
+<Param name="optional loginUrl as nullable text" />
+<Param name="optional options as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="SapBusinessWarehouse.Cubes" func="yes" >
+<Overload retVal = "table" descr="Returns the InfoCubes and queries in an SAP Business Warehouse system grouped by InfoArea.">
+<Param name="server as text" />
+<Param name="systemNumberOrSystemId as text" />
+<Param name="clientId as text" />
+<Param name="optional optionsOrLogonGroup as any" />
+<Param name="optional options as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="SapHana.Database" func="yes" >
+<Overload retVal = "table" descr="Returns the packages in an SAP HANA database.">
+<Param name="server as text" />
+<Param name="optional options as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="SharePoint.Contents" func="yes" >
+<Overload retVal = "table" descr="Returns a table containing content from a SharePoint site.">
+<Param name="url as text" />
+<Param name="optional options as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="SharePoint.Files" func="yes" >
+<Overload retVal = "table" descr="Returns a table containing documents from a SharePoint site.">
+<Param name="url as text" />
+<Param name="optional options as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="SharePoint.Tables" func="yes" >
+<Overload retVal = "table" descr="Returns a table containing content from a SharePoint List.">
+<Param name="url as text" />
+<Param name="optional options as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Single.From" func="yes" >
+<Overload retVal = "nullable number" descr="Creates a Single from the given value.">
+<Param name="value as any" />
+<Param name="optional culture as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Smartsheet.Content" func="yes" >
+<Overload retVal = "any" descr="Returns a table of data from an Smartsheet index endpoint.">
+<Param name="endpoint as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Smartsheet.Query" func="yes" >
+<Overload retVal = "any" descr="Returns a JSON result from the Smartsheet API">
+<Param name="endpoint as text" />
+<Param name="args as text" />
+<Param name="headers as record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Smartsheet.Tables" func="yes" >
+<Overload retVal = "table" descr="Returns a table of sheets, reports, folders, and workspaces from the Smartsheet API">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Snowflake.Databases" func="yes" >
+<Overload retVal = "table" descr="Import data from a Snowflake Computing warehouse.">
+<Param name="server as text" />
+<Param name="warehouse as text" />
+<Param name="optional options as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Soda.Feed" func="yes" >
+<Overload retVal = "table" descr="Returns a table from the contents at the specified URL formatted according to the SODA 2.0 API.">
+<Param name="url as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spark.Tables" func="yes" >
+<Overload retVal = "table" descr="Returns a table listing the tables on the specified Spark cluster.">
+<Param name="server as text" />
+<Param name="protocol as number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="SparkPost.GetContents" func="yes" >
+<Overload retVal = "table" descr="Returns a table of available data from the SparkPost API v1">
+<Param name="path as text" />
+<Param name="optional query as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="SparkPost.GetMetrics" func="yes" >
+<Overload retVal = "table" descr="Returns a table of available metrics from the SparkPost API v1">
+<Param name="DaysOffset as number" />
+<Param name="MetricsColumns as text" />
+<Param name="path as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="SparkPost.Metrics" func="yes" >
+<Overload retVal = "any" descr="null">
+<Param name="dayoffset as number" />
+<Param name="metrics as text" />
+<Param name="path as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="SparkPost.NavTable" func="yes" >
+<Overload retVal = "table" descr="Enter the number of days of metrics to retrieve from SparkPost.">
+<Param name="DaysOffset as number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Splitter.SplitByNothing" func="yes" >
+<Overload retVal = "function" descr="Returns a function that does no splitting, returning its argument as a single element list.">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Splitter.SplitTextByAnyDelimiter" func="yes" >
+<Overload retVal = "function" descr="Returns a function that splits text into a list of text at any of the specified delimiters.">
+<Param name="delimiters as list" />
+<Param name="optional quoteStyle as nullable number" />
+<Param name="optional startAtEnd as nullable logical" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Splitter.SplitTextByDelimiter" func="yes" >
+<Overload retVal = "function" descr="Returns a function that splits text into a list of text according to the specified delimiter.">
+<Param name="delimiter as text" />
+<Param name="optional quoteStyle as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Splitter.SplitTextByEachDelimiter" func="yes" >
+<Overload retVal = "function" descr="Returns a function that splits text into a list of text at each specified delimiter in sequence.">
+<Param name="delimiters as list" />
+<Param name="optional quoteStyle as nullable number" />
+<Param name="optional startAtEnd as nullable logical" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Splitter.SplitTextByLengths" func="yes" >
+<Overload retVal = "function" descr="Returns a function that splits text into a list of text by each specified length.">
+<Param name="lengths as list" />
+<Param name="optional startAtEnd as nullable logical" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Splitter.SplitTextByPositions" func="yes" >
+<Overload retVal = "function" descr="Returns a function that splits text into a list of text at each specified position.">
+<Param name="positions as list" />
+<Param name="optional startAtEnd as nullable logical" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Splitter.SplitTextByRanges" func="yes" >
+<Overload retVal = "function" descr="Returns a function that splits text into a list of text according to the specified offsets and lengths.">
+<Param name="ranges as list" />
+<Param name="optional startAtEnd as nullable logical" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Splitter.SplitTextByRepeatedLengths" func="yes" >
+<Overload retVal = "function" descr="Returns a function that splits text into a list of text after the specified length repeatedly.">
+<Param name="length as number" />
+<Param name="optional startAtEnd as nullable logical" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Splitter.SplitTextByWhitespace" func="yes" >
+<Overload retVal = "function" descr="Returns a function that splits text into a list of text at whitespace.">
+<Param name="optional quoteStyle as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Sql.Database" func="yes" >
+<Overload retVal = "table" descr="Returns a table of SQL tables, views, and stored functions from the SQL Server database.">
+<Param name="server as text" />
+<Param name="database as text" />
+<Param name="optional options as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Sql.Databases" func="yes" >
+<Overload retVal = "table" descr="Returns a table of databases on a SQL Server.">
+<Param name="server as text" />
+<Param name="optional options as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="SqlExpression.SchemaFrom" func="yes" >
+<Overload retVal = "any" descr="SqlExpression.SchemaFrom">
+<Param name="schema as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="SqlExpression.ToExpression" func="yes" >
+<Overload retVal = "text" descr="SqlExpression.ToExpression">
+<Param name="sql as text" />
+<Param name="environment as record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Stripe.Contents" func="yes" >
+<Overload retVal = "table" descr="Makes a call to the Stripe API, with the option to limit number of API calls made.">
+<Param name="method as text" />
+<Param name="optional query as nullable record" />
+<Param name="optional pageLimit as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Stripe.Method" func="yes" >
+<Overload retVal = "table" descr="Makes a call to the Stripe API.">
+<Param name="method as text" />
+<Param name="additionalParameters as record" />
+<Param name="ColumnNames as list" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Stripe.Tables" func="yes" >
+<Overload retVal = "table" descr="Returns a table listing the available Stripe tables and functions.">
+</Overload>
+</KeyWord>
+
+<KeyWord name="SweetIQ.Contents" func="yes" >
+<Overload retVal = "any" descr="null">
+<Param name="optional clientId as nullable text" />
+<Param name="optional path as nullable text" />
+<Param name="optional optionalParameter as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="SweetIQ.Tables" func="yes" >
+<Overload retVal = "any" descr="null">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Sybase.Database" func="yes" >
+<Overload retVal = "table" descr="Returns a table of SQL tables and views available in a Sybase database.">
+<Param name="server as text" />
+<Param name="database as text" />
+<Param name="optional options as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.AddColumn" func="yes" >
+<Overload retVal = "table" descr="Adds a column with the specified name. The value is computed using the specified selection function with each row taken as an input.">
+<Param name="table as table" />
+<Param name="newColumnName as text" />
+<Param name="columnGenerator as function" />
+<Param name="optional columnType as nullable type" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.AddIndexColumn" func="yes" >
+<Overload retVal = "table" descr="Appends a column with explicit position values.">
+<Param name="table as table" />
+<Param name="newColumnName as text" />
+<Param name="optional initialValue as nullable number" />
+<Param name="optional increment as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.AddJoinColumn" func="yes" >
+<Overload retVal = "table" descr="Performs a join between tables on supplied columns and produces the join result in a new column.">
+<Param name="table1 as table" />
+<Param name="key1 as any" />
+<Param name="table2 as any" />
+<Param name="key2 as any" />
+<Param name="newColumnName as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.AddKey" func="yes" >
+<Overload retVal = "table" descr="Add a key to a table, specify the subset of the table’s column names that defines the key, and specify whether the key is primary.">
+<Param name="table as table" />
+<Param name="columns as list" />
+<Param name="isPrimary as logical" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.AggregateTableColumn" func="yes" >
+<Overload retVal = "table" descr="Aggregates a column of tables into multiple columns in the containing table.">
+<Param name="table as table" />
+<Param name="column as text" />
+<Param name="aggregations as list" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.AlternateRows" func="yes" >
+<Overload retVal = "table" descr="Keeps the initial offset then alternates taking and skipping the following rows.">
+<Param name="table as table" />
+<Param name="offset as number" />
+<Param name="skip as number" />
+<Param name="take as number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.Buffer" func="yes" >
+<Overload retVal = "table" descr="Buffers a table in memory, isolating it from external changes during evaluation.">
+<Param name="table as table" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.Column" func="yes" >
+<Overload retVal = "list" descr="Returns a specified column of data from the table as a list.">
+<Param name="table as table" />
+<Param name="column as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.ColumnCount" func="yes" >
+<Overload retVal = "number" descr="Returns the number of columns in the table.">
+<Param name="table as table" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.ColumnNames" func="yes" >
+<Overload retVal = "list" descr="Returns the column names as a list.">
+<Param name="table as table" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.ColumnsOfType" func="yes" >
+<Overload retVal = "list" descr="Returns a list with the names of the columns that match the specified types.">
+<Param name="table as table" />
+<Param name="listOfTypes as list" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.Combine" func="yes" >
+<Overload retVal = "table" descr="Returns a table that is the result of merging a list of tables.">
+<Param name="tables as list" />
+<Param name="optional columns as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.CombineColumns" func="yes" >
+<Overload retVal = "table" descr="Combines the specified columns into a new column using the specified combiner function.">
+<Param name="table as table" />
+<Param name="sourceColumns as list" />
+<Param name="combiner as function" />
+<Param name="column as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.Contains" func="yes" >
+<Overload retVal = "logical" descr="Indicates whether the specified record appears as a row in the table.">
+<Param name="table as table" />
+<Param name="row as record" />
+<Param name="optional equationCriteria as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.ContainsAll" func="yes" >
+<Overload retVal = "logical" descr="Indicates whether all of the specified records appear as rows in the table.">
+<Param name="table as table" />
+<Param name="rows as list" />
+<Param name="optional equationCriteria as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.ContainsAny" func="yes" >
+<Overload retVal = "logical" descr="Indicates whether any of the specified records appear as rows in the table.">
+<Param name="table as table" />
+<Param name="rows as list" />
+<Param name="optional equationCriteria as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.DemoteHeaders" func="yes" >
+<Overload retVal = "table" descr="Demotes the column headers to the first row of values.">
+<Param name="table as table" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.Distinct" func="yes" >
+<Overload retVal = "table" descr="Removes duplicate rows from the table.">
+<Param name="table as table" />
+<Param name="optional equationCriteria as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.DuplicateColumn" func="yes" >
+<Overload retVal = "table" descr="Duplicates a column with the specified name. Values and type are copied from the source column.">
+<Param name="table as table" />
+<Param name="columnName as text" />
+<Param name="newColumnName as text" />
+<Param name="optional columnType as nullable type" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.ExpandListColumn" func="yes" >
+<Overload retVal = "table" descr="Given a column of lists in a table, create a copy of a row for each value in its list.">
+<Param name="table as table" />
+<Param name="column as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.ExpandRecordColumn" func="yes" >
+<Overload retVal = "table" descr="Expands a column of records into columns with each of the values.">
+<Param name="table as table" />
+<Param name="column as text" />
+<Param name="fieldNames as list" />
+<Param name="optional newColumnNames as nullable list" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.ExpandTableColumn" func="yes" >
+<Overload retVal = "table" descr="Expands a column of records or a column of tables into multiple columns in the containing table.">
+<Param name="table as table" />
+<Param name="column as text" />
+<Param name="columnNames as list" />
+<Param name="optional newColumnNames as nullable list" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.FillDown" func="yes" >
+<Overload retVal = "table" descr="Propagates the value of a previous cell to the null-valued cells below in the column.">
+<Param name="table as table" />
+<Param name="columns as list" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.FillUp" func="yes" >
+<Overload retVal = "table" descr="Propagates the value of a cell to the null-valued cells above in the column.">
+<Param name="table as table" />
+<Param name="columns as list" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.FilterWithDataTable" func="yes" >
+<Overload retVal = "any" descr="Table.FilterWithDataTable">
+<Param name="table as table" />
+<Param name="dataTableIdentifier as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.FindText" func="yes" >
+<Overload retVal = "table" descr="Returns all the rows that contain the given text in the table.">
+<Param name="table as table" />
+<Param name="text as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.First" func="yes" >
+<Overload retVal = "any" descr="Returns the first row or a specified default value.">
+<Param name="table as table" />
+<Param name="optional default as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.FirstN" func="yes" >
+<Overload retVal = "table" descr="Returns the first count rows specified.">
+<Param name="table as table" />
+<Param name="countOrCondition as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.FirstValue" func="yes" >
+<Overload retVal = "any" descr="Returns the first column of the first row of the table or a specified default value.">
+<Param name="table as table" />
+<Param name="optional default as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.FromColumns" func="yes" >
+<Overload retVal = "table" descr="Creates a table from a list of columns and specified values.">
+<Param name="lists as list" />
+<Param name="optional columns as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.FromList" func="yes" >
+<Overload retVal = "table" descr="Converts a list into a table by applying the specified splitting function to each item in the list.">
+<Param name="list as list" />
+<Param name="optional splitter as nullable function" />
+<Param name="optional columns as any" />
+<Param name="optional default as any" />
+<Param name="optional extraValues as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.FromPartitions" func="yes" >
+<Overload retVal = "table" descr="Returns a table that is the result of combining a set of partitioned tables.">
+<Param name="partitionColumn as text" />
+<Param name="partitions as list" />
+<Param name="optional partitionColumnType as nullable type" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.FromRecords" func="yes" >
+<Overload retVal = "table" descr="Converts a list of records into a table.">
+<Param name="records as list" />
+<Param name="optional columns as any" />
+<Param name="optional missingField as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.FromRows" func="yes" >
+<Overload retVal = "table" descr="Creates a table from a list of row values and optional columns">
+<Param name="rows as list" />
+<Param name="optional columns as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.FromValue" func="yes" >
+<Overload retVal = "table" descr="Creates a table with a column from the provided value(s).">
+<Param name="value as any" />
+<Param name="optional options as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.Group" func="yes" >
+<Overload retVal = "table" descr="Groups rows in the table that have the same key.">
+<Param name="table as table" />
+<Param name="key as any" />
+<Param name="aggregatedColumns as list" />
+<Param name="optional groupKind as nullable number" />
+<Param name="optional comparer as nullable function" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.HasColumns" func="yes" >
+<Overload retVal = "logical" descr="indicates whether the table contains the specified column(s).">
+<Param name="table as table" />
+<Param name="columns as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.InsertRows" func="yes" >
+<Overload retVal = "table" descr="Inserts a list of rows into the table at the specified position.">
+<Param name="table as table" />
+<Param name="offset as number" />
+<Param name="rows as list" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.IsDistinct" func="yes" >
+<Overload retVal = "logical" descr="Indicates whether the table contains only distinct rows (no duplicates).">
+<Param name="table as table" />
+<Param name="optional comparisonCriteria as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.IsEmpty" func="yes" >
+<Overload retVal = "logical" descr="Indicates whether the table contains any rows.">
+<Param name="table as table" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.Join" func="yes" >
+<Overload retVal = "table" descr="Joins the rows from the two tables that match based on the given keys.">
+<Param name="table1 as table" />
+<Param name="key1 as any" />
+<Param name="table2 as table" />
+<Param name="key2 as any" />
+<Param name="optional joinKind as nullable number" />
+<Param name="optional joinAlgorithm as nullable number" />
+<Param name="optional keyEqualityComparers as nullable list" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.Keys" func="yes" >
+<Overload retVal = "list" descr="Table.Keys">
+<Param name="table as table" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.Last" func="yes" >
+<Overload retVal = "any" descr="Returns the last row or a specified default value.">
+<Param name="table as table" />
+<Param name="optional default as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.LastN" func="yes" >
+<Overload retVal = "table" descr="Returns the last specified number of rows.">
+<Param name="table as table" />
+<Param name="countOrCondition as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.MatchesAllRows" func="yes" >
+<Overload retVal = "logical" descr="Indicates whether all the rows in the table meet the given condition.">
+<Param name="table as table" />
+<Param name="condition as function" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.MatchesAnyRows" func="yes" >
+<Overload retVal = "logical" descr="Indicates whether any the rows in the table meet the given condition.">
+<Param name="table as table" />
+<Param name="condition as function" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.Max" func="yes" >
+<Overload retVal = "any" descr="Returns the largest row or default value using the given criteria.">
+<Param name="table as table" />
+<Param name="comparisonCriteria as any" />
+<Param name="optional default as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.MaxN" func="yes" >
+<Overload retVal = "table" descr="Returns the largest row(s) using the given criteria.">
+<Param name="table as table" />
+<Param name="comparisonCriteria as any" />
+<Param name="countOrCondition as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.Min" func="yes" >
+<Overload retVal = "any" descr="Returns the smallest row or a default value using the given criteria.">
+<Param name="table as table" />
+<Param name="comparisonCriteria as any" />
+<Param name="optional default as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.MinN" func="yes" >
+<Overload retVal = "table" descr="Returns the smallest row(s) using the given criteria.">
+<Param name="table as table" />
+<Param name="comparisonCriteria as any" />
+<Param name="countOrCondition as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.NestedJoin" func="yes" >
+<Overload retVal = "table" descr="Performs a join between tables on supplied columns and produces the join result in a new column.">
+<Param name="table1 as table" />
+<Param name="key1 as any" />
+<Param name="table2 as any" />
+<Param name="key2 as any" />
+<Param name="newColumnName as text" />
+<Param name="optional joinKind as nullable number" />
+<Param name="optional keyEqualityComparers as nullable list" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.Partition" func="yes" >
+<Overload retVal = "list" descr="Partitions the table into a list of tables based on the number of groups and column specified.">
+<Param name="table as table" />
+<Param name="column as text" />
+<Param name="groups as number" />
+<Param name="hash as function" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.PartitionValues" func="yes" >
+<Overload retVal = "table" descr="Returns information about how a table is partitioned.">
+<Param name="table as table" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.Pivot" func="yes" >
+<Overload retVal = "table" descr="Given a pair of columns representing attribute-value pairs, rotates the data in the attribute column into a column headings.">
+<Param name="table as table" />
+<Param name="pivotValues as list" />
+<Param name="attributeColumn as text" />
+<Param name="valueColumn as text" />
+<Param name="optional aggregationFunction as nullable function" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.PositionOf" func="yes" >
+<Overload retVal = "any" descr="Returns the position or positions of the row within the table.">
+<Param name="table as table" />
+<Param name="row as record" />
+<Param name="optional occurrence as any" />
+<Param name="optional equationCriteria as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.PositionOfAny" func="yes" >
+<Overload retVal = "any" descr="Returns the position or positions of any of the specified rows within the table.">
+<Param name="table as table" />
+<Param name="rows as list" />
+<Param name="optional occurrence as nullable number" />
+<Param name="optional equationCriteria as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.PrefixColumns" func="yes" >
+<Overload retVal = "table" descr="Returns a table where the columns have all been prefixed with the given text.">
+<Param name="table as table" />
+<Param name="prefix as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.Profile" func="yes" >
+<Overload retVal = "table" descr="Returns a profile of the columns of a table.">
+<Param name="table as table" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.PromoteHeaders" func="yes" >
+<Overload retVal = "table" descr="Promotes the first row of values as the new column headers (i.e. column names).">
+<Param name="table as table" />
+<Param name="optional options as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.Range" func="yes" >
+<Overload retVal = "table" descr="Returns the rows beginning at the specified offset.">
+<Param name="table as table" />
+<Param name="offset as number" />
+<Param name="optional count as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.RemoveColumns" func="yes" >
+<Overload retVal = "table" descr="Removes the specified columns.">
+<Param name="table as table" />
+<Param name="columns as any" />
+<Param name="optional missingField as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.RemoveFirstN" func="yes" >
+<Overload retVal = "table" descr="Returns a table with the first count rows skipped.">
+<Param name="table as table" />
+<Param name="countOrCondition as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.RemoveLastN" func="yes" >
+<Overload retVal = "table" descr="Returns a table with the last N rows removed.">
+<Param name="table as table" />
+<Param name="optional countOrCondition as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.RemoveMatchingRows" func="yes" >
+<Overload retVal = "table" descr="Removes all occurrences of the specified rows from the table.">
+<Param name="table as table" />
+<Param name="rows as list" />
+<Param name="optional equationCriteria as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.RemoveRows" func="yes" >
+<Overload retVal = "table" descr="Removes the specified number of rows.">
+<Param name="table as table" />
+<Param name="offset as number" />
+<Param name="optional count as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.RemoveRowsWithErrors" func="yes" >
+<Overload retVal = "table" descr="Returns a table with the rows removed from the input table that contain an error in at least one of the cells. If a columns list is specified, then only the cells in the specified columns are inspected for errors.">
+<Param name="table as table" />
+<Param name="optional columns as nullable list" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.RenameColumns" func="yes" >
+<Overload retVal = "table" descr="Applies rename(s) of the form {old, new}.">
+<Param name="table as table" />
+<Param name="renames as list" />
+<Param name="optional missingField as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.ReorderColumns" func="yes" >
+<Overload retVal = "table" descr="Returns a table with the columns in the specified order.">
+<Param name="table as table" />
+<Param name="columnOrder as list" />
+<Param name="optional missingField as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.Repeat" func="yes" >
+<Overload retVal = "table" descr="Repeats the rows of the tables a specified number of times.">
+<Param name="table as table" />
+<Param name="count as number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.ReplaceErrorValues" func="yes" >
+<Overload retVal = "table" descr="Replaces the error values in the specified columns with the corresponding specified value.">
+<Param name="table as table" />
+<Param name="errorReplacement as list" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.ReplaceKeys" func="yes" >
+<Overload retVal = "table" descr="Table.ReplaceKeys">
+<Param name="table as table" />
+<Param name="keys as list" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.ReplaceMatchingRows" func="yes" >
+<Overload retVal = "table" descr="Replaces all the specified rows with the provided row(s).">
+<Param name="table as table" />
+<Param name="replacements as list" />
+<Param name="optional equationCriteria as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.ReplaceRelationshipIdentity" func="yes" >
+<Overload retVal = "any" descr="Table.ReplaceRelationshipIdentity">
+<Param name="value as any" />
+<Param name="identity as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.ReplaceRows" func="yes" >
+<Overload retVal = "table" descr="Replaces the specified range of rows with the provided row(s).">
+<Param name="table as table" />
+<Param name="offset as number" />
+<Param name="count as number" />
+<Param name="rows as list" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.ReplaceValue" func="yes" >
+<Overload retVal = "table" descr="Replaces one value with another in the specified columns.">
+<Param name="table as table" />
+<Param name="oldValue as any" />
+<Param name="newValue as any" />
+<Param name="replacer as function" />
+<Param name="columnsToSearch as list" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.ReverseRows" func="yes" >
+<Overload retVal = "table" descr="Returns a table with the rows in reverse order.">
+<Param name="table as table" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.RowCount" func="yes" >
+<Overload retVal = "number" descr="Returns the number of rows in the table.">
+<Param name="table as table" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.Schema" func="yes" >
+<Overload retVal = "table" descr="Returns a table containing a description of the columns (i.e. the schema) of the specified table.">
+<Param name="table as table" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.SelectColumns" func="yes" >
+<Overload retVal = "table" descr="Returns a table with only the specified columns.">
+<Param name="table as table" />
+<Param name="columns as any" />
+<Param name="optional missingField as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.SelectRows" func="yes" >
+<Overload retVal = "table" descr="Selects the rows that meet the condition function.">
+<Param name="table as table" />
+<Param name="condition as function" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.SelectRowsWithErrors" func="yes" >
+<Overload retVal = "table" descr="Returns a table with only those rows of the input table that contain an error in at least one of the cells. If a columns list is specified, then only the cells in the specified columns are inspected for errors.">
+<Param name="table as table" />
+<Param name="optional columns as nullable list" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.SingleRow" func="yes" >
+<Overload retVal = "record" descr="Returns the single row in the table.">
+<Param name="table as table" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.Skip" func="yes" >
+<Overload retVal = "table" descr="Returns a table with the first count rows skipped.">
+<Param name="table as table" />
+<Param name="countOrCondition as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.Sort" func="yes" >
+<Overload retVal = "table" descr="Sorts the table using one or more column names and comparison criteria.">
+<Param name="table as table" />
+<Param name="comparisonCriteria as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.Split" func="yes" >
+<Overload retVal = "list" descr="Splits the specified table into a list of tables using the specified page size.">
+<Param name="table as table" />
+<Param name="pageSize as number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.SplitColumn" func="yes" >
+<Overload retVal = "table" descr="Splits the specified columns into a set of additional columns using the specified splitter function.">
+<Param name="table as table" />
+<Param name="sourceColumn as text" />
+<Param name="splitter as function" />
+<Param name="optional columnNamesOrNumber as any" />
+<Param name="optional default as any" />
+<Param name="optional extraColumns as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.ToColumns" func="yes" >
+<Overload retVal = "list" descr="Creates a list of nested lists of column values from a table.">
+<Param name="table as table" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.ToList" func="yes" >
+<Overload retVal = "list" descr="Converts a table into a list by applying the specified combining function to each row of values in the table.">
+<Param name="table as table" />
+<Param name="optional combiner as nullable function" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.ToRecords" func="yes" >
+<Overload retVal = "list" descr="Converts a table to a list of records.">
+<Param name="table as table" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.ToRows" func="yes" >
+<Overload retVal = "list" descr="Creates a list of nested lists of row values from a table.">
+<Param name="table as table" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.TransformColumnNames" func="yes" >
+<Overload retVal = "table" descr="Transforms column names by using the given function.">
+<Param name="table as table" />
+<Param name="nameGenerator as function" />
+<Param name="optional options as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.TransformColumns" func="yes" >
+<Overload retVal = "table" descr="Applies transformation(s) of the form { column, transform }.">
+<Param name="table as table" />
+<Param name="transformOperations as list" />
+<Param name="optional defaultTransformation as nullable function" />
+<Param name="optional missingField as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.TransformColumnTypes" func="yes" >
+<Overload retVal = "table" descr="Applies type transformation(s) of the form { column, type } using a specific culture.">
+<Param name="table as table" />
+<Param name="typeTransformations as list" />
+<Param name="optional culture as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.TransformRows" func="yes" >
+<Overload retVal = "list" descr="Transforms the rows of the table using the specified transform function.">
+<Param name="table as table" />
+<Param name="transform as function" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.Transpose" func="yes" >
+<Overload retVal = "table" descr="Makes columns into rows and rows into columns.">
+<Param name="table as table" />
+<Param name="optional columns as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.Unpivot" func="yes" >
+<Overload retVal = "table" descr="Translates a set of columns in a table into attribute-value pairs.">
+<Param name="table as table" />
+<Param name="pivotColumns as list" />
+<Param name="attributeColumn as text" />
+<Param name="valueColumn as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.UnpivotOtherColumns" func="yes" >
+<Overload retVal = "table" descr="Translates all columns other than a specified set into attribute-value pairs.">
+<Param name="table as table" />
+<Param name="pivotColumns as list" />
+<Param name="attributeColumn as text" />
+<Param name="valueColumn as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.View" func="yes" >
+<Overload retVal = "table" descr="Creates or extends a table with user-defined handlers for query and action operations.">
+<Param name="table as nullable table" />
+<Param name="handlers as record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Table.ViewFunction" func="yes" >
+<Overload retVal = "function" descr="Creates a function that can be intercepted by a handler defined on a view (via Table.View).">
+<Param name="function as function" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Tables.GetRelationships" func="yes" >
+<Overload retVal = "table" descr="Gets the relationships among a set of tables.">
+<Param name="tables as table" />
+<Param name="optional dataColumn as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="TeamDesk.Database" func="yes" >
+<Overload retVal = "table" descr="null">
+<Param name="url as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="TeamDesk.Select" func="yes" >
+<Overload retVal = "table" descr="null">
+<Param name="url as text" />
+<Param name="optional table as nullable text" />
+<Param name="optional columns as any" />
+<Param name="optional filter as nullable text" />
+<Param name="optional orderBy as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="TeamDesk.SelectView" func="yes" >
+<Overload retVal = "table" descr="null">
+<Param name="url as text" />
+<Param name="optional table as nullable text" />
+<Param name="optional view as nullable text" />
+<Param name="optional filter as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Teradata.Database" func="yes" >
+<Overload retVal = "table" descr="Returns a table of SQL tables and views from the Teradata database.">
+<Param name="server as text" />
+<Param name="optional options as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Text.AfterDelimiter" func="yes" >
+<Overload retVal = "any" descr="Text.AfterDelimiter">
+<Param name="text as nullable text" />
+<Param name="delimiter as text" />
+<Param name="optional index as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Text.At" func="yes" >
+<Overload retVal = "nullable text" descr="Returns the character at the specified position.">
+<Param name="text as nullable text" />
+<Param name="index as number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Text.BeforeDelimiter" func="yes" >
+<Overload retVal = "any" descr="Text.BeforeDelimiter">
+<Param name="text as nullable text" />
+<Param name="delimiter as text" />
+<Param name="optional index as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Text.BetweenDelimiters" func="yes" >
+<Overload retVal = "any" descr="Text.BetweenDelimiters">
+<Param name="text as nullable text" />
+<Param name="startDelimiter as text" />
+<Param name="endDelimiter as text" />
+<Param name="optional startIndex as any" />
+<Param name="optional endIndex as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Text.Clean" func="yes" >
+<Overload retVal = "nullable text" descr="Returns the text value with all non-printable characters removed.">
+<Param name="text as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Text.Combine" func="yes" >
+<Overload retVal = "text" descr="Concatenates a list of text values into one text value.">
+<Param name="texts as list" />
+<Param name="optional separator as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Text.Contains" func="yes" >
+<Overload retVal = "nullable logical" descr="Returns whether the text contains the substring.">
+<Param name="text as nullable text" />
+<Param name="substring as text" />
+<Param name="optional comparer as nullable function" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Text.End" func="yes" >
+<Overload retVal = "nullable text" descr="Returns the last characters of the text.">
+<Param name="text as nullable text" />
+<Param name="count as number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Text.EndsWith" func="yes" >
+<Overload retVal = "nullable logical" descr="Indicates whether the text ends in the specified value.">
+<Param name="text as nullable text" />
+<Param name="substring as text" />
+<Param name="optional comparer as nullable function" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Text.Format" func="yes" >
+<Overload retVal = "text" descr="Returns formatted text from a format string and arguments.">
+<Param name="formatString as text" />
+<Param name="arguments as any" />
+<Param name="optional culture as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Text.From" func="yes" >
+<Overload retVal = "nullable text" descr="Creates a text value from the given value.">
+<Param name="value as any" />
+<Param name="optional culture as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Text.FromBinary" func="yes" >
+<Overload retVal = "nullable text" descr="Decodes data from a binary form into text.">
+<Param name="binary as nullable binary" />
+<Param name="optional encoding as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Text.Insert" func="yes" >
+<Overload retVal = "nullable text" descr="Inserts one text value into another at a given position.">
+<Param name="text as nullable text" />
+<Param name="offset as number" />
+<Param name="newText as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Text.Length" func="yes" >
+<Overload retVal = "nullable number" descr="Returns the number of characters.">
+<Param name="text as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Text.Lower" func="yes" >
+<Overload retVal = "nullable text" descr="Converts all characters to lowercase.">
+<Param name="text as nullable text" />
+<Param name="optional culture as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Text.Middle" func="yes" >
+<Overload retVal = "nullable text" descr="Returns the substring up to a specific length.">
+<Param name="text as nullable text" />
+<Param name="start as number" />
+<Param name="optional count as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Text.NewGuid" func="yes" >
+<Overload retVal = "text" descr="Returns a new, random globally unique identifier (GUID).">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Text.PadEnd" func="yes" >
+<Overload retVal = "nullable text" descr="Returns text of a specified length by padding the end of the given text.">
+<Param name="text as nullable text" />
+<Param name="count as number" />
+<Param name="optional character as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Text.PadStart" func="yes" >
+<Overload retVal = "nullable text" descr="Returns text of a specified length by padding the start of the given text.">
+<Param name="text as nullable text" />
+<Param name="count as number" />
+<Param name="optional character as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Text.PositionOf" func="yes" >
+<Overload retVal = "any" descr="Returns the first position of the value (-1 if not found).">
+<Param name="text as text" />
+<Param name="substring as text" />
+<Param name="optional occurrence as nullable number" />
+<Param name="optional comparer as nullable function" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Text.PositionOfAny" func="yes" >
+<Overload retVal = "any" descr="Returns the first position in the text value of any listed character (-1 if not found).">
+<Param name="text as text" />
+<Param name="characters as list" />
+<Param name="optional occurrence as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Text.Proper" func="yes" >
+<Overload retVal = "nullable text" descr="Capitalizes the first letter of each word.">
+<Param name="text as nullable text" />
+<Param name="optional culture as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Text.Range" func="yes" >
+<Overload retVal = "nullable text" descr="Returns the substring found at offset.">
+<Param name="text as nullable text" />
+<Param name="offset as number" />
+<Param name="optional count as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Text.Remove" func="yes" >
+<Overload retVal = "nullable text" descr="Removes all occurrences of the given character or list of characters from the input text value.">
+<Param name="text as nullable text" />
+<Param name="removeChars as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Text.RemoveRange" func="yes" >
+<Overload retVal = "nullable text" descr="Removes a count of characters starting at the given offset">
+<Param name="text as nullable text" />
+<Param name="offset as number" />
+<Param name="optional count as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Text.Repeat" func="yes" >
+<Overload retVal = "nullable text" descr="Returns a text value composed of the input text repeated a specified number of times.">
+<Param name="text as nullable text" />
+<Param name="count as number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Text.Replace" func="yes" >
+<Overload retVal = "nullable text" descr="Replaces all occurrences of the given substring in the text.">
+<Param name="text as nullable text" />
+<Param name="old as text" />
+<Param name="new as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Text.ReplaceRange" func="yes" >
+<Overload retVal = "nullable text" descr="Removes a range of characters and inserts a new value at a specified position.">
+<Param name="text as nullable text" />
+<Param name="offset as number" />
+<Param name="count as number" />
+<Param name="newText as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Text.Reverse" func="yes" >
+<Overload retVal = "nullable text" descr="Text.Reverse">
+<Param name="text as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Text.Select" func="yes" >
+<Overload retVal = "nullable text" descr="Selects all occurrences of the given character or list of characters from the input text value.">
+<Param name="text as nullable text" />
+<Param name="selectChars as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Text.Split" func="yes" >
+<Overload retVal = "list" descr="Splits text into a list of text values based upon a specified delimiter.">
+<Param name="text as text" />
+<Param name="separator as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Text.SplitAny" func="yes" >
+<Overload retVal = "list" descr="Returns a list of text values, split on any of the characters in the delimiter.">
+<Param name="text as text" />
+<Param name="separators as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Text.Start" func="yes" >
+<Overload retVal = "nullable text" descr="Returns the start of the text.">
+<Param name="text as nullable text" />
+<Param name="count as number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Text.StartsWith" func="yes" >
+<Overload retVal = "nullable logical" descr="Indicates whether the text starts with a specified value.">
+<Param name="text as nullable text" />
+<Param name="substring as text" />
+<Param name="optional comparer as nullable function" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Text.ToBinary" func="yes" >
+<Overload retVal = "nullable binary" descr="Encodes text into a binary form.">
+<Param name="text as nullable text" />
+<Param name="optional encoding as nullable number" />
+<Param name="optional includeByteOrderMark as nullable logical" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Text.ToList" func="yes" >
+<Overload retVal = "list" descr="Returns a list of character values from the given text value.">
+<Param name="text as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Text.Trim" func="yes" >
+<Overload retVal = "nullable text" descr="Removes all leading and trailing whitespace.">
+<Param name="text as nullable text" />
+<Param name="optional trim as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Text.TrimEnd" func="yes" >
+<Overload retVal = "nullable text" descr="Removes all trailing whitespace.">
+<Param name="text as nullable text" />
+<Param name="optional trim as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Text.TrimStart" func="yes" >
+<Overload retVal = "nullable text" descr="Removes all leading whitespace.">
+<Param name="text as nullable text" />
+<Param name="optional trim as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Text.Upper" func="yes" >
+<Overload retVal = "nullable text" descr="Converts all characters to uppercase.">
+<Param name="text as nullable text" />
+<Param name="optional culture as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Time.EndOfHour" func="yes" >
+<Overload retVal = "any" descr="Returns the last value of the hour.">
+<Param name="dateTime as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Time.From" func="yes" >
+<Overload retVal = "nullable time" descr="Creates a time from the given value.">
+<Param name="value as any" />
+<Param name="optional culture as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Time.FromText" func="yes" >
+<Overload retVal = "nullable time" descr="Creates a Time from local and universal Time formats.">
+<Param name="text as nullable text" />
+<Param name="optional culture as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Time.Hour" func="yes" >
+<Overload retVal = "nullable number" descr="Returns the hour component.">
+<Param name="dateTime as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Time.Minute" func="yes" >
+<Overload retVal = "nullable number" descr="Returns the minute component.">
+<Param name="dateTime as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Time.Second" func="yes" >
+<Overload retVal = "nullable number" descr="Returns the second component.">
+<Param name="dateTime as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Time.StartOfHour" func="yes" >
+<Overload retVal = "any" descr="Returns the first value of the hour.">
+<Param name="dateTime as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Time.ToRecord" func="yes" >
+<Overload retVal = "record" descr="Returns a record containing the Time value's parts.">
+<Param name="time as time" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Time.ToText" func="yes" >
+<Overload retVal = "nullable text" descr="Returns a textual representation of the Time value.">
+<Param name="time as nullable time" />
+<Param name="optional format as nullable text" />
+<Param name="optional culture as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Troux.CustomFeed" func="yes" >
+<Overload retVal = "table" descr="Enter the URL of your Planview Enterprise One - Capability and Technology Management account and a query.">
+<Param name="url as text" />
+<Param name="query as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Troux.Feed" func="yes" >
+<Overload retVal = "table" descr="Enter the URL of your Planview Enterprise One - Capability and Technology Management account.">
+<Param name="url as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Troux.TestConnection" func="yes" >
+<Overload retVal = "any" descr="null">
+<Param name="url as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Twilio.Contents" func="yes" >
+<Overload retVal = "any" descr="null">
+<Param name="URL as any" />
+<Param name="collectionName as any" />
+<Param name="optional historyInMonths as any" />
+<Param name="optional dateLabel as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Twilio.Tables" func="yes" >
+<Overload retVal = "table" descr="Enter the number of months of historical Twilio data to retrieve.">
+<Param name="historyMonths as number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Twilio.URL" func="yes" >
+<Overload retVal = "any" descr="null">
+<Param name="url as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="tyGraph.Feed" func="yes" >
+<Overload retVal = "any" descr="null">
+<Param name="url as text" />
+<Param name="optional query as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="tyGraph.NavTable" func="yes" >
+<Overload retVal = "table" descr="uses https://api.tygraph.com/odata">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Type.AddTableKey" func="yes" >
+<Overload retVal = "type" descr="Adds a key to the given table type.">
+<Param name="table as type" />
+<Param name="columns as list" />
+<Param name="isPrimary as logical" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Type.ClosedRecord" func="yes" >
+<Overload retVal = "type" descr="Returns a closed version of the given record type (or the same type, if it is already closed).">
+<Param name="type as type" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Type.Facets" func="yes" >
+<Overload retVal = "record" descr="Returns the facets of a type.">
+<Param name="type as type" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Type.ForFunction" func="yes" >
+<Overload retVal = "type" descr="Returns a type that represents functions with specific parameter and return type constraints.">
+<Param name="signature as record" />
+<Param name="min as number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Type.ForRecord" func="yes" >
+<Overload retVal = "type" descr="Returns a type that represents records with specific type constraints on fields.">
+<Param name="fields as record" />
+<Param name="open as logical" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Type.FunctionParameters" func="yes" >
+<Overload retVal = "record" descr="Returns a record with field values set to the name of the parameters of a function type, and their values set to their corresponding types.">
+<Param name="type as type" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Type.FunctionRequiredParameters" func="yes" >
+<Overload retVal = "number" descr="Returns a number indicating the minimum number of parameters required to invoke the type of function.">
+<Param name="type as type" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Type.FunctionReturn" func="yes" >
+<Overload retVal = "type" descr="Returns a type returned by a function type.">
+<Param name="type as type" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Type.Is" func="yes" >
+<Overload retVal = "logical" descr="Type.Is">
+<Param name="type1 as type" />
+<Param name="type2 as type" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Type.IsNullable" func="yes" >
+<Overload retVal = "logical" descr="Returns true if a type is a nullable type; otherwise, false.">
+<Param name="type as type" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Type.IsOpenRecord" func="yes" >
+<Overload retVal = "logical" descr="Returns whether a record type is open.">
+<Param name="type as type" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Type.ListItem" func="yes" >
+<Overload retVal = "type" descr="Returns an item type from a list type.">
+<Param name="type as type" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Type.NonNullable" func="yes" >
+<Overload retVal = "type" descr="Returns the non nullable type from a type.">
+<Param name="type as type" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Type.OpenRecord" func="yes" >
+<Overload retVal = "type" descr="Returns an opened version of the given record type (or the same type, if it is already open).">
+<Param name="type as type" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Type.RecordFields" func="yes" >
+<Overload retVal = "record" descr="Returns a record describing the fields of a record type with each field of the returned record type having a corresponding name and a value.">
+<Param name="type as type" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Type.ReplaceFacets" func="yes" >
+<Overload retVal = "type" descr="Replaces the facets of a type.">
+<Param name="type as type" />
+<Param name="facets as record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Type.ReplaceTableKeys" func="yes" >
+<Overload retVal = "type" descr="Returns a new table type with all keys replaced by the specified list of keys.">
+<Param name="tableType as type" />
+<Param name="keys as list" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Type.TableColumn" func="yes" >
+<Overload retVal = "type" descr="Returns the type of a column in a table.">
+<Param name="tableType as type" />
+<Param name="column as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Type.TableKeys" func="yes" >
+<Overload retVal = "list" descr="Returns the possibly empty list of keys for the given table type.">
+<Param name="tableType as type" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Type.TableRow" func="yes" >
+<Overload retVal = "type" descr="Type.TableRow">
+<Param name="table as type" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Type.TableSchema" func="yes" >
+<Overload retVal = "table" descr="Returns a table containing a description of the columns (i.e. the schema) of the specified table type.">
+<Param name="tableType as type" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Type.Union" func="yes" >
+<Overload retVal = "type" descr="Returns the union of a list of types.">
+<Param name="types as list" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Uri.BuildQueryString" func="yes" >
+<Overload retVal = "text" descr="Assemble a record into a URI query string.">
+<Param name="query as record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Uri.Combine" func="yes" >
+<Overload retVal = "text" descr="Returns an absolute URI that is the combination of the input base URI and relative URI.">
+<Param name="baseUri as text" />
+<Param name="relativeUri as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Uri.EscapeDataString" func="yes" >
+<Overload retVal = "text" descr="Encodes special characters in accordance with RFC 3986.">
+<Param name="data as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Uri.Parts" func="yes" >
+<Overload retVal = "record" descr="Returns the parts of the input absolute URI as a record.">
+<Param name="absoluteUri as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Value.Add" func="yes" >
+<Overload retVal = "any" descr="Returns the sum of the two values.">
+<Param name="value1 as any" />
+<Param name="value2 as any" />
+<Param name="optional precision as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Value.As" func="yes" >
+<Overload retVal = "any" descr="Value.As">
+<Param name="value as any" />
+<Param name="type as type" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Value.Compare" func="yes" >
+<Overload retVal = "number" descr="Returns -1, 0, or 1 based on whether the first value is less than, equal to, or greater than the second one.">
+<Param name="value1 as any" />
+<Param name="value2 as any" />
+<Param name="optional precision as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Value.Divide" func="yes" >
+<Overload retVal = "any" descr="Returns the result of dividing the first value by the second.">
+<Param name="value1 as any" />
+<Param name="value2 as any" />
+<Param name="optional precision as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Value.Equals" func="yes" >
+<Overload retVal = "logical" descr="Returns whether two values are equal.">
+<Param name="value1 as any" />
+<Param name="value2 as any" />
+<Param name="optional precision as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Value.Firewall" func="yes" >
+<Overload retVal = "any" descr="Value.Firewall">
+<Param name="key as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Value.FromText" func="yes" >
+<Overload retVal = "any" descr="Creates a strongly-typed value from a textual representation.">
+<Param name="text as any" />
+<Param name="optional culture as nullable text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Value.Is" func="yes" >
+<Overload retVal = "logical" descr="Value.Is">
+<Param name="value as any" />
+<Param name="type as type" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Value.Metadata" func="yes" >
+<Overload retVal = "any" descr="Returns a record containing the input's metadata.">
+<Param name="value as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Value.Multiply" func="yes" >
+<Overload retVal = "any" descr="Returns the product of the two values.">
+<Param name="value1 as any" />
+<Param name="value2 as any" />
+<Param name="optional precision as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Value.NativeQuery" func="yes" >
+<Overload retVal = "any" descr="Evaluates a query against a target.">
+<Param name="target as any" />
+<Param name="query as text" />
+<Param name="optional parameters as any" />
+<Param name="optional options as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Value.NullableEquals" func="yes" >
+<Overload retVal = "nullable logical" descr="Returns whether two values are equal.">
+<Param name="value1 as any" />
+<Param name="value2 as any" />
+<Param name="optional precision as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Value.RemoveMetadata" func="yes" >
+<Overload retVal = "any" descr="Strips the input of metadata.">
+<Param name="value as any" />
+<Param name="optional metaValue as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Value.ReplaceMetadata" func="yes" >
+<Overload retVal = "any" descr="Replaces the input's metadata information.">
+<Param name="value as any" />
+<Param name="metaValue as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Value.ReplaceType" func="yes" >
+<Overload retVal = "any" descr="Value.ReplaceType">
+<Param name="value as any" />
+<Param name="type as type" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Value.ResourceExpression" func="yes" >
+<Overload retVal = "any" descr="Value.ResourceExpression">
+<Param name="value as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Value.Subtract" func="yes" >
+<Overload retVal = "any" descr="Returns the difference of the two values.">
+<Param name="value1 as any" />
+<Param name="value2 as any" />
+<Param name="optional precision as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Value.Type" func="yes" >
+<Overload retVal = "type" descr="Returns the type of the given value.">
+<Param name="value as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Variable.Value" func="yes" >
+<Overload retVal = "any" descr="Variable.Value">
+<Param name="identifier as text" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Vertica.Database" func="yes" >
+<Overload retVal = "table" descr="Import data from Vertica">
+<Param name="server as text" />
+<Param name="database as text" />
+<Param name="optional options as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="VSTS.AccountContents" func="yes" >
+<Overload retVal = "table" descr="Enter Url of your VSTS Analytics Service.">
+<Param name="url as text" />
+<Param name="optional options as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="VSTS.AnalyticsViews" func="yes" >
+<Overload retVal = "table" descr="Enter account and project names.">
+<Param name="url as text" />
+<Param name="project as text" />
+<Param name="optional options as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="VSTS.Contents" func="yes" >
+<Overload retVal = "table" descr="Enter Url of your VSTS Analytics Service.">
+<Param name="url as text" />
+<Param name="optional options as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="VSTS.Feed" func="yes" >
+<Overload retVal = "table" descr="Visual Studio Team Services Feed.">
+<Param name="url as text" />
+<Param name="optional options as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="VSTS.Views" func="yes" >
+<Overload retVal = "table" descr="Enter account and project names.">
+<Param name="url as text" />
+<Param name="project as text" />
+<Param name="areaPath as nullable text" />
+<Param name="optional options as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Web.BrowserContents" func="yes" >
+<Overload retVal = "text" descr="Web.BrowserContents">
+<Param name="url as text" />
+<Param name="optional options as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Web.Contents" func="yes" >
+<Overload retVal = "binary" descr="Returns the contents downloaded from the url as binary.">
+<Param name="url as text" />
+<Param name="optional options as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Web.Page" func="yes" >
+<Overload retVal = "table" descr="Returns the contents of the HTML document broken into its constituent structures, as well as a representation of the full document and its text after removing tags.">
+<Param name="html as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="WebAction.Request" func="yes" >
+<Overload retVal = "action" descr="Creates an action that, when executed, will return the results of performing an HTTP request as a binary value.">
+<Param name="method as text" />
+<Param name="url as text" />
+<Param name="optional options as nullable record" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Webtrends.KeyMetrics" func="yes" >
+<Overload retVal = "table" descr="Returns a table with key Webtrends metrics.">
+<Param name="ProfileId as text" />
+<Param name="optional startDate as nullable date" />
+<Param name="optional endDate as nullable date" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Webtrends.Profile" func="yes" >
+<Overload retVal = "any" descr="null">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Webtrends.ReportContents" func="yes" >
+<Overload retVal = "table" descr="Returns a table with report content from Webtrends.">
+<Param name="ProfileId as text" />
+<Param name="ReportId as text" />
+<Param name="optional startDate as nullable date" />
+<Param name="optional endDate as nullable date" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Webtrends.Tables" func="yes" >
+<Overload retVal = "table" descr="Enter the Profile ID associated with your Webtrends account.">
+<Param name="ProfileId as text" />
+<Param name="optional startDate as nullable date" />
+<Param name="optional endDate as nullable date" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Xml.Document" func="yes" >
+<Overload retVal = "table" descr="Returns the contents of the XML document as a hierarchical table.">
+<Param name="contents as any" />
+<Param name="optional encoding as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Xml.Tables" func="yes" >
+<Overload retVal = "table" descr="Returns the contents of the XML document as a nested collection of flattened tables.">
+<Param name="contents as any" />
+<Param name="optional options as nullable record" />
+<Param name="optional encoding as nullable number" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Zendesk.Collection" func="yes" >
+<Overload retVal = "any" descr="null">
+<Param name="url as any" />
+<Param name="collectionName as any" />
+<Param name="optional schema as any" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Zendesk.Tables" func="yes" >
+<Overload retVal = "table" descr="Enter the URL of your Zendesk account.">
+<Param name="url as text" />
+</Overload>
+</KeyWord>
+
+
+</AutoComplete>
+</NotepadPlus>
