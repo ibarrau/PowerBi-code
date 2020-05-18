@@ -1,0 +1,340 @@
+// https://community.powerbi.com/t5/Community-Blog/Get-your-own-Power-Query-Editor-using-Notepad/ba-p/146347
+// https://github.com/tnclark8012/Power-BI-Desktop-Query-Extensions
+// varias paginas api https://datachant.com/2016/06/27/cursor-based-pagination-power-query/
+
+// --------------------------
+// Power Bi Frequent
+// --------------------------
+
+//encoding utf = 65001
+
+// JUALIAN Date
+// 5 digitos
+Date.AddDays(Date.From(DateTimeZone.From(Text.Start(Number.ToText([fecha2]),4) & "-01-01")),Int64.From(Text.End(Number.ToText([fecha2]),3)))
+// 6 digitos
+#date(1900+Number.IntegerDivide([fecha1], 1000),1,1)+#duration(Number.Mod([fecha1], 1000)-1,0,0,0)
+
+// Reemplazador de otro campo, cuando es nulo una columna por otra.
+= Table.ReplaceValue(#"Reemplazo Null UserId",null, each _[Índice],Replacer.ReplaceValue,{"PlanId"})
+
+// Si este valor de columna2 esta en alguna fila de columna1
+if List.Contains(Table.ToList(Table.SelectColumns(#"Tipo cambiado" , "SupervisorID")), [Id]) then "Lider" else "Ejecutivo"
+	
+// Agregar 0 en valores menores a 10. Clasico de meses.
+Date.ToText([fecha],"MM")
+Text.PadStart(Text.From([Month]),2,"0")
+
+//Modificar fecha como YYYYMM
+= Table.TransformColumns(#"Tipo cambiado", {{"ColumnaDate", each Text.From(Date.Year(_)) & Text.From(Date.ToText(_,"MM")), type text}})
+
+// Reemplazar una fila de una columna tras un hallazgo por el valor de otra columna.
+= Table.FromRecords(Table.TransformRows(dbo_EjecutivosDeCuentas,
+    (r) => Record.TransformFields(r,
+        {"SupervisorID", each if r[Id]="2690AC0E-E055-4CC0-9BEE-0A30F8FF379F" then null else r[SupervisorID]})))
+
+// Reemplazar una fila de una columna tras un hallazgo por un valor escrito.
+= Table.TransformColumns(#"PasoANTERIOR", {{"fechasuscripcion", each if Date.Year(_) < 1900 then #date(Date.Year(DateTime.LocalNow()),Date.Month(_),Date.Day(_)) else _}}) 		
+		
+// IN Statement
+each List.Contains({item1, "item2"}, [column1]) 
+
+// Generar lista de valores numéricos
+= List.Generate(()=>150, each _ > 0, each _ - 1)
+
+// Agrupar una columna con sus valores separados por coma
+#"Filas agrupadas" = Table.Group(Origen, {"Name"}, {{"ToTable", each _, type table [Columna1=text, Columna2=text]}}),
+#"Personalizada agregada" = Table.AddColumn(#"Filas agrupadas", "ToList", each Table.ToList(Table.SelectColumns([ToTable], "Product"))),
+#"Personalizada agregada1" = Table.AddColumn(#"Personalizada agregada", "ByCommas", each Text.Combine([ToList], ",")),
+
+
+// Multiples reemplazos de Meses.		
+let
+    Source = paso,
+    Substitutions = [
+        #"Enero" = "1",
+        #"Febrero" = "2",
+        #"Marzo" = "3",		
+		#"Abril" = "4",
+		#"Mayo" = "5",
+		#"Junio" = "6",
+		#"Julio" = "7",
+		#"Agosto" = "8",
+		#"Septiembre" = "9",
+		#"Octubre" = "10",
+		#"Noviembre" = "11",
+		#"Diciembre" = "12"],
+    Substituted = Table.TransformColumns(Source, {{"Mes", each Record.FieldOrDefault(Substitutions, _, _)}})
+in
+    Substituted
+
+= let
+    Source = #"Replaced Value",
+    Substitutions = [
+        #"1"="Enero",
+        #"2"="Febrero",
+        #"3"="Marzo",
+		#"4"="Abril",
+		#"5"="Mayo",
+		#"6"="Junio",
+		#"7"="Julio",
+		#"8"="Agosto",
+		#"9"="Septiembre",
+		#"10"="Octubre",
+		#"11"="Noviembre",
+		#"12"="Diciembre"],
+    Substituted = Table.TransformColumns(Source, {{"Mes", each Record.FieldOrDefault(Substitutions, Text.From(_), _)}})
+in
+    Substituted
+	
+// --------------------------
+// Convertir fecha a una fila desde hasta	
+// --------------------------	
+//https://www.poweredsolutions.co/2020/01/11/dax-vs-power-query-static-segmentation-in-power-bi-dax-power-query/
+
+// --------------------------
+// Tablas fechas	
+// --------------------------
+	
+// Fecha minima de una tabla Table.Min(Venta, "Fecha")[Fecha]	
+= let
+//Capture the date range from the parameters
+    StartDate = #date(2010, 1, 1),
+    EndDate = DateTime.Date(DateTime.LocalNow()),
+//Get the number of dates that will be required for the table
+    GetDateCount = Duration.Days(EndDate - StartDate),
+//Take the count of dates and turn it into a list of dates
+    GetDateList = List.Dates(StartDate, GetDateCount, 
+    #duration(1,0,0,0)),
+//Convert the list into a table
+    DateListToTable = Table.FromList(GetDateList, 
+    Splitter.SplitByNothing(), {"Fecha"}, null, ExtraValues.Error),
+//Add Year Column
+    YearNumber = Table.AddColumn(DateListToTable, "Año", 
+    each Date.Year([Fecha]), Int32.Type),
+//Add Month Number Column
+    MonthNumber = Table.AddColumn(YearNumber , "IdMes", 
+    each Date.Month([Fecha]), Int32.Type),
+//Add Month Name Column
+    MonthName = Table.AddColumn(MonthNumber , "Mes", 
+    each Date.ToText([Fecha],"MMMM", "es-es"), type text),
+//Add Day Number Column
+    DayNumber  = Table.AddColumn(MonthName , "Dia", 
+    each Date.Day([Fecha]), Int32.Type)
+in
+    DayNumber
+	
+// FECHA CORRIDA no calendaria
+// --------------------------	
+
+= let
+//Capture the date range from the parameters
+    StartDate = #date(Date.Year(DateTime.Date(DateTime.LocalNow()))-2, 12, 1),
+    EndDate = DateTime.Date(DateTime.LocalNow()),
+//Get the number of dates that will be required for the table
+    GetDateCount = Duration.Days(EndDate - StartDate),
+//Take the count of dates and turn it into a list of dates
+    GetDateList = List.Dates(StartDate, GetDateCount, 
+    #duration(1,0,0,0)),
+//Convert the list into a table
+    DateListToTable = Table.FromList(GetDateList, 
+    Splitter.SplitByNothing(), {"Fecha"}, null, ExtraValues.Error),
+//Año
+    YearNumber = Table.AddColumn(DateListToTable, "Año", each 
+                 if [Fecha] > #date(Date.Year([Fecha]), 12, 25) 
+                       then Date.Year([Fecha])+1
+                       else Date.Year([Fecha]), Int32.Type),
+//Mes
+    MonthNumber = Table.AddColumn(YearNumber , "IdMes", each 
+    if [Fecha] > #date(Date.Year([Fecha]), Date.Month([Fecha]), 25) then
+            if Date.Month([Fecha]) = 12 then 1
+            else Date.Month([Fecha])+1
+    else Date.Month([Fecha]), Int32.Type),
+//Periodo
+    AMes = Table.AddColumn(MonthNumber , "AMes", 
+    each Text.From([Año]) & Text.PadStart(Text.From([IdMes]),2,"0"), type text)
+in
+    AMes
+	
+// Fecha corrida con indice
+// --------------------------	
+
+let
+    Origen = let
+//Capture the date range from the parameters
+    StartDate = #date(Date.Year(DateTime.Date(DateTime.LocalNow()))-2, 12, 1),
+    EndDate = DateTime.Date(DateTime.LocalNow()),
+//Get the number of dates that will be required for the table
+    GetDateCount = Duration.Days(EndDate - StartDate),
+//Take the count of dates and turn it into a list of dates
+    GetDateList = List.Dates(StartDate, GetDateCount, 
+    #duration(1,0,0,0)),
+//Convert the list into a table
+    DateListToTable = Table.FromList(GetDateList, 
+    Splitter.SplitByNothing(), {"Fecha"}, null, ExtraValues.Error),
+//Periodo
+    AMes = Table.AddColumn(DateListToTable , "AMes", 
+    each Text.From(Date.Year([Fecha])) & Text.PadStart(Text.From(Date.Month([Fecha])),2,"0"), type text)
+in
+    AMes,
+    #"Columnas quitadas" = Table.RemoveColumns(Origen,{"Fecha"}),
+    #"Duplicados quitados" = Table.Distinct(#"Columnas quitadas"),
+    #"Índice agregado" = Table.AddIndexColumn(#"Duplicados quitados", "Índice", 0, 1)
+in
+    #"Índice agregado"
+
+// --------------------------
+// Dimension Time
+// --------------------------	
+	
+let
+    Origen = List.Times(#time(0, 0, 0), 1440, #duration(0, 0, 1, 0)),
+    #"Convertida en tabla" = Table.FromList(Origen, Splitter.SplitByNothing(), null, null, ExtraValues.Error),
+    #"Hora insertada" = Table.AddColumn(#"Convertida en tabla", "Hour", each Time.Hour([Column1]), Int64.Type),
+    #"Minuto insertado" = Table.AddColumn(#"Hora insertada", "Minute", each Time.Minute([Column1]), Int64.Type),
+    #"Personalizada agregada" = Table.AddColumn(#"Minuto insertado", "MilitarTime", each Text.Combine({Text.PadStart(Text.From([Hour]),2,"0"),Text.PadStart(Text.From([Minute]),2,"0")}, ""), type text),
+    #"Personalizada agregada1" = Table.AddColumn(#"Personalizada agregada", "OrderHour", each if [Hour] < 7 then [Hour]+17 else [Hour]-7, Int32.Type),
+    #"Columnas con nombre cambiado" = Table.RenameColumns(#"Personalizada agregada1",{{"Column1", "Time"}}),
+    #"Tipo cambiado" = Table.TransformColumnTypes(#"Columnas con nombre cambiado",{{"Time", type time}})
+in
+    #"Tipo cambiado"
+	
+// --------------------------
+// Casos de fecha
+// --------------------------
+
+// Semana del año para lunes
+Date.WeekofYear(Date.AddDays([date],-1))
+	
+// Edad
+Duration.Days(DateTime.Date(DateTime.LocalNow())-[FECHA])
+
+// Expandir fechas desde hasta en una sola. Agregar columna asi:
+List.Transform({Number.From([Desde])..Number.From([Hasta])}, each Date.From(_))
+	
+// --------------------------
+// Query example
+// --------------------------
+// Select de columnas y where
+Table.SelectColumns(
+	Table.SelectRows(Table.FromRecords(   
+	{  
+	  
+		  [CustomerID = 1, Name = "Bob", Phone = "123-4567"],  
+		  [CustomerID = 2, Name = "Jim", Phone = "987-6543"] ,  
+		  [CustomerID = 3, Name = "Paul", Phone = "543-7890"] ,  
+		  [CustomerID = 4, Name = "Ringo", Phone = "232-1550"]  
+	  
+	}  
+		), each [CustomerID] > 2)  
+, "Name")
+
+// Table Append
+= Table.Combine({#"Nombre del mes insertado", #"estadistica-inscripciones-iniciales-autos-motos (2)"})
+
+// --------------------------	
+// GEOCODING and REVERSE Notinatium in power query
+// --------------------------	
+let
+	AddressLookup = (lat as text, long as text) =>
+		let
+			Source = Json.Document(Web.Contents("http://nominatim.openstreetmap.org/reverse?format=jsonv2&lat="&lat&"&lon="&long&"")),
+			address = Source[address],
+			#"Converted to Table" = Record.ToTable(address),
+			#"Filtered Rows" = Table.SelectRows(#"Converted to Table", each ([Name] = "city" or [Name] = "country" or [Name] = "house_number" or [Name] = "postcode" or [Name] = "road")),
+			#"Appended Query" = Table.Combine({#"Filtered Rows", DefaultValues}),
+			#"Removed Duplicates" = Table.Distinct(#"Appended Query", {"Name"}),
+			#"Transposed Table" = Table.Transpose(#"Removed Duplicates"),
+			#"Promoted Headers" = Table.PromoteHeaders(#"Transposed Table", [PromoteAllScalars=true]),
+			#"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"house_number", Int64.Type}, {"road", type text}, {"city", type text}, {"postcode", type text}, {"country", type text}})
+		in
+			#"Changed Type"
+in
+	AddressLookup
+	
+// Respuesta ej: Argentina,Santiago del Estero,Pinto,Aguirre
+
+let
+	AddressLookup = (pcia as texttext) =>
+		let
+			Source = Json.Document(Web.Contents("https://nominatim.openstreetmap.org/search/"&pcia&"?format=json&addressdetails=1&limit=1&polygon_svg=1")),
+			address = Source[address],
+		in
+			Source
+in
+	AddressLookup
+
+// Respuesta ej: argentina,jujuy,rinconada
+
+
+// MULTI REST API
+// ERROR handling https://blog.crossjoin.co.uk/2016/08/09/handling-404-not-found-errors-with-web-contents-in-power-query-and-power-bi/
+
+// --------------------------	
+// Ejemplo de API Data Factory
+// --------------------------	
+let
+	iterations = 10,          // Number of iterations
+	urle = "https://management.azure.com/subscriptions/" & SubscriptionID & "/resourcegroups/" & ResourceGroup & "/providers/Microsoft.DataFactory/datafactories/" & DataFactory & "/datasets?api-version=" &  Date.ToText(APIVersion, "yyyy-MM-dd"),
+	FnGetOnePage =
+		(urle) as record =>
+		let
+			Source = Json.Document(Web.Contents(urle)),
+			data = try Source[value] otherwise null,
+			next = try Source[nextLink] otherwise null,
+			res = [Data=data, Next=next]
+		in
+	res,
+
+	GeneratedList =
+		List.Generate(
+			()=>[i=0, res = FnGetOnePage(urle)],
+			each [i]<iterations and [res][Data]<>null,
+			each [i=[i]+1, res = FnGetOnePage([res][Next])],
+			each [res][Data]),
+			
+
+// --------------------------	
+// Remove all errors
+// --------------------------	
+let
+    src = Excel.CurrentWorkbook(){[Name="Tabelle1"]}[Content],
+    cols = Table.ColumnNames(src),
+    replace = Table.ReplaceErrorValues(src, List.Transform(cols, each {_, "!"}))
+in
+    replace
+
+	
+// --------------------------	
+// Ejemplo SQL JOIN casero
+// --------------------------	
+
+// SELECT 
+  // t1.Field2, 
+  // t1.Field1 AS Field1A, 
+  // t2.Field1 AS Field1B, 
+  // sum(t2.Field4) AS Summed
+// FROM
+  // Table1 AS t1 
+// INNER JOIN 
+  // Table1 AS t2 
+      // ON 
+         // t1.Field1 >= t2.Field1 AND 
+         // t1.Field2 = t2.Field2 AND 
+         // t1.Field3 = t2.Field3
+// WHERE 
+  // t1.Field3 = 1
+// GROUP BY 
+  // t1.Field2, 
+  // t1.Field1, 
+  // t2.Field1
+    
+RelativeMerge = Table.AddColumn(Table1, "RelativeJoin", 
+	(Earlier) => Table.SelectRows(Table2, 
+				 each [Field1]<=Earlier[Field1] and [Field2]=Earlier[Field2] and [Field3]=Earlier[Field3])),
+
+// --------------------------	
+// IMAGENES
+// --------------------------	
+
+"data:image/png;base64, " & [BinaryToText]
+
