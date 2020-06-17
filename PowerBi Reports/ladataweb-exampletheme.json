@@ -1,5 +1,5 @@
 {
-   "name":"NachosTheme ~ created by powerbi.tips ~ v1.0",
+   "name":"NachosTheme",
    "dataColors":[
       "#FF8C00",
       "#3c5460",
@@ -346,9 +346,9 @@
 					"fontColorPrimary": { "solid": { "color": "#000000"}},
 					"backColorPrimary": { "solid": { "color": "#ffffff"}},
 					"fontColorSecondary": { "solid": { "color": "#000000"}},
-					"backColorSecondary": { "solid": { "color": "#b1bbbf"}},
+					"backColorSecondary": { "solid": { "color": "#e6e6e6"}},
 					"bandedRowHeaders": true,
-					"valuesOnRow": true,
+					"valuesOnRow": false,
 					"urlIcon": true,
 					"wordWrap": true,
 					"fontSize": 12
@@ -357,7 +357,7 @@
 					"rowSubtotals": true,
 					"columnSubtotals": true,
 					"fontColor": { "solid": { "color": "#ffffff"}},
-					"backColor": { "solid": { "color": "#637680"}},
+					"backColor": { "solid": { "color": "#b1bbbf"}},
 					"fontSize": 14,
 					"applyToHeaders": true,
 					"rowSubtotalsPosition": "Bottom",
@@ -370,6 +370,39 @@
 					"applyToHeaders": true,
 					"fontSize": 14
 				}]
+			}
+		},
+		"slicer": {
+		"*": {
+			"header": [{
+				"show": true,				
+				"textSize": 14,
+				"fontFamily": "Segoe UI"
+				}]
+			}
+		},
+		"basicShape": {
+			"*": {
+				"dropShadow":[
+				{
+					"show":false
+				}]				
+			}
+		},
+		"textbox": {
+			"*": {
+			"dropShadow":[
+				{
+					"show":false
+				}]				
+			}
+		},
+		"image": {
+			"*": {
+			"dropShadow":[
+				{
+					"show":false
+				}]				
 			}
 		}
    }
