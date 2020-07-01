@@ -404,6 +404,18 @@
 					"show":false
 				}]				
 			}
-		}
+		},
+		"page":{
+			"*":{
+			"background":[
+				{
+					"transparency":0
+				}],
+			"outspace":[
+				{
+					"color":{"solid":{"color":"#E6E6E6"}}
+				}]
+			}
+		}		
    }
 }
