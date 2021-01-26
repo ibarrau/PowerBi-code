@@ -1,0 +1,224 @@
+{
+    "name": "Refresh_PowerBi_Dataset",
+    "properties": {
+        "activities": [
+            {
+                "name": "Obtener Bearer Token",
+                "type": "WebActivity",
+                "dependsOn": [
+                    {
+                        "activity": "Service Principal Secret desde AKV",
+                        "dependencyConditions": [
+                            "Succeeded"
+                        ]
+                    }
+                ],
+                "policy": {
+                    "timeout": "7.00:00:00",
+                    "retry": 0,
+                    "retryIntervalInSeconds": 30,
+                    "secureOutput": false,
+                    "secureInput": true
+                },
+                "userProperties": [],
+                "typeProperties": {
+                    "url": {
+                        "value": "https://login.microsoftonline.com/@{pipeline().parameters.tenant_id}/oauth2/token",
+                        "type": "Expression"
+                    },
+                    "method": "POST",
+                    "headers": {
+                        "Content-Type": "application/x-www-form-urlencoded"
+                    },
+                    "body": {
+                        "value": "grant_type=client_credentials&client_id=@{pipeline().parameters.service_principal_client_id}&client_secret=@{activity('Service Principal Secret desde AKV').output.value}&resource=https://analysis.windows.net/powerbi/api",
+                        "type": "Expression"
+                    }
+                }
+            },
+            {
+                "name": "Refrescar Dataset",
+                "type": "WebActivity",
+                "dependsOn": [
+                    {
+                        "activity": "Obtener Bearer Token",
+                        "dependencyConditions": [
+                            "Succeeded"
+                        ]
+                    }
+                ],
+                "policy": {
+                    "timeout": "7.00:00:00",
+                    "retry": 0,
+                    "retryIntervalInSeconds": 30,
+                    "secureOutput": false,
+                    "secureInput": true
+                },
+                "userProperties": [],
+                "typeProperties": {
+                    "url": {
+                        "value": "https://api.powerbi.com/v1.0/myorg/groups/@{pipeline().parameters.group_id}/datasets/@{pipeline().parameters.dataset_id}/refreshes",
+                        "type": "Expression"
+                    },
+                    "method": "POST",
+                    "headers": {
+                        "Authorization": {
+                            "value": "Bearer @{activity('Obtener Bearer Token').output.access_token}",
+                            "type": "Expression"
+                        },
+                        "Content-Type": "application/json"
+                    },
+                    "body": {
+                        "parameter": "do not delete"
+                    }
+                }
+            },
+            {
+                "name": "Service Principal Secret desde AKV",
+                "type": "WebActivity",
+                "dependsOn": [],
+                "policy": {
+                    "timeout": "7.00:00:00",
+                    "retry": 0,
+                    "retryIntervalInSeconds": 30,
+                    "secureOutput": true,
+                    "secureInput": false
+                },
+                "userProperties": [],
+                "typeProperties": {
+                    "url": {
+                        "value": "https://@{pipeline().parameters.key_vault_name}.vault.azure.net/secrets/@{pipeline().parameters.secret_name}?api-version=7.0",
+                        "type": "Expression"
+                    },
+                    "method": "GET",
+                    "authentication": {
+                        "type": "MSI",
+                        "resource": "https://vault.azure.net"
+                    }
+                }
+            },
+            {
+                "name": "Hasta Refresh Completo",
+                "type": "Until",
+                "dependsOn": [
+                    {
+                        "activity": "Refrescar Dataset",
+                        "dependencyConditions": [
+                            "Succeeded"
+                        ]
+                    }
+                ],
+                "userProperties": [],
+                "typeProperties": {
+                    "expression": {
+                        "value": "@not(equals('Unknown',variables('Status')))",
+                        "type": "Expression"
+                    },
+                    "activities": [
+                        {
+                            "name": "Esperar",
+                            "type": "Wait",
+                            "dependsOn": [],
+                            "userProperties": [],
+                            "typeProperties": {
+                                "waitTimeInSeconds": {
+                                    "value": "@int(pipeline().parameters.wait_seconds)",
+                                    "type": "Expression"
+                                }
+                            }
+                        },
+                        {
+                            "name": "Refresh Status",
+                            "type": "WebActivity",
+                            "dependsOn": [
+                                {
+                                    "activity": "Esperar",
+                                    "dependencyConditions": [
+                                        "Succeeded"
+                                    ]
+                                }
+                            ],
+                            "policy": {
+                                "timeout": "7.00:00:00",
+                                "retry": 0,
+                                "retryIntervalInSeconds": 30,
+                                "secureOutput": false,
+                                "secureInput": false
+                            },
+                            "userProperties": [],
+                            "typeProperties": {
+                                "url": {
+                                    "value": "https://api.powerbi.com/v1.0/myorg/groups/@{pipeline().parameters.group_id}/datasets/@{pipeline().parameters.dataset_id}/refreshes?$top=1",
+                                    "type": "Expression"
+                                },
+                                "method": "GET",
+                                "headers": {
+                                    "Authorization": {
+                                        "value": "Bearer @{activity('Obtener Bearer Token').output.access_token}",
+                                        "type": "Expression"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "name": "Set Status",
+                            "type": "SetVariable",
+                            "dependsOn": [
+                                {
+                                    "activity": "Refresh Status",
+                                    "dependencyConditions": [
+                                        "Succeeded"
+                                    ]
+                                }
+                            ],
+                            "userProperties": [],
+                            "typeProperties": {
+                                "variableName": "Status",
+                                "value": {
+                                    "value": "@activity('Refresh Status').output.value[0].status",
+                                    "type": "Expression"
+                                }
+                            }
+                        }
+                    ],
+                    "timeout": "01:00:00"
+                }
+            }
+        ],
+        "parameters": {
+            "dataset_id": {
+                "type": "string"
+            },
+            "group_id": {
+                "type": "string"
+            },
+            "key_vault_name": {
+                "type": "string"
+            },
+            "secret_name": {
+                "type": "string"
+            },
+            "service_principal_client_id": {
+                "type": "string"
+            },
+            "wait_seconds": {
+                "type": "string",
+                "defaultValue": "120"
+            },
+            "tenant_id": {
+                "type": "string"
+            }
+        },
+        "variables": {
+            "Status": {
+                "type": "String"
+            }
+        },
+        "folder": {
+            "name": "General"
+        },
+        "annotations": [],
+        "lastPublishTime": "2020-12-15T19:41:32Z"
+    },
+    "type": "Microsoft.DataFactory/factories/pipelines"
+}
