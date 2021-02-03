@@ -1,4 +1,4 @@
-StoreKey;Store Type;Store Name;Continent;City;State;CountryRegion;Employees;Selling Area;Last Remodel Date
+StoreId;Store Type;Store Name;Continent;City;State;CountryRegion;Employees;Selling Area;Last Remodel Date
 17;Store;Contoso Spokane Store;North America;Spokane;Washington;United States;25;700;17/6/2009
 5;Store;Contoso Redmond Store;North America;Redmond;Washington;United States;33;560;17/6/2009
 15;Store;Contoso Renton Store;North America;Renton;Washington;United States;22;500;17/6/2009
