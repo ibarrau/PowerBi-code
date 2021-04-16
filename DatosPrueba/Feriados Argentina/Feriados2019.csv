@@ -1,0 +1,33 @@
+Fecha,Dia,Desc,Tipo
+1 de Enero,Martes,Año Nuevo.,Inamovibles
+4 de Marzo,Lunes,Carnaval.,Inamovibles
+5 de Marzo,Martes,Carnaval.,Inamovibles
+24 de Marzo,Domingo,Día Nacional de la Memoria por la Verdad y la Justicia.,Inamovibles
+2 de Abril,Martes,Día del Veterano y de los Caídos en la Guerra de Malvinas.,Inamovibles
+19 de Abril,Viernes,Viernes Santo.,Inamovibles
+1 de Mayo,Miércoles,Día del Trabajador.,Inamovibles
+25 de Mayo,Sábado,Día de la Revolución de Mayo.,Inamovibles
+20 de Junio,Jueves,Día Paso a la Inmortalidad del General Manuel Belgrano.,Inamovibles
+9 de Julio,Martes,Día de la Independencia.,Inamovibles
+18 de Noviembre,Lunes,Día de la Soberanía Nacional.,Inamovibles
+8 de Diciembre,Domingo,Inmaculada Concepción de María.,Inamovibles
+25 de Diciembre,Miércoles,Navidad.,Inamovibles
+17 de Junio,Lunes,Día Paso a la Inmortalidad del General Martín Miguel de Güemes.,Trasladables
+17 de Agosto,Sábado,Paso a la Inmortalidad del General José de San Martín.,Trasladables
+12 de Octubre,Sábado,Día del Respeto a la Diversidad Cultural.,Trasladables
+18 de Abril,Jueves,Jueves Santo.,No Laborables
+19 de Abril,Viernes,Pascuas Judías.,No Laborables
+20 de Abril,Sábado,Pascuas Judías.,No Laborables
+21 de Abril,Domingo,Pascuas Judías.,No Laborables
+24 de Abril,Miércoles,Día de Acción por la Tolerancia y el Respeto entre los Pueblos.,No Laborables
+25 de Abril,Jueves,Pascuas Judías.,No Laborables
+26 de Abril,Viernes,Pascuas Judías.,No Laborables
+27 de Abril,Sábado,Pascuas Judías.,No Laborables
+4 de Junio,Martes,Fiesta de la Ruptura del Ayuno del Sagrado Mes de Ramadán.,No Laborables
+11 de Agosto,Domingo,Fiesta del Sacrificio.,No Laborables
+31 de Agosto,Sábado,Año Nuevo Islámico.,No Laborables
+29 de Septiembre,Domingo,Año Nuevo Judío.,No Laborables
+30 de Septiembre,Lunes,Año Nuevo Judío.,No Laborables
+1 de Octubre,Martes,Año Nuevo Judío.,No Laborables
+8 de Octubre,Martes,Día del Perdón.,No Laborables
+9 de Octubre,Miércoles,Día del Perdón.,No Laborables
