@@ -11,15 +11,18 @@ def get_feriados(year):
     #Get data from web with parameter year
     page = requests.get("https://www.lanacion.com.ar/feriados/" + str(year) )
     tree = html.fromstring(page.content)
-    #array = tree.xpath('//section[@class="lista-feriados"]//ul[@class="lista-feriados__item"]')
+    #Take section tag values that in this case are tables.
     section = tree.xpath('//section[@class="lista-feriados"]')
     rango = 0
     if len(section) >= 4:
         rango = len(section)-1
     tipo = ""
+    #Loop tables  except for last like rango says
     for i in range(rango):
+        #Loop rows UL list 
         for ul in section[i]:
             if len(ul.attrib) == 0:
+                #Set tipo = title of the table to use as a column later
                 tipo = ul[0].text_content()                
                 pass
             else:
@@ -27,11 +30,13 @@ def get_feriados(year):
                     pass
                 else:
                     uls = []
+                    #Loop columns to prepare a list [] of the row to insert in the frame 
                     for li in ul.text_content().split('\r\n'):
                         if li.strip() == "":
                             pass
                         else:                            
                             uls.append(li.strip())                            
+                    #Add table title as a component in the list to insert in the frame
                     uls.append(tipo)
                     df = df.append(pd.Series(uls, index=['Fecha', 'Dia', 'Desc', 'Tipo']), ignore_index=True)
     return df
@@ -61,7 +66,7 @@ if __name__ == "__main__":
         quit()        
     
     print('Guardando...')    
-    df.to_csv(r'C:\Users\IBARRAU\OneDrive - Pi Data Strategy & Consulting\Pruebas Propias\Datos Abiertos\Feriados'+str(year)+'.csv', sep=",", encoding="iso8859", index=False, index_label=False)
+    df.to_csv(r'C:\PATHX\Feriados'+str(year)+'.csv', sep=",", encoding="iso8859", index=False, index_label=False)
     
 else:
     print("Error, fallo el main.")
