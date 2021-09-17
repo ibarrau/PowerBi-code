@@ -73,11 +73,12 @@ def post_dax_query(query, auth_token, dataset):
         print(e)
         
 # Executions to make it happen
-
 auth_token = get_auth_token(power_bi_client_id, power_bi_username, power_bi_password)
 
+# Write your DAX  query inside the query parameter. There you have an example.
 query = "EVALUATE VALUES(TablaFecha[Mes])"
 
+# Capture dataframe in df 
 df = post_dax_query(query, auth_token, dataset)
 
 # Have fun with your df
