@@ -40,6 +40,21 @@ def get_feriados(year):
                     uls.append(tipo)
                     df = df.append(pd.Series(uls, index=['Fecha', 'Dia', 'Desc', 'Tipo']), ignore_index=True)
     return df
+    
+    '''
+    You can also crean a little more the code doing the following
+    
+    df["Año"]= str(year)
+    df[['Dia','Mes']] = df['Fecha'].str.split(' de ',expand=True)
+    df ["Dia"] = ("0" + df["Dia"]).apply(lambda x: x[-2:]) 
+    df = df[["Dia", "Mes", "Año", "Fecha", "Desc","Tipo"]]                
+    m = { 'Enero': "01", 'Febrero': "02", 'Marzo': "03", 'Abril': "04", 'Mayo': "05", 'Junio': "06", 'Julio': "07", 'Agosto': "08", 'Septiembre': "09", 'Octubre': "10", 'Noviembre': "11", 'Diciembre': "12"   }
+    df["Mes"] = df["Mes"].apply(lambda x: m[x.capitalize()])
+    df["Fecha"] = df.Dia +"-"+ df.Mes +"-"+ df.Año
+    df = df[["Año","Fecha", "Desc", "Tipo"]]
+    return df
+    
+    '''
 
 if __name__ == "__main__":
     year = int(str(sys.argv[1]))
