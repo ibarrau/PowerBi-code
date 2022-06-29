@@ -53,6 +53,11 @@
                   "alignment":"Center"
                }
             ],
+			"background": [{
+				"show": true,
+				"color": { "solid": { "color": "#ffffff" } },
+				"transparency": 25
+			}],
             "dropShadow":[
                {
                   "show":true
@@ -409,6 +414,7 @@
 			"*":{
 			"background":[
 				{
+					"color":{"solid":{"color":"#E6E6E6"}},
 					"transparency":0
 				}],
 			"outspace":[
