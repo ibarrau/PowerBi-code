@@ -1,0 +1,17 @@
+{
+	"titulo":"Falsa API",
+	"tipo": "Raw de github",
+	"productos": [
+		{
+			"id_producto":"9",
+			"producto":"lapiz"
+		},
+		{
+			"id_producto":"10",
+			"producto":"papeles"
+		}
+	],
+	"nro_archivo":5,
+	"total_archivos":5,
+	"next":""
+}
