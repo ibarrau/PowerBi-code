@@ -12,49 +12,50 @@ def get_feriados(year):
     page = requests.get("https://www.lanacion.com.ar/feriados/" + str(year) )
     tree = html.fromstring(page.content)
     #Take section tag values that in this case are tables.
-    section = tree.xpath('//section[@class="lista-feriados"]')
+    table = tree.xpath('//table[@class="table"]/tbody')
     rango = 0
-    if len(section) >= 4:
-        rango = len(section)-1
+    if len(table) >= 4:
+        rango = len(table)-1
     tipo = ""
-    #Loop tables  except for last like rango says
+    #Loop tables except for last like rango says
     for i in range(rango):
-        #Loop rows UL list 
-        for ul in section[i]:
-            if len(ul.attrib) == 0:
+        #Loop rows tr from table
+        tipo_feriado = tree.xpath('//section[@class="mod-headersection  --line"]')[i].text_content()
+        for ul in table[i]:
+            if len(ul) == 0:
                 #Set tipo = title of the table to use as a column later
                 tipo = ul[0].text_content()                
                 pass
             else:
-                if ul.attrib['class'] == 'lista-feriados__header':
-                    pass
+                if len(ul)==2:
+                    uls = []
+                    #Append columns for single row
+                    uls.append(ul[0].text_content())
+                    uls.append(ul[1].text_content())
+                    uls.append(tipo_feriado)
+                    uls.append(tipo_feriado)
+                    #Add table title as a component in the list to insert in the frame
+                    df = df.append(pd.Series(uls, index=['Fecha', 'Dia', 'Desc', 'Tipo']), ignore_index=True)
+
                 else:
                     uls = []
-                    #Loop columns to prepare a list [] of the row to insert in the frame 
-                    for li in ul.text_content().split('\r\n'):
-                        if li.strip() == "":
-                            pass
-                        else:                            
-                            uls.append(li.strip())                            
+                    #Append columns for single row
+                    uls.append(ul[0].text_content())
+                    uls.append(ul[1].text_content())
+                    uls.append(ul[2].text_content())
+                    uls.append(tipo_feriado)
                     #Add table title as a component in the list to insert in the frame
-                    uls.append(tipo)
                     df = df.append(pd.Series(uls, index=['Fecha', 'Dia', 'Desc', 'Tipo']), ignore_index=True)
-    return df
-    
-    '''
-    You can also crean a little more the code doing the following
-    
+    # Create a clean date
     df["Año"]= str(year)
-    df[['Dia','Mes']] = df['Fecha'].str.split(' de ',expand=True)
-    df ["Dia"] = ("0" + df["Dia"]).apply(lambda x: x[-2:]) 
-    df = df[["Dia", "Mes", "Año", "Fecha", "Desc","Tipo"]]                
+    df[['nroDia','Mes']] = df['Fecha'].str.split(' de ',expand=True)
+    df ["nroDia"] = ("0" + df["nroDia"]).apply(lambda x: x[-2:]) 
+    df = df[["nroDia", "Mes", "Año", "Fecha", "Dia", "Desc","Tipo"]]                
     m = { 'Enero': "01", 'Febrero': "02", 'Marzo': "03", 'Abril': "04", 'Mayo': "05", 'Junio': "06", 'Julio': "07", 'Agosto': "08", 'Septiembre': "09", 'Octubre': "10", 'Noviembre': "11", 'Diciembre': "12"   }
     df["Mes"] = df["Mes"].apply(lambda x: m[x.capitalize()])
-    df["Fecha"] = df.Dia +"-"+ df.Mes +"-"+ df.Año
-    df = df[["Año","Fecha", "Desc", "Tipo"]]
-    return df
-    
-    '''
+    df["Fecha"] = df.nroDia+"-"+ df.Mes +"-"+ df.Año
+    df = df[["Fecha", "Dia", "Desc", "Tipo"]]
+    return df    
 
 if __name__ == "__main__":
     year = int(str(sys.argv[1]))
