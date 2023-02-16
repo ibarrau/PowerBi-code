@@ -23,7 +23,6 @@ using (var client = new HttpClient()) {
         {
             if (contar == 20) {
                 contar = 0;
-                //await Task.Delay(60);
                 Thread.Sleep(60000);
             }
             // Only uncomment the following when you want to keep de descriptions that already exists and only add for measures without a description
