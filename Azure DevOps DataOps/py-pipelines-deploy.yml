@@ -1,0 +1,44 @@
+# Starter pipeline
+trigger:
+  branches:
+    include:
+      - '*'
+  paths:
+    include:
+      - 'Workspace_Name/*.pbix'
+ 
+variables:
+  folderPath: "Workspace_Name"
+ 
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- script: |
+    pip install simplepbi
+  displayName: 'Simplepbi'
+
+- powershell: |
+      ## Get the changed files
+      $files_changed = $changedFiles = git diff --name-only HEAD`~ HEAD
+      $list_files = $files_changed -join ","
+      Write-Host "##vso[task.setvariable variable=changed_files;]$list_files"
+      Write-Output $list_files List_of_files
+
+- bash: |
+    echo "Files to python"
+    echo $(changed_files)
+- task: PythonScript@0
+  inputs:
+    scriptSource: filePath
+    scriptPath: $(System.DefaultWorkingDirectory)/Deploy-PbiReport.py
+    arguments: >      
+      $(folderPath)
+      [Write here the workspace ID from URL without quotes] 
+      $(changed_files)
+  env:
+    AZURE_TENANT_ID: $(AzureTenantId)
+    AZURE_CLIENT_ID: $(AzureClientId)
+    AZURE_CLIENT_SECRET: $(AzureClientSecret)
+
+
