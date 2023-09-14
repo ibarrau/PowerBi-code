@@ -24,25 +24,25 @@
             "valueAxis":[
                {
                   "labelColor": { "solid": { "color": "#ffffff"}},
-				  "fontSize":"9",
-                  "titleFontSize":"9",
+				  "fontSize":9,
+                  "titleFontSize":9,
                   "titleFontFamily":"Segoe UI"
                }
             ],
             "categoryAxis":[
                {
                   "labelColor": { "solid": { "color": "#ffffff"}},
-				  "fontSize":"9",
-                  "titleFontSize":"9",
+				  "fontSize":9,
+                  "titleFontSize":9,
                   "fontFamily":"Segoe UI"
                }
             ],
             "title":[
                {
                   "fontFamily":"Segoe UI",
-                  "fontSize":"14",
+                  "fontSize":14,
 				  "fontColor": { "solid": { "color": "#ffffff"}},                  
-                  "alignment":"Center"
+                  "alignment":"center"
                }
             ],
 			"background": [{
@@ -69,29 +69,29 @@
                {
                   "show":true,
 				  "labelColor": { "solid": { "color": "#ffffff"}},
-                  "fontSize":"9"
+                  "fontSize":9
                }
             ],
             "valueAxis":[
                {
 				  "labelColor": { "solid": { "color": "#ffffff"}},
-                  "fontSize":"9",
-                  "titleFontSize":"9"
+                  "fontSize":9,
+                  "titleFontSize":9
                }
             ],
             "categoryAxis":[
                {
 				  "labelColor": { "solid": { "color": "#ffffff"}},
-                  "fontSize":"9",
-                  "titleFontSize":"9"
+                  "fontSize":9,
+                  "titleFontSize":9
                }
             ],
             "title":[
                {
                   "show":true,
-                  "fontSize":"14",
+                  "fontSize":14,
                   "fontFamily":"Segoe UI",
-                  "alignment":"Center"
+                  "alignment":"center"
                }
             ]
          }
@@ -198,29 +198,29 @@
                {
                   "show":true,
 				  "color": { "solid": { "color": "#ffffff"}},
-                  "fontSize":"9"
+                  "fontSize":9
                }
             ],
             "valueAxis":[
                {
 				  "labelColor": { "solid": { "color": "#ffffff"}},
-                  "fontSize":"9",
-                  "titleFontSize":"9"
+                  "fontSize":9,
+                  "titleFontSize":9
                }
             ],
             "categoryAxis":[
                {
 				  "labelColor": { "solid": { "color": "#ffffff"}},
-                  "fontSize":"9",
-                  "titleFontSize":"9"
+                  "fontSize":9,
+                  "titleFontSize":9
                }
             ],
             "title":[
                {
                   "show":true,
-                  "fontSize":"14",
+                  "fontSize":14,
                   "fontFamily":"Segoe UI",
-                  "alignment":"Center"
+                  "alignment":"center"
                }
             ]
          }
@@ -231,29 +231,29 @@
                {
                   "show":true,
 				  "color": { "solid": { "color": "#ffffff"}},
-                  "fontSize":"9"
+                  "fontSize":9
                }
             ],
             "valueAxis":[
                {
 				  "labelColor": { "solid": { "color": "#ffffff"}},
-                  "fontSize":"9",
-                  "titleFontSize":"9"
+                  "fontSize":9,
+                  "titleFontSize":9
                }
             ],
             "categoryAxis":[
                {
 				  "labelColor": { "solid": { "color": "#ffffff"}},
-                  "fontSize":"9",
-                  "titleFontSize":"9"
+                  "fontSize":9,
+                  "titleFontSize":9
                }
             ],
             "title":[
                {
                   "show":true,
-                  "fontSize":"14",
+                  "fontSize":14,
                   "fontFamily":"Segoe UI",
-                  "alignment":"Center"
+                  "alignment":"center"
                }
             ]
          }
@@ -264,29 +264,29 @@
                {
                   "show":true,
 				  "color": { "solid": { "color": "#ffffff"}},
-                  "fontSize":"9"
+                  "fontSize":9
                }
             ],
             "valueAxis":[
                {
 				  "labelColor": { "solid": { "color": "#ffffff"}},
-                  "fontSize":"9",
-                  "titleFontSize":"9"
+                  "fontSize":9,
+                  "titleFontSize":9
                }
             ],
             "categoryAxis":[
                {
 				  "labelColor": { "solid": { "color": "#ffffff"}},
-                  "fontSize":"9",
-                  "titleFontSize":"9"
+                  "fontSize":9,
+                  "titleFontSize":9
                }
             ],
             "title":[
                {
                   "show":true,
-                  "fontSize":"14",
+                  "fontSize":14,
                   "fontFamily":"Segoe UI",
-                  "alignment":"Center"
+                  "alignment":"center"
                }
             ]
          }
@@ -297,29 +297,29 @@
                {
                   "show":true,
 				  "color": { "solid": { "color": "#ffffff"}},
-                  "fontSize":"9"
+                  "fontSize":9
                }
             ],
             "valueAxis":[
                {
 				  "labelColor": { "solid": { "color": "#ffffff"}},
-                  "fontSize":"9",
-                  "titleFontSize":"9"
+                  "fontSize":9,
+                  "titleFontSize":9
                }
             ],
             "categoryAxis":[
                {
 				  "labelColor": { "solid": { "color": "#ffffff"}},
-                  "fontSize":"9",
-                  "titleFontSize":"9"
+                  "fontSize":9,
+                  "titleFontSize":9
                }
             ],
             "title":[
                {
                   "show":true,
-                  "fontSize":"14",
+                  "fontSize":14,
                   "fontFamily":"Segoe UI",
-                  "alignment":"Center"
+                  "alignment":"center"
                }
             ]
          }
@@ -330,29 +330,29 @@
                {
                   "show":true,
 				  "color": { "solid": { "color": "#ffffff"}},
-                  "fontSize":"9"
+                  "fontSize":9
                }
             ],
             "valueAxis":[
                {
 				  "labelColor": { "solid": { "color": "#ffffff"}},
-                  "fontSize":"9",
-                  "titleFontSize":"9"
+                  "fontSize":9,
+                  "titleFontSize":9
                }
             ],
             "categoryAxis":[
                {
 				  "labelColor": { "solid": { "color": "#ffffff"}},
-                  "fontSize":"9",
-                  "titleFontSize":"9"
+                  "fontSize":9,
+                  "titleFontSize":9
                }
             ],
             "title":[
                {
                   "show":true,
-                  "fontSize":"14",
+                  "fontSize":14,
                   "fontFamily":"Segoe UI",
-                  "alignment":"Center"
+                  "alignment":"center"
                }
             ]
          }
@@ -416,7 +416,7 @@
                   "backgroundTransparency":0,
                   "labelOrientation":0,
                   "show":true,
-                  "fontSize":"26",
+                  "fontSize":26,
                   "fontFamily":"Segoe UI"
                }
             ],
