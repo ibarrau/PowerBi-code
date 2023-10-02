@@ -1,0 +1,45 @@
+ProductSubcategoryKey;ProductSubcategoryLabel;ProductSubcategoryName;ProductSubcategoryDescription;ProductCategoryKey;ETLLoadID;LoadDate;UpdateDate
+1;"0101";"MP4&MP3";"MP4&MP3";1;1;7/7/2009 00:00:00;7/7/2009 00:00:00
+2;"0102";"Recorder";"Recorder";1;1;7/7/2009 00:00:00;7/7/2009 00:00:00
+3;"0103";"Radio";"Radio";1;1;7/7/2009 00:00:00;7/7/2009 00:00:00
+4;"0104";"Recording Pen";"Recording Pen";1;1;7/7/2009 00:00:00;7/7/2009 00:00:00
+5;"0105";"Headphones";"Headphones";1;1;7/7/2009 00:00:00;7/7/2009 00:00:00
+6;"0106";"Bluetooth Headphones";"Bluetooth Headphones";1;1;7/7/2009 00:00:00;7/7/2009 00:00:00
+7;"0107";"Speakers";"Speakers";1;1;7/7/2009 00:00:00;7/7/2009 00:00:00
+8;"0108";"Audio Accessories";"Audio Accessories";1;1;7/7/2009 00:00:00;7/7/2009 00:00:00
+9;"0201";"Televisions";"Televisions";2;1;7/7/2009 00:00:00;7/7/2009 00:00:00
+10;"0202";"VCD & DVD";"VCD & DVD";2;1;7/7/2009 00:00:00;7/7/2009 00:00:00
+11;"0203";"Home Theater System";"Home Theater System";2;1;7/7/2009 00:00:00;7/7/2009 00:00:00
+13;"0205";"Car Video";"Car Video";2;1;7/7/2009 00:00:00;7/7/2009 00:00:00
+14;"0206";"TV & Video Accessories";"TV & Video Accessories";2;1;7/7/2009 00:00:00;7/7/2009 00:00:00
+15;"0301";"Laptops";"Laptops";3;1;7/7/2009 00:00:00;7/7/2009 00:00:00
+16;"0302";"Netbooks";"Netbooks";3;1;7/7/2009 00:00:00;7/7/2009 00:00:00
+17;"0303";"Desktops";"Desktops";3;1;7/7/2009 00:00:00;7/7/2009 00:00:00
+18;"0304";"Monitors";"Monitors";3;1;7/7/2009 00:00:00;7/7/2009 00:00:00
+19;"0305";"Projectors & Screens";"Projectors & Screens";3;1;7/7/2009 00:00:00;7/7/2009 00:00:00
+20;"0306";"Printers, Scanners & Fax";"Printers, Scanners & Fax";3;1;7/7/2009 00:00:00;7/7/2009 00:00:00
+21;"0307";"Computer Setup & Service";"Computer Setup & Service";3;1;7/7/2009 00:00:00;7/7/2009 00:00:00
+22;"0308";"Computers Accessories";"Computers Accessories";3;1;7/7/2009 00:00:00;7/7/2009 00:00:00
+23;"0401";"Digital Cameras";"Digital Cameras";4;1;7/7/2009 00:00:00;7/7/2009 00:00:00
+24;"0402";"Digital SLR Cameras";"Digital SLR Cameras";4;1;7/7/2009 00:00:00;7/7/2009 00:00:00
+25;"0403";"Film Cameras";"Film Cameras";4;1;7/7/2009 00:00:00;7/7/2009 00:00:00
+27;"0405";"Camcorders";"Camcorders";4;1;7/7/2009 00:00:00;7/7/2009 00:00:00
+28;"0406";"Cameras & Camcorders Accessories";"Cameras & Camcorders Accessories";4;1;7/7/2009 00:00:00;7/7/2009 00:00:00
+29;"0501";"Home & Office Phones";"Home & Office Phones";5;1;7/7/2009 00:00:00;7/7/2009 00:00:00
+31;"0503";"Touch Screen Phones";"Touch Screen Phones";5;1;7/7/2009 00:00:00;7/7/2009 00:00:00
+32;"0504";"Smart phones & PDAs";"Smart phones & PDAs";5;1;7/7/2009 00:00:00;7/7/2009 00:00:00
+33;"0505";"Cell phones Accessories";"Cell phones Accessories";5;1;7/7/2009 00:00:00;7/7/2009 00:00:00
+34;"0601";"Music CD";"Music CD";6;1;7/7/2009 00:00:00;7/7/2009 00:00:00
+35;"0602";"Movie DVD";"Movie DVD";6;1;7/7/2009 00:00:00;7/7/2009 00:00:00
+36;"0603";"Audio Books";"Audio Books";6;1;7/7/2009 00:00:00;7/7/2009 00:00:00
+38;"0701";"Boxed Games";"Boxed Games";7;1;7/7/2009 00:00:00;7/7/2009 00:00:00
+39;"0702";"Download Games";"Download Games";7;1;7/7/2009 00:00:00;7/7/2009 00:00:00
+40;"0703";"Games Accessories";"Games Accessories";7;1;7/7/2009 00:00:00;7/7/2009 00:00:00
+41;"0801";"Washers & Dryers";"Washers & Dryers";8;1;7/7/2009 00:00:00;7/7/2009 00:00:00
+42;"0802";"Refrigerators";"Refrigerators";8;1;7/7/2009 00:00:00;7/7/2009 00:00:00
+43;"0803";"Microwaves";"Microwaves";8;1;7/7/2009 00:00:00;7/7/2009 00:00:00
+44;"0804";"Water Heaters";"Water Heaters";8;1;7/7/2009 00:00:00;7/7/2009 00:00:00
+45;"0805";"Coffee Machines";"Coffee Machines";8;1;7/7/2009 00:00:00;7/7/2009 00:00:00
+46;"0806";"Lamps";"Lamps";8;1;7/7/2009 00:00:00;7/7/2009 00:00:00
+47;"0807";"Air Conditioners";"Air Conditioners";8;1;7/7/2009 00:00:00;7/7/2009 00:00:00
+48;"0808";"Fans";"Fans";8;1;7/7/2009 00:00:00;7/7/2009 00:00:00

@@ -1,0 +1,422 @@
+EntityKey;EntityLabel;ParentEntityKey;ParentEntityLabel;EntityName;EntityDescription;EntityType;StartDate;EndDate;Status;ETLLoadID;LoadDate;UpdateDate
+58;"010116";4;"United States";"Contoso Catalog Store";"Contoso Catalog Store";"Store";7/8/2009 15:45:27;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+59;"010115";4;"United States";"Contoso North America Online Store";"Contoso North America Online Store";"Store";7/8/2009 15:43:15;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+635;"010112010";33;"Washington";"Contoso Seattle No.1 Store";"Contoso Seattle No.1 Store";"Store";17/2/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+636;"010112011";33;"Washington";"Contoso Seattle No.2 Store";"Contoso Seattle No.2 Store";"Store";17/2/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+638;"010112001";33;"Washington";"Contoso Bellevue Store";"Contoso Bellevue Store";"Store";18/2/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+639;"010112008";33;"Washington";"Contoso Redmond Store";"Contoso Redmond Store";"Store";18/2/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+640;"010112018";33;"Washington";"Contoso Yakima Store";"Contoso Yakima Store";"Store";19/2/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+641;"010112006";33;"Washington";"Contoso Granger Store";"Contoso Granger Store";"Store";19/2/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+642;"010112014";33;"Washington";"Contoso Sunnyside Store";"Contoso Sunnyside Store";"Store";21/2/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+643;"010112015";33;"Washington";"Contoso Toppenish Store";"Contoso Toppenish Store";"Store";21/2/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+644;"010112017";33;"Washington";"Contoso Wapato Store";"Contoso Wapato Store";"Store";22/2/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+645;"010112003";33;"Washington";"Contoso Cle Elum Store";"Contoso Cle Elum Store";"Store";22/2/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+646;"010112007";33;"Washington";"Contoso North Bend Store";"Contoso North Bend Store";"Store";22/2/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+647;"010112012";33;"Washington";"Contoso Snoqualmie Store";"Contoso Snoqualmie Store";"Store";23/2/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+648;"010112005";33;"Washington";"Contoso Fall City Store";"Contoso Fall City Store";"Store";23/2/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+649;"010112009";33;"Washington";"Contoso Renton Store";"Contoso Renton Store";"Store";23/2/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+650;"010112004";33;"Washington";"Contoso Everett Store";"Contoso Everett Store";"Store";23/2/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+651;"010112013";33;"Washington";"Contoso Spokane Store";"Contoso Spokane Store";"Store";24/2/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+652;"010112016";33;"Washington";"Contoso Veradale Store";"Contoso Veradale Store";"Store";25/2/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+653;"010112002";33;"Washington";"Contoso Cheney Store";"Contoso Cheney Store";"Store";26/2/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+654;"010101008";34;"Colorado";"Contoso Englewood Store";"Contoso Englewood Store";"Store";27/2/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+655;"010101021";34;"Colorado";"Contoso Wheat Ridge Store";"Contoso Wheat Ridge Store";"Store";27/2/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+656;"010101020";34;"Colorado";"Contoso Westminster Store";"Contoso Westminster Store";"Store";28/2/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+657;"010101010";34;"Colorado";"Contoso Grand Junction Store";"Contoso Grand Junction Store";"Store";28/2/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+658;"010101016";34;"Colorado";"Contoso New Castle Store";"Contoso New Castle Store";"Store";28/2/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+659;"010101011";34;"Colorado";"Contoso Greeley No.1 Store";"Contoso Greeley No.1 Store";"Store";2/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+660;"010101014";34;"Colorado";"Contoso Loveland Store";"Contoso Loveland Store";"Store";2/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+661;"010101012";34;"Colorado";"Contoso Lafayette Store";"Contoso Lafayette Store";"Store";3/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+662;"010101004";34;"Colorado";"Contoso Castle Rock Store";"Contoso Castle Rock Store";"Store";4/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+663;"010101018";34;"Colorado";"Contoso Sedalia Store";"Contoso Sedalia Store";"Store";15/12/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+664;"010101009";34;"Colorado";"Contoso Fort Collins Store";"Contoso Fort Collins Store";"Store";4/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+665;"010101022";34;"Colorado";"Contoso Greeley No.2 Store";"Contoso Greeley No.2 Store";"Store";4/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+666;"010101015";34;"Colorado";"Contoso Milliken Store";"Contoso Milliken Store";"Store";5/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+667;"010101002";34;"Colorado";"Contoso Berthoud Store";"Contoso Berthoud Store";"Store";6/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+668;"010101005";34;"Colorado";"Contoso Denver No.1 Store";"Contoso Denver No.1 Store";"Store";6/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+669;"010101006";34;"Colorado";"Contoso Denver No.2 Store";"Contoso Denver No.2 Store";"Store";6/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+670;"010101007";34;"Colorado";"Contoso Denver No.3 Store";"Contoso Denver No.3 Store";"Store";7/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+671;"010101003";34;"Colorado";"Contoso Boulder Store";"Contoso Boulder Store";"Store";7/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+672;"010101019";34;"Colorado";"Contoso Thornton Store";"Contoso Thornton Store";"Store";7/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+673;"010101013";34;"Colorado";"Contoso Littleton Store";"Contoso Littleton Store";"Store";8/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+674;"010101001";34;"Colorado";"Contoso Aurora Store";"Contoso Aurora Store";"Store";8/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+675;"010101017";34;"Colorado";"Contoso Parker Store";"Contoso Parker Store";"Store";9/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+676;"010113008";35;"Wisconsin";"Contoso Green Bay Store";"Contoso Green Bay Store";"Store";9/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+677;"010113001";35;"Wisconsin";"Contoso Appleton Store";"Contoso Appleton Store";"Store";10/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+678;"010113012";35;"Wisconsin";"Contoso Menasha Store";"Contoso Menasha Store";"Store";12/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+679;"010113017";35;"Wisconsin";"Contoso Oshkosh Store";"Contoso Oshkosh Store";"Store";12/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+680;"010113005";35;"Wisconsin";"Contoso Fond du Lac Store";"Contoso Fond du Lac Store";"Store";12/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+681;"010113013";35;"Wisconsin";"Contoso Milwaukee No.1 Store";"Contoso Milwaukee No.1 Store";"Store";12/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+682;"010113014";35;"Wisconsin";"Contoso Milwaukee No.2 Store";"Contoso Milwaukee No.2 Store";"Store";12/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+683;"010113015";35;"Wisconsin";"Contoso Milwaukee No.3 Store";"Contoso Milwaukee No.3 Store";"Store";13/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+684;"010113022";35;"Wisconsin";"Contoso Waukesha No.1 Store";"Contoso Waukesha No.1 Store";"Store";13/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+685;"010113009";35;"Wisconsin";"Contoso Racine  No.1 Store";"Contoso Racine  No.1 Store";"Store";14/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+686;"010113002";35;"Wisconsin";"Contoso Burlington Store";"Contoso Burlington Store";"Store";14/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+687;"010113003";35;"Wisconsin";"Contoso East Troy Store";"Contoso East Troy Store";"Store";14/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+688;"010113023";35;"Wisconsin";"Contoso Waukesha No.2 Store";"Contoso Waukesha No.2 Store";"Store";15/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+689;"010113007";45;"Maryland";"Contoso Germantown Store";"Contoso Germantown Store";"Store";15/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+691;"010113018";35;"Wisconsin";"Contoso Port Washington Store";"Contoso Port Washington Store";"Store";17/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+692;"010113020";35;"Wisconsin";"Contoso Sheboygan Store";"Contoso Sheboygan Store";"Store";17/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+693;"010113011";35;"Wisconsin";"Contoso Manitowoc Store";"Contoso Manitowoc Store";"Store";17/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+694;"010113010";35;"Wisconsin";"Contoso Madison Store";"Contoso Madison Store";"Store";18/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+695;"010113016";35;"Wisconsin";"Contoso Oregon Store";"Contoso Oregon Store";"Store";19/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+696;"010113021";35;"Wisconsin";"Contoso Stoughton Store";"Contoso Stoughton Store";"Store";19/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+697;"010113004";35;"Wisconsin";"Contoso Edgerton Store";"Contoso Edgerton Store";"Store";19/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+698;"010113006";35;"Wisconsin";"Contoso Fort Atkinson Store";"Contoso Fort Atkinson Store";"Store";20/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+699;"010113019";35;"Wisconsin";"Contoso Racine  No.2 Store";"Contoso Racine  No.2 Store";"Store";20/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+700;"010110015";36;"Texas";"Contoso Houston No.1 Store";"Contoso Houston No.1 Store";"Store";20/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+701;"010110016";36;"Texas";"Contoso Houston No.2 Store";"Contoso Houston No.2 Store";"Store";22/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+702;"010110017";36;"Texas";"Contoso Houston No.3 Store";"Contoso Houston No.3 Store";"Store";22/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+703;"010110018";36;"Texas";"Contoso Houston No.4 Store";"Contoso Houston No.4 Store";"Store";23/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+704;"010110024";36;"Texas";"Contoso Midland Store";"Contoso Midland Store";"Store";24/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+705;"010110031";36;"Texas";"Contoso Russellville Store";"Contoso Russellville Store";"Store";24/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+706;"010110025";36;"Texas";"Contoso Minden Store";"Contoso Minden Store";"Store";25/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+707;"010110033";36;"Texas";"Contoso Shreveport Store";"Contoso Shreveport Store";"Store";25/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+708;"010110023";36;"Texas";"Contoso Marshall Store";"Contoso Marshall Store";"Store";26/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+709;"010110022";36;"Texas";"Contoso Longview Store";"Contoso Longview Store";"Store";26/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+710;"010110005";36;"Texas";"Contoso Beaumont No.1 Store";"Contoso Beaumont No.1 Store";"Store";27/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+711;"010110026";36;"Texas";"Contoso Orange Store";"Contoso Orange Store";"Store";27/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+712;"010110006";36;"Texas";"Contoso Beaumont No.2 Store";"Contoso Beaumont No.2 Store";"Store";27/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+713;"010110004";36;"Texas";"Contoso Baytown Store";"Contoso Baytown Store";"Store";28/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+714;"010110020";36;"Texas";"Contoso La Porte Store";"Contoso La Porte Store";"Store";29/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+715;"010110003";36;"Texas";"Contoso Bacliff Store";"Contoso Bacliff Store";"Store";29/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+716;"010110035";36;"Texas";"Contoso Texas City Store";"Contoso Texas City Store";"Store";30/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+717;"010110027";36;"Texas";"Contoso Pasadena Store";"Contoso Pasadena Store";"Store";30/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+718;"010110019";36;"Texas";"Contoso Humble Store";"Contoso Humble Store";"Store";30/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+719;"010110034";36;"Texas";"Contoso Spring Store";"Contoso Spring Store";"Store";30/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+720;"010110002";36;"Texas";"Contoso Austin Store";"Contoso Austin Store";"Store";30/3/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+721;"010110032";36;"Texas";"Contoso San Antonio Store";"Contoso San Antonio Store";"Store";1/4/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+722;"010110007";36;"Texas";"Contoso Cedar Park Store";"Contoso Cedar Park Store";"Store";1/4/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+723;"010110030";36;"Texas";"Contoso Round Rock Store";"Contoso Round Rock Store";"Store";1/4/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+724;"010110008";36;"Texas";"Contoso Dallas Store";"Contoso Dallas Store";"Store";2/4/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+725;"010110012";36;"Texas";"Contoso Georgetown Store";"Contoso Georgetown Store";"Store";3/4/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+726;"010110014";36;"Texas";"Contoso Hillsboro Store";"Contoso Hillsboro Store";"Store";3/4/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+727;"010111002";36;"Texas";"Contoso Arlington Store";"Contoso Arlington Store";"Store";4/4/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+728;"010110013";36;"Texas";"Contoso Grand Prairie Store";"Contoso Grand Prairie Store";"Store";4/4/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+729;"010110010";36;"Texas";"Contoso Desoto Store";"Contoso Desoto Store";"Store";4/4/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+730;"010110029";36;"Texas";"Contoso Richardson Store";"Contoso Richardson Store";"Store";5/4/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+731;"010110021";36;"Texas";"Contoso Lewisville Store";"Contoso Lewisville Store";"Store";6/4/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+732;"010110009";36;"Texas";"Contoso Denton Store";"Contoso Denton Store";"Store";6/4/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+733;"010110011";36;"Texas";"Contoso Fort Worth Store";"Contoso Fort Worth Store";"Store";6/4/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+734;"010110028";36;"Texas";"Contoso Plano Store";"Contoso Plano Store";"Store";7/4/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+735;"010103006";37;"Florida";"Contoso Miami No.1 Store";"Contoso Miami No.1 Store";"Store";7/4/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+736;"010103007";37;"Florida";"Contoso Miami No.2 Store";"Contoso Miami No.2 Store";"Store";8/4/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+737;"010103003";37;"Florida";"Contoso Jacksonville Store";"Contoso Jacksonville Store";"Store";8/4/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+738;"010103011";37;"Florida";"Contoso Tallahassee No.1 Store";"Contoso Tallahassee No.1 Store";"Store";9/4/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+739;"010103012";37;"Florida";"Contoso Tallahassee No.2 Store";"Contoso Tallahassee No.2 Store";"Store";9/4/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+741;"010103010";37;"Florida";"Contoso Sebring Store";"Contoso Sebring Store";"Store";3/1/2000 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+742;"010103005";37;"Florida";"Contoso Lakeland Store";"Contoso Lakeland Store";"Store";4/1/2000 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+743;"010103002";37;"Florida";"Contoso Fort Lauderdale Store";"Contoso Fort Lauderdale Store";"Store";7/1/2000 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+744;"010103009";37;"Florida";"Contoso Orlando Store";"Contoso Orlando Store";"Store";12/1/2000 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+745;"010103013";37;"Florida";"Contoso Tampa Store";"Contoso Tampa Store";"Store";12/1/2000 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+746;"010103004";37;"Florida";"Contoso Key West Store";"Contoso Key West Store";"Store";18/1/2000 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+747;"010103001";37;"Florida";"Contoso Cape Canaveral Store";"Contoso Cape Canaveral Store";"Store";19/1/2000 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+748;"010108001";38;"New York";"Contoso Albany Store";"Contoso Albany Store";"Store";22/1/2000 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+749;"010108006";38;"New York";"Contoso New York No.1 Store";"Contoso New York No.1 Store";"Store";23/1/2000 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+750;"010108012";38;"New York";"Contoso Rochester No.1 Store";"Contoso Rochester No.1 Store";"Store";26/1/2000 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+751;"010108007";38;"New York";"Contoso New York No.2 Store";"Contoso New York No.2 Store";"Store";26/1/2000 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+752;"010108014";38;"New York";"Contoso Syracuse Store";"Contoso Syracuse Store";"Store";30/1/2000 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+753;"010108003";38;"New York";"Contoso Buffalo Store";"Contoso Buffalo Store";"Store";2/2/2000 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+754;"010108009";38;"New York";"Contoso Plattsburgh Store";"Contoso Plattsburgh Store";"Store";5/2/2000 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+755;"010108002";38;"New York";"Contoso Brooklyn Store";"Contoso Brooklyn Store";"Store";7/2/2000 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+756;"010108008";38;"New York";"Contoso Oswego Store";"Contoso Oswego Store";"Store";12/2/2000 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+757;"010108005";38;"New York";"Contoso Ithaca Store";"Contoso Ithaca Store";"Store";13/2/2000 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+758;"010108013";38;"New York";"Contoso Rochester No.2 Store";"Contoso Rochester No.2 Store";"Store";17/2/2000 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+759;"010108011";38;"New York";"Contoso Queens Store";"Contoso Queens Store";"Store";18/2/2000 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+760;"010108004";38;"New York";"Contoso Elmira Store";"Contoso Elmira Store";"Store";23/2/2000 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+761;"010108010";38;"New York";"Contoso Poestenkill Store";"Contoso Poestenkill Store";"Store";24/2/2000 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+762;"010107016";39;"New Jersey";"Contoso Trenton No.1 Store";"Contoso Trenton No.1 Store";"Store";25/2/2000 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+763;"010107017";39;"New Jersey";"Contoso Trenton No.2 Store";"Contoso Trenton No.2 Store";"Store";25/2/2000 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+764;"010107012";39;"New Jersey";"Contoso Newark No.1 Store";"Contoso Newark No.1 Store";"Store";28/2/2000 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+765;"010107013";39;"New Jersey";"Contoso Newark No.2 Store";"Contoso Newark No.2 Store";"Store";28/2/2000 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+766;"010107008";39;"New Jersey";"Contoso Jersey City Store";"Contoso Jersey City Store";"Store";1/3/2000 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+767;"010107015";39;"New Jersey";"Contoso Paterson Store";"Contoso Paterson Store";"Store";3/3/2000 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+768;"010107004";39;"New Jersey";"Contoso Clifton Store";"Contoso Clifton Store";"Store";4/3/2000 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+769;"010107005";39;"New Jersey";"Contoso East Orange Store";"Contoso East Orange Store";"Store";8/3/2000 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+770;"010107014";39;"New Jersey";"Contoso Passaic Store";"Contoso Passaic Store";"Store";8/3/2000 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+771;"010107002";39;"New Jersey";"Contoso Bayonne Store";"Contoso Bayonne Store";"Store";11/3/2000 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+772;"010107018";39;"New Jersey";"Contoso Vineland Store";"Contoso Vineland Store";"Store";15/3/2000 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+773;"010107011";39;"New Jersey";"Contoso New Brunswick Store";"Contoso New Brunswick Store";"Store";16/3/2000 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+774;"010107006";39;"New Jersey";"Contoso Hackensack Store";"Contoso Hackensack Store";"Store";19/3/2000 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+775;"010107001";39;"New Jersey";"Contoso Atlantic City Store";"Contoso Atlantic City Store";"Store";23/3/2000 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+776;"010107009";39;"New Jersey";"Contoso Montclair Store";"Contoso Montclair Store";"Store";26/3/2000 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+777;"010107007";39;"New Jersey";"Contoso Hoboken Store";"Contoso Hoboken Store";"Store";26/3/2000 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+778;"010107010";39;"New Jersey";"Contoso Morristown Store";"Contoso Morristown Store";"Store";26/3/2000 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+779;"010107003";39;"New Jersey";"Contoso Cape May Store";"Contoso Cape May Store";"Store";30/3/2000 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+780;"010106002";40;"Massachusetts";"Contoso Boston Store";"Contoso Boston Store";"Store";3/4/2000 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+781;"010106019";40;"Massachusetts";"Contoso Worcester No.1 Store";"Contoso Worcester No.1 Store";"Store";4/4/2000 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+782;"010106020";40;"Massachusetts";"Contoso Worcester No.2 Store";"Contoso Worcester No.2 Store";"Store";5/4/2000 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+783;"010106013";40;"Massachusetts";"Contoso New Bedford Store";"Contoso New Bedford Store";"Store";7/4/2000 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+784;"010106001";40;"Massachusetts";"Contoso Attleboro Store";"Contoso Attleboro Store";"Store";9/4/2000 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+785;"010106010";40;"Massachusetts";"Contoso Lowell Store";"Contoso Lowell Store";"Store";10/4/2000 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+786;"010106009";40;"Massachusetts";"Contoso Leominster Store";"Contoso Leominster Store";"Store";5/1/2001 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+787;"010106007";40;"Massachusetts";"Contoso Hingham Store";"Contoso Hingham Store";"Store";6/1/2001 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+788;"010106017";40;"Massachusetts";"Contoso Quincy Store";"Contoso Quincy Store";"Store";23/1/2001 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+789;"010106005";40;"Massachusetts";"Contoso Framingham Store";"Contoso Framingham Store";"Store";25/1/2001 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+790;"010106003";40;"Massachusetts";"Contoso Cambridge Store";"Contoso Cambridge Store";"Store";30/1/2001 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+791;"010106018";40;"Massachusetts";"Contoso Somerville Store";"Contoso Somerville Store";"Store";4/2/2001 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+792;"010106006";40;"Massachusetts";"Contoso Haverhill Store";"Contoso Haverhill Store";"Store";7/2/2001 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+793;"010106011";40;"Massachusetts";"Contoso Lynn Store";"Contoso Lynn Store";"Store";18/2/2001 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+794;"010106014";40;"Massachusetts";"Contoso Northampton Store";"Contoso Northampton Store";"Store";10/3/2001 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+795;"010106008";40;"Massachusetts";"Contoso Holyoke Store";"Contoso Holyoke Store";"Store";17/3/2001 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+796;"010106015";40;"Massachusetts";"Contoso Pittsfield Store";"Contoso Pittsfield Store";"Store";18/3/2001 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+797;"010106004";40;"Massachusetts";"Contoso Falmouth Store";"Contoso Falmouth Store";"Store";28/3/2001 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+798;"010106016";40;"Massachusetts";"Contoso Provincetown Store";"Contoso Provincetown Store";"Store";31/8/2001 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+799;"010106012";40;"Massachusetts";"Contoso Nantucket Store";"Contoso Nantucket Store";"Store";16/8/2002 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+800;"010104001";41;"Maine";"Contoso Bangor Store";"Contoso Bangor Store";"Store";1/7/2001 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+801;"010104002";41;"Maine";"Contoso Bar Harbor Store";"Contoso Bar Harbor Store";"Store";1/7/2001 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+802;"010104003";41;"Maine";"Contoso Kennebunkport Store";"Contoso Kennebunkport Store";"Store";1/7/2001 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+803;"010104004";41;"Maine";"Contoso Lewiston Store";"Contoso Lewiston Store";"Store";1/7/2001 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+804;"010104005";41;"Maine";"Contoso Orono Store";"Contoso Orono Store";"Store";1/7/2001 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+805;"010104006";41;"Maine";"Contoso South Portland Store";"Contoso South Portland Store";"Store";1/7/2001 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+806;"010102003";42;"Connecticut";"Contoso Hartford Store";"Contoso Hartford Store";"Store";1/7/2001 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+807;"010102001";42;"Connecticut";"Contoso Bridgeport Store";"Contoso Bridgeport Store";"Store";1/7/2001 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+808;"010102008";42;"Connecticut";"Contoso Waterbury Store";"Contoso Waterbury Store";"Store";1/7/2001 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+809;"010102007";42;"Connecticut";"Contoso Old Saybrook Store";"Contoso Old Saybrook Store";"Store";18/5/2002 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+810;"010102002";42;"Connecticut";"Contoso Darien Store";"Contoso Darien Store";"Store";1/7/2002 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+811;"010102005";42;"Connecticut";"Contoso New Haven Store";"Contoso New Haven Store";"Store";1/7/2002 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+812;"010102004";42;"Connecticut";"Contoso Litchfield County Store";"Contoso Litchfield County Store";"Store";1/11/2002 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+813;"010102006";42;"Connecticut";"Contoso New London Store";"Contoso New London Store";"Store";15/4/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+814;"010111006";43;"Virginia";"Contoso Norfolk Store";"Contoso Norfolk Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+815;"010111008";43;"Virginia";"Contoso Virginia Beach Store";"Contoso Virginia Beach Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+816;"010111009";43;"Virginia";"Contoso Winchester Store";"Contoso Winchester Store";"Store";1/11/2002 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+817;"010114001";54;"Alaska";"Contoso Anchorage Store";"Contoso Anchorage Store";"Store";15/4/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+818;"010111001";43;"Virginia";"Contoso Alexandria Store";"Contoso Alexandria Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+819;"010111007";43;"Virginia";"Contoso Roanoke Store";"Contoso Roanoke Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+820;"010111003";43;"Virginia";"Contoso Charlottesville Store";"Contoso Charlottesville Store";"Store";1/11/2002 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+821;"010111004";43;"Virginia";"Contoso Fredericksburg Store";"Contoso Fredericksburg Store";"Store";15/4/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+822;"010111005";43;"Virginia";"Contoso Martinsville Store";"Contoso Martinsville Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+823;"010109002";44;"South Carolina";"Contoso Greenville Store";"Contoso Greenville Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+824;"010109001";44;"South Carolina";"Contoso Charleston Store";"Contoso Charleston Store";"Store";1/11/2002 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+825;"010105001";45;"Maryland";"Contoso Annapolis Store";"Contoso Annapolis Store";"Store";15/4/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+826;"010105003";45;"Maryland";"Contoso Baltimore Store";"Contoso Baltimore Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+827;"010105004";45;"Maryland";"Contoso Howard Store";"Contoso Howard Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+828;"010105008";45;"Maryland";"Contoso Ridgely Store";"Contoso Ridgely Store";"Store";1/11/2002 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+829;"010105007";45;"Maryland";"Contoso Queen Anne's County Store";"Contoso Queen Anne's County Store";"Store";15/4/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+830;"010105006";45;"Maryland";"Contoso Parkville Store";"Contoso Parkville Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+831;"010105002";45;"Maryland";"Contoso Back River Store";"Contoso Back River Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+832;"010105005";45;"Maryland";"Contoso North Harford Store";"Contoso North Harford Store";"Store";1/11/2002 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+833;"021501008";46;"England";"Contoso London Store";"Contoso London Store";"Store";15/4/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+834;"021502001";47;"Scotland";"Contoso Edinburgh Store";"Contoso Edinburgh Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+835;"021502002";47;"Scotland";"Contoso Glasgow Store";"Contoso Glasgow Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+836;"021501012";46;"England";"Contoso York Store";"Contoso York Store";"Store";1/11/2002 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+837;"021501002";46;"England";"Contoso Carlisle Store";"Contoso Carlisle Store";"Store";15/4/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+838;"021501009";46;"England";"Contoso Manchester Store";"Contoso Manchester Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+839;"021501005";46;"England";"Contoso Lancashire Store";"Contoso Lancashire Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+840;"021501011";46;"England";"Contoso West Yorkshire Store";"Contoso West Yorkshire Store";"Store";1/11/2002 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+841;"021501001";46;"England";"Contoso Baildon Store";"Contoso Baildon Store";"Store";15/4/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+842;"021501003";46;"England";"Contoso Cheshire Store";"Contoso Cheshire Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+843;"021501010";46;"England";"Contoso Stockport Store";"Contoso Stockport Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+844;"021501007";46;"England";"Contoso Liverpool Store";"Contoso Liverpool Store";"Store";1/11/2002 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+845;"021501004";46;"England";"Contoso Knotty Ash Store";"Contoso Knotty Ash Store";"Store";15/4/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+846;"021501006";46;"England";"Contoso Leeds Store";"Contoso Leeds Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+847;"020303001";571;"Ile-del-France";"Contoso Paris Store";"Contoso Paris Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+848;"031001001";607;"Singapore";"Contoso Singapore Store";"Contoso Singapore Store";"Store";1/11/2002 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+849;"030304001";49;"Shanghai";"Contoso Shanghai No.1 Store";"Contoso Shanghai No.1 Store";"Store";15/4/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+850;"030305001";48;"Xinjiang";"Contoso Urumqi Store";"Contoso Urumqi Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+851;"030301001";50;"Beijing";"Contoso Beijing Store";"Contoso Beijing Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+852;"030302001";51;"Guangdong";"Contoso Guangzhou Store";"Contoso Guangzhou Store";"Store";1/11/2002 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+853;"030304002";49;"Shanghai";"Contoso Shanghai No.2 Store";"Contoso Shanghai No.2 Store";"Store";15/4/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+854;"020306001";572;"Provence-Alpes-Cote d'Azur";"Contoso Marseille Store";"Contoso Marseille Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+855;"020307001";573;"Rhone-Alpes";"Contoso Lyon Store";"Contoso Lyon Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+856;"020304001";574;"Midi-Pyrenees";"Contoso Toulouse Store";"Contoso Toulouse Store";"Store";1/11/2002 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+857;"020301001";575;"Provence-Alpes-Côte d'Azur";"Contoso Nice Store";"Contoso Nice Store";"Store";15/4/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+858;"020305001";576;"Pays de la Loire";"Contoso Nantes Store";"Contoso Nantes Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+859;"020302001";577;"Alsace";"Contoso Strasbourg Store";"Contoso Strasbourg Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+860;"020805001";578;"Roma";"Contoso Roma Store";"Contoso Roma Store";"Store";1/11/2002 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+861;"020806001";579;"Venice";"Contoso Venezia Store";"Contoso Venezia Store";"Store";15/4/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+862;"020803001";580;"Province of Florence";"Contoso Firenze Store";"Contoso Firenze Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+863;"020804001";581;"Province of Turin";"Contoso Torino Store";"Contoso Torino Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+864;"020802001";582;"Lombardy";"Contoso Milan Store";"Contoso Milan Store";"Store";1/11/2002 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+865;"020801001";37;"Florida";"Contoso Naples Store";"Contoso Naples Store";"Store";15/4/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+866;"020403001";584;"Berlin";"Contoso Berlin Store";"Contoso Berlin Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+868;"020406001";590;"Nordrhein-Westfalen";"Contoso koln No.2 Store";"Contoso koln No.2 Store";"Store";1/11/2002 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+869;"020404001";587;"Hesse";"Contoso Hofheim Store";"Contoso Hofheim Store";"Store";15/4/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+870;"020407001";590;"North Rhine-Westphalia";"Contoso koln No.1 Store";"Contoso koln No.1 Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+871;"020408002";592;"Rhineland-Palatinate";"Contoso Landstuhl Store";"Contoso Landstuhl Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+872;"020406002";590;"Nordrhein-Westfalen";"Contoso Dusseldorf Store";"Contoso Dusseldorf Store";"Store";1/11/2002 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+873;"020408003";592;"Rhineland-Palatinate";"Contoso Ramstein Store";"Contoso Ramstein Store";"Store";15/4/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+874;"020408001";592;"Rhineland-Palatinate";"Contoso Baumholder Store";"Contoso Baumholder Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+875;"020401001";594;"Bavaria";"Contoso Giebelstadt Store";"Contoso Giebelstadt Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+876;"020401002";594;"Bavaria";"Contoso obamberg Store";"Contoso obamberg Store";"Store";1/11/2002 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+877;"020402001";594;"Bavaria";"Contoso Munich Store";"Contoso Munich Store";"Store";15/4/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+878;"020601001";596;"North Holland";"Contoso Amsterdam Store";"Contoso Amsterdam Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+879;"020201001";597;"Copenhagen";"Contoso Copenhagen Store";"Contoso Copenhagen Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+880;"021401001";598;"Stockholm";"Contoso Stockholm Store";"Contoso Stockholm Store";"Store";1/11/2002 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+881;"021301001";599;"Madrid";"Contoso Madrid Store";"Contoso Madrid Store";"Store";15/4/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+882;"021201001";600;"Ljubljana";"Contoso Ljubljana Store";"Contoso Ljubljana Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+883;"021101001";601;"Bucharest";"Contoso Bucharest Store";"Contoso Bucharest Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+884;"020101001";602;"Bern";"Contoso Berne Store";"Contoso Berne Store";"Store";1/11/2002 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+885;"021001001";603;"Warszawa";"Contoso Warsaw Store";"Contoso Warsaw Store";"Store";15/4/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+886;"020901001";604;"Valletta";"Contoso Valletta Store";"Contoso Valletta Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+887;"020701001";605;"Leinster";"Contoso Dublin Store";"Contoso Dublin Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+888;"020501001";606;"Central Greece and Evvoia";"Contoso Athens Store";"Contoso Athens Store";"Store";1/11/2002 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+889;"030103001";633;"Australian Capital Territory";"Contoso Canberra Store";"Contoso Canberra Store";"Store";1/11/2002 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+890;"030102001";632;"New South Wales";"Contoso Sydney No.1 Store";"Contoso Sydney No.1 Store";"Store";15/4/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+891;"030101001";631;"Armenia";"Contoso Yerevan Store";"Contoso Yerevan Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+892;"030402001";608;"National Capital Territory of Delhi";"Contoso New Delhi Store";"Contoso New Delhi Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+893;"030401001";609;"Maharashtra";"Contoso Mumbai Store";"Contoso Mumbai Store";"Store";1/11/2002 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+894;"030403001";610;"West Bengal";"Contoso Kolkata Store";"Contoso Kolkata Store";"Store";15/4/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+895;"030201001";611;"Thimphu District";"Contoso Thimphu No.1 Store";"Contoso Thimphu No.1 Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+896;"030303001";612;"Hong Kong";"Contoso Hong Kong No.1 Store";"Contoso Hong Kong No.1 Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+897;"030501001";613;"Tehran";"Contoso Tehran No.1 Store";"Contoso Tehran No.1 Store";"Store";1/11/2002 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+898;"031201001";614;"Damascus";"Contoso Damascus No.1 Store";"Contoso Damascus No.1 Store";"Store";15/4/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+899;"031301001";615;"Bangkok";"Contoso Bangkok No.1 Store";"Contoso Bangkok No.1 Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+900;"021701001";616;"Central Federal District";"Contoso Moscow  No.1 Store";"Contoso Moscow  No.1 Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+901;"031401001";617;"Ahal Province";"Contoso Ashgabat No.1 Store";"Contoso Ashgabat No.1 Store";"Store";1/11/2002 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+902;"030801001";618;"Islamabad Capital Territory";"Contoso Islamabad No.1 Store";"Contoso Islamabad No.1 Store";"Store";15/4/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+904;"030604001";620;"Kanto";"Contoso Tokyo No.1 Store";"Contoso Tokyo No.1 Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+905;"030604002";620;"Kanto";"Contoso Tokyo No.2 Store";"Contoso Tokyo No.2 Store";"Store";1/11/2002 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+906;"030604003";620;"Kanto";"Contoso Yokohama Store";"Contoso Yokohama Store";"Store";15/4/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+907;"030603001";626;"Kansai";"Contoso Osaka No.1 Store";"Contoso Osaka No.1 Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+908;"030601001";627;"Chubu";"Contoso Nagoya Store";"Contoso Nagoya Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+909;"030602001";625;"Hokkaido";"Contoso Sapporo Store";"Contoso Sapporo Store";"Store";1/11/2002 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+910;"030603002";626;"Kansai";"Contoso Kyoto Store";"Contoso Kyoto Store";"Store";15/4/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+911;"031101001";628;"Seoul";"Contoso Seoul Store";"Contoso Seoul Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+912;"031102001";629;"Busan";"Contoso Busan Store";"Contoso Busan Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+913;"031301003";630;"Chui Province";"Contoso Bishkek Store";"Contoso Bishkek Store";"Store";1/11/2002 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+914;"010201001";60;"Ontario";"Contoso Ottawa No.1 Store";"Contoso Ottawa No.1 Store";"Store";1/11/2002 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+915;"010201002";60;"Ontario";"Contoso Ottawa No.2 Store";"Contoso Ottawa No.2 Store";"Store";1/11/2002 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+916;"010201003";60;"Ontario";"Contoso Toronto No.1 Store";"Contoso Toronto No.1 Store";"Store";1/11/2002 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+917;"010201004";60;"Ontario";"Contoso Toronto No.2 Store";"Contoso Toronto No.2 Store";"Store";1/11/2002 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+918;"010201005";60;"Ontario";"Contoso Toronto No.3 Store";"Contoso Toronto No.3 Store";"Store";1/11/2002 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+919;"010202001";61;"Quebec";"Contoso Montreal No.1 Store";"Contoso Montreal No.1 Store";"Store";1/11/2002 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+920;"010202002";61;"Quebec";"Contoso Montreal No.2 Store";"Contoso Montreal No.2 Store";"Store";1/11/2002 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+921;"010203001";62;"British Columbia";"Contoso Vancouver  No.1 Store";"Contoso Vancouver  No.1 Store";"Store";1/11/2002 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+922;"010203002";62;"British Columbia";"Contoso Vancouver  No.2 Store";"Contoso Vancouver  No.2 Store";"Store";1/11/2002 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+923;"010204001";63;"Alberta";"Contoso Calgary  Store";"Contoso Calgary  Store";"Store";1/11/2002 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+924;"030201002";611;"Thimphu District";"Contoso Thimphu No.2 Store";"Contoso Thimphu No.2 Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+925;"030303002";612;"Hong Kong";"Contoso Hong Kong No.2 Store";"Contoso Hong Kong No.2 Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+926;"030501002";613;"Tehran";"Contoso Tehran No.2 Store";"Contoso Tehran No.2 Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+927;"031201002";614;"Damascus";"Contoso Damascus No.2 Store";"Contoso Damascus No.2 Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+928;"031301002";615;"Bangkok";"Contoso Bangkok No.2 Store";"Contoso Bangkok No.2 Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+929;"030901002";616;"Central Federal District";"Contoso Moscow  No.2 Store";"Contoso Moscow  No.2 Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+930;"031401002";617;"Ahal Province";"Contoso Ashgabat  No.2 Store";"Contoso Ashgabat  No.2 Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+931;"030801002";618;"Islamabad Capital Territory";"Contoso Islamabad  No.2 Store";"Contoso Islamabad  No.2 Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+932;"030102002";632;"New South Wales";"Contoso Sydney  No.2 Store";"Contoso Sydney  No.2 Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+933;"030603003";626;"Kansai";"Contoso Osaka No.2 Store";"Contoso Osaka No.2 Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+934;"010112019";33;"Washington";"Contoso Kennewick Store";"Contoso Kennewick Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+935;"030306001";940;"Taiwan";"Contoso Taipei  Store";"Contoso Taipei  Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+936;"021601001";938;"Lisboa Region";"Contoso Lisbon Store";"Contoso Lisbon Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+942;"021702001";941;"Northwestern";"Contoso Saint Petersburg Store";"Contoso Saint Petersburg Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+944;"021703001";943;"Nizhny Novgorod Oblast";"Contoso Nizhny Novgorod Store";"Contoso Nizhny Novgorod Store";"Store";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+945;"020405";8;"Germany";"Contoso Europe Online Store";"Contoso Europe Online Store";"Store";1/11/2008 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+946;"030306";23;"China";"Contoso Asia Online Store";"Contoso Asia Online Store";"Store";1/11/2008 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+947;"010117";4;"United States";"Contoso North America Reseller";"Contoso North America Reseller";"Store";1/11/2009 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+948;"020308";6;"France";"Contoso Europe Reseller";"Contoso Europe Reseller";"Store";1/11/2009 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+949;"030307";23;"China";"Contoso Asia Reseller";"Contoso Asia Reseller";"Store";1/11/2009 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+1;"01";;"";"Contoso North America";"Contoso North America";"Group";31/7/1996 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+2;"02";;"";"Contoso Europe";"Contoso Europe";"Group";26/2/1997 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+3;"03";;"";"Contoso Asia";"Contoso Asia";"Group";12/12/1997 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+4;"0101";1;"North America";"Contoso United States";"Contoso United States";"Country/Region";5/1/1998 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+5;"0215";2;"Europe";"Contoso UK";"Contoso UK";"Country/Region";30/6/2000 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+6;"0203";2;"Europe";"Contoso France";"Contoso France";"Country/Region";11/1/1998 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+7;"0208";2;"Europe";"Contoso Italy";"Contoso Italy";"Country/Region";20/1/1998 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+8;"0204";2;"Europe";"Contoso Germany";"Contoso Germany";"Country/Region";16/8/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+9;"0206";2;"Europe";"Contoso the Netherlands";"Contoso the Netherlands";"Country/Region";26/1/1998 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+10;"0202";2;"Europe";"Contoso Denmark";"Contoso Denmark";"Country/Region";6/2/1998 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+11;"0214";2;"Europe";"Contoso Sweden";"Contoso Sweden";"Country/Region";6/2/1998 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+12;"0213";2;"Europe";"Contoso Spain";"Contoso Spain";"Country/Region";7/2/1998 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+13;"0212";2;"Europe";"Contoso Slovenia";"Contoso Slovenia";"Country/Region";24/2/1998 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+14;"0211";2;"Europe";"Contoso Romania";"Contoso Romania";"Country/Region";3/3/1998 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+15;"0102";1;"North America";"Contoso Canada";"Contoso Canada";"Country/Region";7/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+16;"0210";2;"Europe";"Contoso Poland";"Contoso Poland";"Country/Region";11/3/1998 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+17;"0209";2;"Europe";"Contoso Malta";"Contoso Malta";"Country/Region";23/3/1998 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+18;"0207";2;"Europe";"Contoso Ireland";"Contoso Ireland";"Country/Region";30/3/1998 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+19;"0205";2;"Europe";"Contoso Greece";"Contoso Greece";"Country/Region";11/4/1998 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+20;"0310";3;"Asia";"Contoso Singapore";"Contoso Singapore";"Country/Region";18/4/1998 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+21;"0304";3;"Asia";"Contoso India";"Contoso India";"Country/Region";29/4/1998 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+22;"0302";3;"Asia";"Contoso Bhutan";"Contoso Bhutan";"Country/Region";2/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+23;"0303";3;"Asia";"Contoso China";"Contoso China";"Country/Region";2/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+24;"0305";3;"Asia";"Contoso Iran";"Contoso Iran";"Country/Region";3/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+25;"0312";3;"Asia";"Contoso Syria";"Contoso Syria";"Country/Region";3/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+26;"0313";3;"Asia";"Contoso Thailand";"Contoso Thailand";"Country/Region";3/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+27;"0217";2;"Europe";"Contoso Russia";"Contoso Russia";"Country/Region";4/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+28;"0314";3;"Asia";"Contoso Turkmenistan";"Contoso Turkmenistan";"Country/Region";5/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+29;"0308";3;"Asia";"Contoso Pakistan";"Contoso Pakistan";"Country/Region";5/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+30;"0306";3;"Asia";"Contoso Japan";"Contoso Japan";"Country/Region";5/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+31;"0311";3;"Asia";"Contoso South Korea";"Contoso South Korea";"Country/Region";6/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+32;"0307";3;"Asia";"Contoso Kyrgyzstan";"Contoso Kyrgyzstan";"Country/Region";7/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+33;"010112";4;"United States";"Contoso Washington";"Contoso Washington";"State";7/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+34;"010101";4;"United States";"Contoso Colorado";"Contoso Colorado";"State";8/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+35;"010113";4;"United States";"Contoso Wisconsin";"Contoso Wisconsin";"State";8/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+36;"010110";4;"United States";"Contoso Texas";"Contoso Texas";"State";8/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+37;"010103";4;"United States";"Contoso Florida";"Contoso Florida";"State";8/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+38;"010108";4;"United States";"Contoso New York";"Contoso New York";"State";8/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+39;"010107";4;"United States";"Contoso New Jersey";"Contoso New Jersey";"State";9/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+40;"010106";4;"United States";"Contoso Massachusetts";"Contoso Massachusetts";"State";9/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+41;"010104";4;"United States";"Contoso Maine";"Contoso Maine";"State";10/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+42;"010102";4;"United States";"Contoso Connecticut";"Contoso Connecticut";"State";10/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+43;"010111";4;"United States";"Contoso Virginia";"Contoso Virginia";"State";10/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+44;"010109";4;"United States";"Contoso South Carolina";"Contoso South Carolina";"State";12/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+45;"010105";4;"United States";"Contoso Maryland";"Contoso Maryland";"State";13/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+46;"021501";5;"UK";"Contoso England";"Contoso England";"State";13/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+47;"021502";5;"UK";"Contoso Scotland";"Contoso Scotland";"State";13/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+48;"030305";23;"China";"Contoso Xinjiang";"Contoso Xinjiang";"State";13/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+49;"030304";23;"China";"Contoso Shanghai";"Contoso Shanghai";"State";14/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+50;"030301";23;"China";"Contoso Beijing";"Contoso Beijing";"State";15/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+51;"030302";23;"China";"Contoso Guangdong";"Contoso Guangdong";"State";15/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+52;"0301";3;"Asia";"Contoso Australia";"Contoso Australia";"Country/Region";7/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+53;"0201";2;"Europe";"Contoso Switzerland";"Contoso Switzerland";"Country/Region";11/4/1998 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+54;"010114";4;"United States";"Contoso Alaska";"Contoso Alaska";"State";13/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+60;"010201";15;"Canada";"Contoso Ontario";"Contoso Ontario";"State";14/2/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+61;"010202";15;"Canada";"Contoso Quebec";"Contoso Quebec";"State";14/2/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+62;"010203";15;"Canada";"Contoso British Columbia";"Contoso British Columbia";"State";14/2/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+63;"010204";15;"Canada";"Contoso Alberta";"Contoso Alberta";"State";14/2/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+571;"020303";6;"France";"Contoso Ile-del-France";"Contoso Ile-del-France";"State";15/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+572;"020306";6;"France";"Contoso Provence-Alpes-Cote d'Azur";"Contoso Provence-Alpes-Cote d'Azur";"State";16/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+573;"020307";6;"France";"Contoso Rhone-Alpes";"Contoso Rhone-Alpes";"State";16/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+574;"020304";6;"France";"Contoso Midi-Pyrenees";"Contoso Midi-Pyrenees";"State";16/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+575;"020301";6;"France";"Contoso Provence-Alpes-Côte d'Azur";"Contoso Provence-Alpes-Côte d'Azur";"State";17/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+576;"020305";6;"France";"Contoso Pays de la Loire";"Contoso Pays de la Loire";"State";17/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+577;"020302";6;"France";"Contoso Alsace";"Contoso Alsace";"State";18/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+578;"020805";7;"Italy";"Contoso Roma";"Contoso Roma";"State";18/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+579;"020806";7;"Italy";"Contoso Venice";"Contoso Venice";"State";18/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+580;"020803";7;"Italy";"Contoso Province of Florence";"Contoso Province of Florence";"State";19/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+581;"020804";7;"Italy";"Contoso Province of Turin";"Contoso Province of Turin";"State";20/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+582;"020802";7;"Italy";"Contoso Lombardy";"Contoso Lombardy";"State";20/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+583;"020801";7;"Italy";"Contoso Campania";"Contoso Campania";"State";22/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+584;"020403";8;"Germany";"Contoso Berlin";"Contoso Berlin";"State";23/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+587;"020404";8;"Germany";"Contoso Hesse";"Contoso Hesse";"State";24/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+590;"020406";8;"Germany";"Contoso North Rhine-Westphalia";"Contoso North Rhine-Westphalia";"State";26/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+592;"020408";8;"Germany";"Contoso Rhineland-Palatinate";"Contoso Rhineland-Palatinate";"State";26/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+594;"020401";8;"Germany";"Contoso Bavaria";"Contoso Bavaria";"State";27/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+596;"020601";9;"Contoso the Netherlands";"Contoso North Holland";"Contoso North Holland";"State";28/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+597;"020201";10;"Denmark";"Contoso Copenhagen";"Contoso Copenhagen";"State";28/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+598;"021401";11;"Sweden";"Contoso Stockholm";"Contoso Stockholm";"State";29/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+599;"021301";12;"Spain";"Contoso Madrid";"Contoso Madrid";"State";29/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+600;"021201";13;"Slovenia";"Contoso Ljubljana";"Contoso Ljubljana";"State";30/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+601;"021101";14;"Romania";"Contoso Bucharest";"Contoso Bucharest";"State";30/1/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+602;"020101";53;"Berne";"Contoso Bern";"Contoso Bern";"State";1/2/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+603;"021001";16;"Poland";"Contoso Warszawa";"Contoso Warszawa";"State";2/2/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+604;"020901";17;"Malta";"Contoso Valletta";"Contoso Valletta";"State";2/2/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+605;"020701";18;"Ireland";"Contoso Leinster";"Contoso Leinster";"State";3/2/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+606;"020501";19;"Greece";"Contoso Central Greece and Evvoia";"Contoso Central Greece and Evvoia";"State";3/2/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+607;"031001";20;"Singapore";"Contoso Singapore";"Contoso Singapore";"State";3/2/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+608;"030402";21;"India";"Contoso India Capital Territory";"National Capital Territory of Delhi";"State";4/2/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+609;"030401";21;"India";"Contoso Maharashtra";"Contoso Maharashtra";"State";4/2/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+610;"030403";21;"India";"Contoso West Bengal";"Contoso West Bengal";"State";5/2/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+611;"030201";22;"Bhutan";"Contoso Thimphu District";"Contoso Thimphu District";"State";5/2/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+612;"030303";23;"China";"Contoso Hong Kong";"Contoso Hong Kong";"State";5/2/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+613;"030501";24;"Iran";"Contoso Tehran";"Contoso Tehran";"State";5/2/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+614;"031201";25;"Syria";"Contoso Damascus";"Contoso Damascus";"State";6/2/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+615;"031301";26;"Thailand";"Contoso Bangkok";"Contoso Bangkok";"State";7/2/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+616;"021701";27;"Russia";"Contoso Central Federal District";"Contoso Central Federal District";"State";7/2/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+617;"031401";28;"Turkmenistan";"Contoso Ahal Province";"Contoso Ahal Province";"State";8/2/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+618;"030801";29;"Pakistan";"Contoso Islamabad Capital Territory";"Contoso Islamabad Capital Territory";"State";2/10/2001 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+620;"030604";30;"Japan";"Contoso Kanto";"Contoso Kanto";"State";9/2/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+625;"030602";30;"Japan";"Contoso Hokkaido";"Contoso Hokkaido";"State";13/2/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+626;"030603";30;"Japan";"Contoso Kansai";"Contoso Kansai";"State";13/2/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+627;"030601";30;"Japan";"Contoso Chubu";"Contoso Chubu";"State";13/2/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+628;"031101";31;"South Korea";"Contoso Seoul";"Contoso Seoul";"State";13/2/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+629;"031102";31;"South Korea";"Contoso Busan";"Contoso Busan";"State";13/2/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+630;"030701";32;"Kyrgyzstan";"Contoso Chui Province";"Contoso Chui Province";"State";14/2/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+631;"030101";52;"Armenia";"Contoso Armenia";"Contoso Armenia";"State";14/2/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+632;"030102";52;"Australia";"Contoso New South Wales";"Contoso New South Wales";"State";14/2/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+633;"030103";52;"Australia";"Contoso Australian Capital Territory";"Contoso Australian Capital Territory";"State";14/2/1999 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+937;"0315";3;"Asia";"Contoso Taiwan";"Contoso Taiwan";"Country/Region";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+938;"021601";939;"Portugal";"Contoso Lisboa Region";"Contoso Lisboa Region";"State";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+939;"0216";2;"Europe";"Contoso Portugal";"Contoso Portugal";"Country/Region";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+940;"031501";937;"Taiwan";"Contoso Taiwan";"Contoso Taiwan";"State";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+941;"021702";27;"Russia";"Contoso Northwestern";"Contoso Northwestern";"State";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00
+943;"021703";27;"Russia";"Contoso Nizhny Novgorod Oblast";"Contoso Nizhny Novgorod Oblast";"State";1/7/2003 00:00:00;;"Current";1;1/8/2009 00:00:00;1/8/2009 00:00:00

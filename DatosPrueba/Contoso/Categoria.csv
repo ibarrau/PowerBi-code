@@ -1,0 +1,9 @@
+ProductCategoryKey;ProductCategoryLabel;ProductCategoryName;ProductCategoryDescription;ETLLoadID;LoadDate;UpdateDate
+1;"01";"Audio";"Audio";1;7/7/2009 00:00:00;7/7/2009 00:00:00
+2;"02";"TV and Video";"TV and Video";1;7/7/2009 00:00:00;7/7/2009 00:00:00
+3;"03";"Computers";"Computers";1;7/7/2009 00:00:00;7/7/2009 00:00:00
+4;"04";"Cameras and camcorders";"Cameras and camcorders";1;7/7/2009 00:00:00;7/7/2009 00:00:00
+5;"05";"Cell phones";"Cell phones";1;7/7/2009 00:00:00;7/7/2009 00:00:00
+6;"06";"Music, Movies and Audio Books";"Music, Movies and Audio Books";1;7/7/2009 00:00:00;7/7/2009 00:00:00
+7;"07";"Games and Toys";"Games and Toys";1;7/7/2009 00:00:00;7/7/2009 00:00:00
+8;"08";"Home Appliances";"Home Appliances";1;7/7/2009 00:00:00;7/7/2009 00:00:00
