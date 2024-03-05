@@ -50,7 +50,7 @@
                         }
                      }
                   },
-                  "alignment":"Center"
+                  "alignment":"center"
                }
             ],
 			"background": [{
@@ -70,27 +70,27 @@
             "labels":[
                {
                   "show":true,
-                  "fontSize":"9"
+                  "fontSize":9
                }
             ],
             "valueAxis":[
                {
-                  "fontSize":"9",
-                  "titleFontSize":"9"
+                  "fontSize":9,
+                  "titleFontSize":9
                }
             ],
             "categoryAxis":[
                {
-                  "fontSize":"9",
-                  "titleFontSize":"9"
+                  "fontSize":9,
+                  "titleFontSize":9
                }
             ],
             "title":[
                {
                   "show":true,
-                  "fontSize":"14",
+                  "fontSize":14,
                   "fontFamily":"Segoe UI",
-                  "alignment":"Center"
+                  "alignment":"center"
                }
             ]
          }
@@ -264,7 +264,7 @@
                   "backgroundTransparency":0,
                   "labelOrientation":0,
                   "show":true,
-                  "fontSize":"26",
+                  "fontSize":26,
                   "fontFamily":"Segoe UI"
                }
             ]
