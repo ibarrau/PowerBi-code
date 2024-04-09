@@ -1,0 +1,122 @@
+﻿{
+  "name": "Custom",
+  "textClasses": {
+    "callout": {
+      "fontSize": 28,
+      "color": "#F8F6EE"
+    },
+    "label": {
+      "color": "#F8F6EE",
+      "fontSize": 12
+    },
+    "title": {
+      "color": "#F8F6EE"
+    },
+    "header": {
+      "color": "#F8F6EE"
+    }
+  },
+  "dataColors": [
+    "#287E8F",
+    "#F6B53D",
+    "#15CAB6",
+    "#EF8A5A",
+    "#E85E76",
+    "#0F488C",
+    "#323447",
+    "#007181",
+    "#3599B8",
+    "#DFBFBF",
+    "#4AC5BB",
+    "#5F6B6D",
+    "#FB8281",
+    "#F4D25A",
+    "#7F898A",
+    "#A4DDEE",
+    "#FDAB89",
+    "#B687AC",
+    "#28738A",
+    "#A78F8F",
+    "#168980",
+    "#293537",
+    "#BB4A4A",
+    "#B59525",
+    "#475052",
+    "#6A9FB0",
+    "#BD7150",
+    "#7B4F71",
+    "#1B4D5C",
+    "#706060",
+    "#0F5C55",
+    "#1C2325"
+  ],
+  "visualStyles": {
+    "*": {
+      "*": {
+        "background": [
+          {
+            "transparency": 100
+          }
+        ],
+        "outspacePane": [
+          {
+            "checkboxAndApplyColor": {
+              "solid": {
+                "color": "#C2C2FD"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "page": {
+      "*": {
+        "background": [
+          {
+            "color": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "transparency": 100
+          }
+        ],
+        "outspace": [
+          {
+            "color": {
+              "solid": {
+                "color": "#323447"
+              }
+            },
+            "transparency": 0
+          }
+        ]
+      }
+    },
+	"tableEx":{
+		"*":{
+			"stylePreset":[{
+				"name": "None"
+			}]
+		}
+	},
+    "pivotTable": {
+      "*": {
+        "stylePreset": [
+          {
+            "name": "None"
+          }
+        ]
+      }
+    },
+	"slicer": {
+			"*": {
+				"items": [{
+					"fontColor": { "solid": { "color": "#989898"}}
+				}]
+			}
+		}
+  },
+  "foreground": "#F8F6EE",
+  "foregroundNeutralSecondary": "#B3B0AD"
+}
