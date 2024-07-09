@@ -41,11 +41,43 @@ Edicion,Ronda,Score,Equipo1,Equipo2,Año,Llave
 2021-Brasil,Fase Grupo,1-0,Uruguay,Paraguay,2021,A
 2021-Brasil,Fase Grupo,0-1,Venezuela,Perú,2021,B
 2021-Brasil,Fase Grupo,1-4,Bolivia,Argentina,2021,A
-2021-Brasil,Cuartos,1-0,Brasil,Chile,2021,1
-2021-Brasil,Cuartos,3-3 (4-3),Perú,Paraguay,2021,2
-2021-Brasil,Cuartos,3-0,Argentina,Ecuador,2021,3
-2021-Brasil,Cuartos,0-0 (2-4),Uruguay,Colombia,2021,4
+2021-Brasil,Cuartos,3-3 (4-3),Perú,Paraguay,2021,1
+2021-Brasil,Cuartos,1-0,Brasil,Chile,2021,2
+2021-Brasil,Cuartos,0-0 (2-4),Uruguay,Colombia,2021,3
+2021-Brasil,Cuartos,3-0,Argentina,Ecuador,2021,4
 2021-Brasil,Semi,1-0,Brasil,Perú,2021,1
 2021-Brasil,Semi,1-1 (3-2),Argentina,Colombia,2021,2
-2021-Brasil,Tercer/Cuarto,2-3,Perú,Colombia,2021,2
-2021-Brasil,Final,0-1,Brasil,Argentina,2021,1
+2021-Brasil,Tercer/Cuarto,3-2,Colombia,Perú,2021,1
+2021-Brasil,Final,1-0,Argentina,Brasil,2021,1
+2024-USA,Fase Grupo,2-0,Argentina,Canada,2024,A
+2024-USA,Fase Grupo,0-0,Perú,Chile,2024,A
+2024-USA,Fase Grupo,1-2,Ecuador,Venezuela,2024,B
+2024-USA,Fase Grupo,1-0,México,Jamaica,2024,B
+2024-USA,Fase Grupo,2-0,USA,Bolivia,2024,C
+2024-USA,Fase Grupo,3-1,Uruguay,Panamá,2024,C
+2024-USA,Fase Grupo,2-1,Colombia,Paraguay,2024,D
+2024-USA,Fase Grupo,0-0,Brasil,Costa Rica,2024,D
+2024-USA,Fase Grupo,0-1,Perú,Canada,2024,A
+2024-USA,Fase Grupo,0-1,Chile,Argentina,2024,A
+2024-USA,Fase Grupo,3-1,Ecuador,Jamaica,2024,B
+2024-USA,Fase Grupo,1-0,Venezuela,México,2024,B
+2024-USA,Fase Grupo,2-1,Panamá,USA,2024,C
+2024-USA,Fase Grupo,5-0,Uruguay,Bolivia,2024,C
+2024-USA,Fase Grupo,3-0,Colombia,Costa Rica,2024,D
+2024-USA,Fase Grupo,4-1,Brasil,Paraguay,2024,D
+2024-USA,Fase Grupo,2-0,Argentina,Perú,2024,A
+2024-USA,Fase Grupo,0-0,Canada,Chile,2024,A
+2024-USA,Fase Grupo,0-0,México,Ecuador,2024,B
+2024-USA,Fase Grupo,0-3,Jamaica,Colombia,2024,B
+2024-USA,Fase Grupo,1-3,Bolivia,Panamá,2024,C
+2024-USA,Fase Grupo,0-1,USA,Uruguay,2024,C
+2024-USA,Fase Grupo,-,Brasil,Colombia,2024,D
+2024-USA,Fase Grupo,-,Costa Rica,Paraguay,2024,D
+2024-USA,Cuartos,1-1 (4-2),Argentina,Ecuador,2024,1
+2024-USA,Cuartos,1-1 (3-4,Venezuela,Canada,2024,2
+2024-USA,Cuartos,5-0,Colombia,Panama,2024,3
+2024-USA,Cuartos,0-0 (4-2),Uruguay,Brasil,2024,4
+2024-USA,Semi,-,Argentina,Canada,2024,1
+2024-USA,Semi,-,Uruguay,Colombia,2024,2
+2024-USA,Tercer/Cuarto,-,,,2024,1
+2024-USA,Final,-,,,2024,1
