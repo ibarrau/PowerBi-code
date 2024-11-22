@@ -1,0 +1,127 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
+  "name": "eef8fd045875506e6e0b",
+  "position": {
+    "x": 496.00000000000006,
+    "y": 111.99999999999999,
+    "z": 8000,
+    "height": 576,
+    "width": 784
+  },
+  "visual": {
+    "visualType": "esriVisual",
+    "query": {
+      "queryState": {
+        "Color": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "estadistica-inscripciones-iniciales-autos-motos"
+                    }
+                  },
+                  "Property": "Prom.Habitante"
+                }
+              },
+              "queryRef": "estadistica-inscripciones-iniciales-autos-motos.Prom.Habitante"
+            }
+          ]
+        },
+        "Location": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "estadistica-inscripciones-iniciales-autos-motos"
+                    }
+                  },
+                  "Property": "provincia"
+                }
+              },
+              "queryRef": "estadistica-inscripciones-iniciales-autos-motos.provincia"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "mapObject": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "'{\"version\":\"1.2\",\"minRequiredVersion\":\"1.0.0.85\",\"portalUrl\":\"https://www.arcgis.com\",\"tocLayerSettings\":{\"MyLayer\":{\"layerCollapse\":true}},\"plusRemovedVersion\":\"1.0.0.102\",\"map\":{\"webmap\":{\"item\":{\"extent\":[[-87.4279190067471,-56.30849797906434],[-39.87909088175978,-19.71169906628399]]},\"itemData\":{\"operationalLayers\":[],\"baseMap\":{\"baseMapLayers\":[{\"url\":\"https://www.arcgis.com/sharing/rest/content/items/5e9b3685f4c24d8781073dd928ebda50/resources/styles/root.json\",\"id\":\"VectorTile_4717\",\"visibility\":true,\"opacity\":1,\"title\":\"Dark Gray Canvas Base\",\"minScale\":0,\"maxScale\":0,\"refreshInterval\":0,\"type\":\"VectorTileLayer\",\"layerType\":\"VectorTileLayer\",\"styleUrl\":\"https://www.arcgis.com/sharing/rest/content/items/5e9b3685f4c24d8781073dd928ebda50/resources/styles/root.json\"},{\"url\":\"https://www.arcgis.com/sharing/rest/content/items/747cb7a5329c478cbe6981076cc879c5/resources/styles/root.json\",\"id\":\"VectorTile_9547\",\"visibility\":true,\"opacity\":1,\"title\":\"Dark Gray Canvas Reference\",\"minScale\":0,\"maxScale\":0,\"refreshInterval\":0,\"isReference\":true,\"type\":\"VectorTileLayer\",\"layerType\":\"VectorTileLayer\",\"styleUrl\":\"https://www.arcgis.com/sharing/rest/content/items/747cb7a5329c478cbe6981076cc879c5/resources/styles/root.json\"}],\"title\":\"Dark Gray Canvas\",\"itemId\":\"358ec1e175ea41c3bf5c68f0da11ae2b\"},\"version\":\"1.8\"}},\"webmapExtensions\":{\"mapSettings\":{\"title\":\"ArcGIS\",\"selectionColor\":\"#ffff00\",\"autoZoomOnAdd\":true,\"percentageDecimals\":2,\"currencyDecimals\":2,\"currencySymbol\":\"USD\",\"decimal\":2,\"dateFormat\":\"shortDate\"},\"infographics\":{\"cards\":[],\"settings\":{\"bufferType\":\"radius\",\"radius\":{\"value\":1,\"units\":\"miles\"},\"driveTime\":{\"value\":1,\"units\":\"minutes\"},\"comparisonLevel\":null}},\"operationalLayers\":\"H4sIAAAAAAAAA+1aW2/bNhT+K4GelVQXSpaNYcDqIFuAFg3qYXsI/EDLtE2UFj2KcqoW+e87h5QsKb7EGZCiwfRgyNS5focXnc/W/XeHz52R87H8QEumHNfZ8pzPuOC6dEZaFcx15IamZuhdxa6juRYMLEB1zbNJSnHkwYB+bQaKLRTLV7eZZmpLhbnHszn76owC11kwqgvFxlIIlmouM2f03REYP3dG99XXa7bgGa+lSybXTKvyz3KDwVmu+O/VrTspyiVouc5c0QeeLW+zhUQbxSCiAlDwPZVCqlqQCprnfMFTiu4/Mr2SWINMZgy8ZMV6jAoMkolcJ9c0m1M1v2ZbbvQbUI4P6koW2fwD2zKLUq/YGjNc8eXqUstLIR9AKU/t7araLeE78P3lcqlo+S5n/1yuC6H5ZQnJznAyDntrTUjiWmi2cAA1iCDnZXWdwdWHglNn5D+6lZxYuT8wcp8clvtRaOTE74rRDMTDqLLuSI0RSKPA2lbCaZ3kjVSmtO8Vo19syu1q+/tgqmSGsXE4GNYeMWDbNDhm+mKce67DoyUmleskOez6adanS7gXmPzoufWseGDTDo7lFb2JNfc06/g/Zx3UWUcvmuYfAWrwk4EKYyv2bd6Bd84CqyATzwhJdBry8yde8DTn87br2y3J8H9UksMboxJ6gRGGNuv4WL18ry+YFfpVwRKbVUeY2AMqJBZR83yEx3kmr6mmY6yh6bRAMLBr1Vxn1dV6c2ShBc/Yrg+rTarUatTmSrGricDogc/1yg5gNMOOAfs3O2XQef5FRYHN5pXn+SEcc1489GCaYM94oelGWwrEiwFFXq5nUmDwXJemh82lgH7M7WR14gRtA2nSc18AqhsYgQk6w87R8VzEcUEv8AtxcA66IC2GLq4kJsn5uI4+hF8T168WUAUsiQ8gsyg6yEjoRS+YsWO75/WBJbFFRsJ9YBWIDrBBlIRDP47iAYkjEgZnYzyyx18dIanW5CBycOPnWm7sFtzWmMJkF+4eN435wKaB67Rx9ssFapoi7SxJRNqmxMW1ieuyY5oVQnTMomDYNUNAMOndgEavGy/22vEgFjRf0Hidjha34GEgOEifmGChQM3UZ8GZQIZ3p+T66g8648AeNYM0HG2Za9riP8BY2YIC45vs1kAdyXP9BIDBIQoxp4eO0KbW9jNtHZmDaBcPmfLkw8RpJrq6M7Hz3VW82VO8aRSb1JuDuKfSPZXuqXRPpXsq/TP1/D2V7ql0T6V7Kt1T6Z5K91T6TVLpZzfQucT62RV7Ds1+bnGcSbpPt2vnUPCTB/FLCPkUp+f4H9jGzM4OFZzm+x7g5KaGUO7dbxHqG3SD/1lfy2ImmKlM7W+j5JZnKaeNq/atQ14mWvFs2fHy+dPft9eNh3p4yPoTSLAkKENo+JWtN4Lq3dBa3ckHpt7f1m8ECGnZ/R1mN7f/p1eav32+urM5M/w5oy52G0cuC5WyMVB7rUpjgorFt2/lhFGVruq3DKgQhvrn6N6D5REQEhNYgj72CCQZBkNYBgE8RePhIIlw9cS4egZDn4RJ8Nj5gSIf0w01bzFwlu8eljdHf5ypXy8Y03TFsBaPu7cUJkyf/QJCZWKq+YjN0sGKPk7/BcuWSS52IQAA\"}},\"allCompressionKeys\":[[\"map\",\"webmapExtensions\",\"operationalLayers\"]],\"compressionMethod\":[\"pako\"]}'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "Filter",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "estadistica-inscripciones-iniciales-autos-motos"
+              }
+            },
+            "Property": "provincia"
+          }
+        },
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "e",
+              "Entity": "estadistica-inscripciones-iniciales-autos-motos",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Not": {
+                  "Expression": {
+                    "In": {
+                      "Expressions": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "e"
+                              }
+                            },
+                            "Property": "provincia"
+                          }
+                        }
+                      ],
+                      "Values": [
+                        [
+                          {
+                            "Literal": {
+                              "Value": "''"
+                            }
+                          }
+                        ]
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

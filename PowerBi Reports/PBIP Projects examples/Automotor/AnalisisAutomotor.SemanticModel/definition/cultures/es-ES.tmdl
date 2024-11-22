@@ -1,0 +1,2437 @@
+cultureInfo es-ES
+
+	linguisticMetadata =
+			{
+			  "Version": "3.5.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "estadisticainscripcionesinicialesautosmoto": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "estadistica-inscripciones-iniciales-autos-motos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "estadistica-inscripciones-iniciales-autos-moto": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "estadistica-inscripcione-iniciale-auto-moto": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "estadistica inscripciones iniciales autos moto": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "estadistica inscripcione iniciale auto moto": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.7566
+			          }
+			        }
+			      ]
+			    },
+			    "estadisticainscripcionesinicialesautosmoto.tipo_vehiculo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "estadistica-inscripciones-iniciales-autos-motos",
+			          "ConceptualProperty": "tipo_vehiculo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tipo vehiculo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tipo_vehiculo": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "estadisticainscripcionesinicialesautosmoto.fecha": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "estadistica-inscripciones-iniciales-autos-motos",
+			          "ConceptualProperty": "Fecha"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fecha": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "estadisticainscripcionesinicialesautosmoto.fecha_me": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "estadistica-inscripciones-iniciales-autos-motos",
+			          "ConceptualProperty": "Fecha mes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fecha me": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "estadisticainscripcionesinicialesautosmoto.ubicacion": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "estadistica-inscripciones-iniciales-autos-motos",
+			          "ConceptualProperty": "Ubicacion"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ubicacion": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "country": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Location"
+			    },
+			    "estadisticainscripcionesinicialesautosmoto.ultimo_me": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "estadistica-inscripciones-iniciales-autos-motos",
+			          "ConceptualProperty": "UltimoMes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ultimo me": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "UltimoMes": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "estadisticainscripcionesinicialesautosmoto.test": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "estadistica-inscripciones-iniciales-autos-motos",
+			          "ConceptualProperty": "test"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "test": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "state or province": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "examination": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "exam": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "assessment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "investigation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "analysis": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "quiz": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "trial": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "check": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "experiment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "assay": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ],
+			      "SemanticType": "Location"
+			    },
+			    "estadisticainscripcionesinicialesautosmoto.anio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "estadistica-inscripciones-iniciales-autos-motos",
+			          "ConceptualProperty": "anio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "anio": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "estadisticainscripcionesinicialesautosmoto.me": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "estadistica-inscripciones-iniciales-autos-motos",
+			          "ConceptualProperty": "mes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "me": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "estadisticainscripcionesinicialesautosmoto.provincia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "estadistica-inscripciones-iniciales-autos-motos",
+			          "ConceptualProperty": "provincia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "provincia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "state or province": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Location"
+			    },
+			    "estadisticainscripcionesinicialesautosmoto.cantidad": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "estadistica-inscripciones-iniciales-autos-motos",
+			          "ConceptualProperty": "cantidad"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cantidad": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "estadisticainscripcionesinicialesautosmoto.letra_provincia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "estadistica-inscripciones-iniciales-autos-motos",
+			          "ConceptualProperty": "letraProvincia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "letra provincia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "letraProvincia": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "estadisticainscripcionesinicialesautosmoto.prom_habitante": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "estadistica-inscripciones-iniciales-autos-motos",
+			          "ConceptualProperty": "Prom.Habitante"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "prom.habitante": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "estadisticainscripcionesinicialesautosmoto.prom__pcia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "estadistica-inscripciones-iniciales-autos-motos",
+			          "ConceptualProperty": "Prom. Pcia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "prom. pcia": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "estadisticainscripcionesinicialesautosmoto.cantidad_anterior": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "estadistica-inscripciones-iniciales-autos-motos",
+			          "ConceptualProperty": "CantidadAnterior"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cantidad anterior": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CantidadAnterior": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "estadisticainscripcionesinicialesautosmoto.tasa_de_crecimiento_anual": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "estadistica-inscripciones-iniciales-autos-motos",
+			          "ConceptualProperty": "Tasa de Crecimiento Anual"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tasa de crecimiento anual": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "estadisticainscripcionesinicialesautosmoto.alerta": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "estadistica-inscripciones-iniciales-autos-motos",
+			          "ConceptualProperty": "Alerta"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "alerta": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "estadisticainscripcionesinicialesautosmoto.prom__anual": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "estadistica-inscripciones-iniciales-autos-motos",
+			          "ConceptualProperty": "Prom. Anual"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "prom. anual": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "poblacional": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Poblacional"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "poblacional": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "poblacional.jurisdicción": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Poblacional",
+			          "ConceptualProperty": "Jurisdicción"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "jurisdicción": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "state or province": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Location"
+			    },
+			    "poblacional.capital": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Poblacional",
+			          "ConceptualProperty": "Capital"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "capital": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "wealth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "money": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "investment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "principal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "hub": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "center": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "headquarters": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "poblacional.población_1": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Poblacional",
+			          "ConceptualProperty": "Población (1)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "población (1)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "población": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "poblacional.superficie_km_2": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Poblacional",
+			          "ConceptualProperty": "Superficie km² (2)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "superficie km² (2)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "superficie km²": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "poblacional.densidad_hab_km": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Poblacional",
+			          "ConceptualProperty": "Densidad hab/km²"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "densidad hab/km²": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "densidad hab": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "densidad hab km²": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "km²": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "UR_ls": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "URLs"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "UR ls": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "URLs": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "UR_ls.url": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "URLs",
+			          "ConceptualProperty": "URL"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "url": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "website": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "site": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "web address": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.571
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_fecha": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "TablaFecha"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tabla fecha": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "TablaFecha": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_fecha.fecha": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "TablaFecha",
+			          "ConceptualProperty": "Fecha"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fecha": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "tabla_fecha.id_fecha": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "TablaFecha",
+			          "ConceptualProperty": "IdFecha"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id fecha": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "IdFecha": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification fecha": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity fecha": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier fecha": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential fecha": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_fecha.año": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "TablaFecha",
+			          "ConceptualProperty": "Año"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "año": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_fecha.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "TablaFecha",
+			          "ConceptualProperty": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_fecha.id_me": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "TablaFecha",
+			          "ConceptualProperty": "IdMes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id me": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "IdMes": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification me": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "identity me": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "identifier me": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "credential me": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_fecha.me": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "TablaFecha",
+			          "ConceptualProperty": "Mes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "me": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_fecha.periodo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "TablaFecha",
+			          "ConceptualProperty": "Periodo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "periodo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_fecha.trimestre_año": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "TablaFecha",
+			          "ConceptualProperty": "TrimestreAño"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre año": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "TrimestreAño": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_fecha.dia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "TablaFecha",
+			          "ConceptualProperty": "Dia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dia": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_fecha.dia_semana": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "TablaFecha",
+			          "ConceptualProperty": "Dia Semana"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dia semana": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_fecha.nombre_dia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "TablaFecha",
+			          "ConceptualProperty": "Nombre Dia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nombre dia": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "estadisticainscripcionesinicialesautosmoto_has_tabla_fecha": {
+			      "Binding": {
+			        "ConceptualEntity": "estadistica-inscripciones-iniciales-autos-motos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "estadisticainscripcionesinicialesautosmoto": {
+			          "Target": {
+			            "Entity": "estadisticainscripcionesinicialesautosmoto"
+			          }
+			        },
+			        "tabla_fecha": {
+			          "Target": {
+			            "Entity": "tabla_fecha"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "estadisticainscripcionesinicialesautosmoto"
+			            },
+			            "Object": {
+			              "Role": "tabla_fecha"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "estadisticainscripcionesinicialesautosmoto_have_tabla_fechas"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_fecha"
+			            },
+			            "Object": {
+			              "Role": "estadisticainscripcionesinicialesautosmoto"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tabla_fechas_have_estadisticainscripcionesinicialesautosmoto"
+			        }
+			      ]
+			    },
+			    "estadisticainscripcionesinicialesautosmoto_has_poblacional": {
+			      "Binding": {
+			        "ConceptualEntity": "estadistica-inscripciones-iniciales-autos-motos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "estadisticainscripcionesinicialesautosmoto": {
+			          "Target": {
+			            "Entity": "estadisticainscripcionesinicialesautosmoto"
+			          }
+			        },
+			        "poblacional": {
+			          "Target": {
+			            "Entity": "poblacional"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "estadisticainscripcionesinicialesautosmoto"
+			            },
+			            "Object": {
+			              "Role": "poblacional"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "estadisticainscripcionesinicialesautosmoto_have_poblacionals"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "poblacional"
+			            },
+			            "Object": {
+			              "Role": "estadisticainscripcionesinicialesautosmoto"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "poblacionals_have_estadisticainscripcionesinicialesautosmoto"
+			        }
+			      ]
+			    },
+			    "tabla_fecha_has_nombre_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "TablaFecha"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tabla_fecha": {
+			          "Target": {
+			            "Entity": "tabla_fecha"
+			          }
+			        },
+			        "tabla_fecha.nombre_dia": {
+			          "Target": {
+			            "Entity": "tabla_fecha.nombre_dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_fecha"
+			            },
+			            "Object": {
+			              "Role": "tabla_fecha.nombre_dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tabla_fechas_have_nombre_dias"
+			        }
+			      ]
+			    },
+			    "tabla_fecha_has_dia_semana": {
+			      "Binding": {
+			        "ConceptualEntity": "TablaFecha"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tabla_fecha": {
+			          "Target": {
+			            "Entity": "tabla_fecha"
+			          }
+			        },
+			        "tabla_fecha.dia_semana": {
+			          "Target": {
+			            "Entity": "tabla_fecha.dia_semana"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_fecha"
+			            },
+			            "Object": {
+			              "Role": "tabla_fecha.dia_semana"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tabla_fechas_have_dia_semanas"
+			        }
+			      ]
+			    },
+			    "tabla_fecha_has_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "TablaFecha"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tabla_fecha": {
+			          "Target": {
+			            "Entity": "tabla_fecha"
+			          }
+			        },
+			        "tabla_fecha.dia": {
+			          "Target": {
+			            "Entity": "tabla_fecha.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_fecha"
+			            },
+			            "Object": {
+			              "Role": "tabla_fecha.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tabla_fechas_have_dias"
+			        }
+			      ]
+			    },
+			    "tabla_fecha_has_trimestre_año": {
+			      "Binding": {
+			        "ConceptualEntity": "TablaFecha"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tabla_fecha": {
+			          "Target": {
+			            "Entity": "tabla_fecha"
+			          }
+			        },
+			        "tabla_fecha.trimestre_año": {
+			          "Target": {
+			            "Entity": "tabla_fecha.trimestre_año"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_fecha"
+			            },
+			            "Object": {
+			              "Role": "tabla_fecha.trimestre_año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tabla_fechas_have_trimestre_años"
+			        }
+			      ]
+			    },
+			    "tabla_fecha_has_periodo": {
+			      "Binding": {
+			        "ConceptualEntity": "TablaFecha"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tabla_fecha": {
+			          "Target": {
+			            "Entity": "tabla_fecha"
+			          }
+			        },
+			        "tabla_fecha.periodo": {
+			          "Target": {
+			            "Entity": "tabla_fecha.periodo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_fecha"
+			            },
+			            "Object": {
+			              "Role": "tabla_fecha.periodo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tabla_fechas_have_periodos"
+			        }
+			      ]
+			    },
+			    "tabla_fecha_has_me": {
+			      "Binding": {
+			        "ConceptualEntity": "TablaFecha"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tabla_fecha": {
+			          "Target": {
+			            "Entity": "tabla_fecha"
+			          }
+			        },
+			        "tabla_fecha.me": {
+			          "Target": {
+			            "Entity": "tabla_fecha.me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_fecha"
+			            },
+			            "Object": {
+			              "Role": "tabla_fecha.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tabla_fechas_have_me"
+			        }
+			      ]
+			    },
+			    "tabla_fecha_has_id_me": {
+			      "Binding": {
+			        "ConceptualEntity": "TablaFecha"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tabla_fecha": {
+			          "Target": {
+			            "Entity": "tabla_fecha"
+			          }
+			        },
+			        "tabla_fecha.id_me": {
+			          "Target": {
+			            "Entity": "tabla_fecha.id_me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_fecha"
+			            },
+			            "Object": {
+			              "Role": "tabla_fecha.id_me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tabla_fechas_have_id_me"
+			        }
+			      ]
+			    },
+			    "tabla_fecha_has_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "TablaFecha"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tabla_fecha": {
+			          "Target": {
+			            "Entity": "tabla_fecha"
+			          }
+			        },
+			        "tabla_fecha.trimestre": {
+			          "Target": {
+			            "Entity": "tabla_fecha.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_fecha"
+			            },
+			            "Object": {
+			              "Role": "tabla_fecha.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tabla_fechas_have_trimestres"
+			        }
+			      ]
+			    },
+			    "tabla_fecha_has_año": {
+			      "Binding": {
+			        "ConceptualEntity": "TablaFecha"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tabla_fecha": {
+			          "Target": {
+			            "Entity": "tabla_fecha"
+			          }
+			        },
+			        "tabla_fecha.año": {
+			          "Target": {
+			            "Entity": "tabla_fecha.año"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_fecha"
+			            },
+			            "Object": {
+			              "Role": "tabla_fecha.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tabla_fechas_have_años"
+			        }
+			      ]
+			    },
+			    "tabla_fecha_has_id_fecha": {
+			      "Binding": {
+			        "ConceptualEntity": "TablaFecha"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tabla_fecha": {
+			          "Target": {
+			            "Entity": "tabla_fecha"
+			          }
+			        },
+			        "tabla_fecha.id_fecha": {
+			          "Target": {
+			            "Entity": "tabla_fecha.id_fecha"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_fecha"
+			            },
+			            "Object": {
+			              "Role": "tabla_fecha.id_fecha"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tabla_fechas_have_id_fechas"
+			        }
+			      ]
+			    },
+			    "tabla_fecha_has_fecha": {
+			      "Binding": {
+			        "ConceptualEntity": "TablaFecha"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tabla_fecha": {
+			          "Target": {
+			            "Entity": "tabla_fecha"
+			          }
+			        },
+			        "tabla_fecha.fecha": {
+			          "Target": {
+			            "Entity": "tabla_fecha.fecha"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_fecha"
+			            },
+			            "Object": {
+			              "Role": "tabla_fecha.fecha"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tabla_fechas_have_fechas"
+			        }
+			      ]
+			    },
+			    "UR_ls_has_url": {
+			      "Binding": {
+			        "ConceptualEntity": "URLs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "UR_ls": {
+			          "Target": {
+			            "Entity": "UR_ls"
+			          }
+			        },
+			        "UR_ls.url": {
+			          "Target": {
+			            "Entity": "UR_ls.url"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "UR_ls"
+			            },
+			            "Object": {
+			              "Role": "UR_ls.url"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "UR_lses_have_urls"
+			        }
+			      ]
+			    },
+			    "poblacional_has_densidad_hab_km": {
+			      "Binding": {
+			        "ConceptualEntity": "Poblacional"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "poblacional": {
+			          "Target": {
+			            "Entity": "poblacional"
+			          }
+			        },
+			        "poblacional.densidad_hab_km": {
+			          "Target": {
+			            "Entity": "poblacional.densidad_hab_km"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "poblacional"
+			            },
+			            "Object": {
+			              "Role": "poblacional.densidad_hab_km"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "poblacionals_have_densidad_hab_km"
+			        }
+			      ]
+			    },
+			    "poblacional_has_superficie_km_2": {
+			      "Binding": {
+			        "ConceptualEntity": "Poblacional"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "poblacional": {
+			          "Target": {
+			            "Entity": "poblacional"
+			          }
+			        },
+			        "poblacional.superficie_km_2": {
+			          "Target": {
+			            "Entity": "poblacional.superficie_km_2"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "poblacional"
+			            },
+			            "Object": {
+			              "Role": "poblacional.superficie_km_2"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "poblacionals_have_superficie_km_2"
+			        }
+			      ]
+			    },
+			    "poblacional_has_población_1": {
+			      "Binding": {
+			        "ConceptualEntity": "Poblacional"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "poblacional": {
+			          "Target": {
+			            "Entity": "poblacional"
+			          }
+			        },
+			        "poblacional.población_1": {
+			          "Target": {
+			            "Entity": "poblacional.población_1"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "poblacional"
+			            },
+			            "Object": {
+			              "Role": "poblacional.población_1"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "poblacionals_have_población_1"
+			        }
+			      ]
+			    },
+			    "poblacional_has_capital": {
+			      "Binding": {
+			        "ConceptualEntity": "Poblacional"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "poblacional": {
+			          "Target": {
+			            "Entity": "poblacional"
+			          }
+			        },
+			        "poblacional.capital": {
+			          "Target": {
+			            "Entity": "poblacional.capital"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "poblacional"
+			            },
+			            "Object": {
+			              "Role": "poblacional.capital"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "poblacionals_have_capitals"
+			        }
+			      ]
+			    },
+			    "poblacional_has_jurisdicción": {
+			      "Binding": {
+			        "ConceptualEntity": "Poblacional"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "poblacional": {
+			          "Target": {
+			            "Entity": "poblacional"
+			          }
+			        },
+			        "poblacional.jurisdicción": {
+			          "Target": {
+			            "Entity": "poblacional.jurisdicción"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "poblacional"
+			            },
+			            "Object": {
+			              "Role": "poblacional.jurisdicción"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "poblacionals_have_jurisdiccións"
+			        }
+			      ]
+			    },
+			    "estadisticainscripcionesinicialesautosmoto_has_prom__anual": {
+			      "Binding": {
+			        "ConceptualEntity": "estadistica-inscripciones-iniciales-autos-motos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "estadisticainscripcionesinicialesautosmoto": {
+			          "Target": {
+			            "Entity": "estadisticainscripcionesinicialesautosmoto"
+			          }
+			        },
+			        "estadisticainscripcionesinicialesautosmoto.prom__anual": {
+			          "Target": {
+			            "Entity": "estadisticainscripcionesinicialesautosmoto.prom__anual"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "estadisticainscripcionesinicialesautosmoto"
+			            },
+			            "Object": {
+			              "Role": "estadisticainscripcionesinicialesautosmoto.prom__anual"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "estadisticainscripcionesinicialesautosmoto_have_prom__anual"
+			        }
+			      ]
+			    },
+			    "tabla_fecha_has_estadisticainscripcionesinicialesautosmoto_prom__anual": {
+			      "Binding": {
+			        "ConceptualEntity": "TablaFecha"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tabla_fecha": {
+			          "Target": {
+			            "Entity": "tabla_fecha"
+			          }
+			        },
+			        "estadisticainscripcionesinicialesautosmoto.prom__anual": {
+			          "Target": {
+			            "Entity": "estadisticainscripcionesinicialesautosmoto.prom__anual"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_fecha"
+			            },
+			            "Object": {
+			              "Role": "estadisticainscripcionesinicialesautosmoto.prom__anual"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tabla_fechas_have_prom__anual"
+			        }
+			      ]
+			    },
+			    "estadisticainscripcionesinicialesautosmoto_has_alerta": {
+			      "Binding": {
+			        "ConceptualEntity": "estadistica-inscripciones-iniciales-autos-motos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "estadisticainscripcionesinicialesautosmoto": {
+			          "Target": {
+			            "Entity": "estadisticainscripcionesinicialesautosmoto"
+			          }
+			        },
+			        "estadisticainscripcionesinicialesautosmoto.alerta": {
+			          "Target": {
+			            "Entity": "estadisticainscripcionesinicialesautosmoto.alerta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "estadisticainscripcionesinicialesautosmoto"
+			            },
+			            "Object": {
+			              "Role": "estadisticainscripcionesinicialesautosmoto.alerta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "estadisticainscripcionesinicialesautosmoto_have_alerta"
+			        }
+			      ]
+			    },
+			    "estadisticainscripcionesinicialesautosmoto_has_tasa_de_crecimiento_anual": {
+			      "Binding": {
+			        "ConceptualEntity": "estadistica-inscripciones-iniciales-autos-motos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "estadisticainscripcionesinicialesautosmoto": {
+			          "Target": {
+			            "Entity": "estadisticainscripcionesinicialesautosmoto"
+			          }
+			        },
+			        "estadisticainscripcionesinicialesautosmoto.tasa_de_crecimiento_anual": {
+			          "Target": {
+			            "Entity": "estadisticainscripcionesinicialesautosmoto.tasa_de_crecimiento_anual"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "estadisticainscripcionesinicialesautosmoto"
+			            },
+			            "Object": {
+			              "Role": "estadisticainscripcionesinicialesautosmoto.tasa_de_crecimiento_anual"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "estadisticainscripcionesinicialesautosmoto_have_tasa_de_crecimiento_anual"
+			        }
+			      ]
+			    },
+			    "estadisticainscripcionesinicialesautosmoto_has_cantidad_anterior": {
+			      "Binding": {
+			        "ConceptualEntity": "estadistica-inscripciones-iniciales-autos-motos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "estadisticainscripcionesinicialesautosmoto": {
+			          "Target": {
+			            "Entity": "estadisticainscripcionesinicialesautosmoto"
+			          }
+			        },
+			        "estadisticainscripcionesinicialesautosmoto.cantidad_anterior": {
+			          "Target": {
+			            "Entity": "estadisticainscripcionesinicialesautosmoto.cantidad_anterior"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "estadisticainscripcionesinicialesautosmoto"
+			            },
+			            "Object": {
+			              "Role": "estadisticainscripcionesinicialesautosmoto.cantidad_anterior"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "estadisticainscripcionesinicialesautosmoto_have_cantidad_anterior"
+			        }
+			      ]
+			    },
+			    "estadisticainscripcionesinicialesautosmoto_has_prom__pcia": {
+			      "Binding": {
+			        "ConceptualEntity": "estadistica-inscripciones-iniciales-autos-motos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "estadisticainscripcionesinicialesautosmoto": {
+			          "Target": {
+			            "Entity": "estadisticainscripcionesinicialesautosmoto"
+			          }
+			        },
+			        "estadisticainscripcionesinicialesautosmoto.prom__pcia": {
+			          "Target": {
+			            "Entity": "estadisticainscripcionesinicialesautosmoto.prom__pcia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "estadisticainscripcionesinicialesautosmoto"
+			            },
+			            "Object": {
+			              "Role": "estadisticainscripcionesinicialesautosmoto.prom__pcia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "estadisticainscripcionesinicialesautosmoto_have_prom__pcia"
+			        }
+			      ]
+			    },
+			    "estadisticainscripcionesinicialesautosmoto_has_prom_habitante": {
+			      "Binding": {
+			        "ConceptualEntity": "estadistica-inscripciones-iniciales-autos-motos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "estadisticainscripcionesinicialesautosmoto": {
+			          "Target": {
+			            "Entity": "estadisticainscripcionesinicialesautosmoto"
+			          }
+			        },
+			        "estadisticainscripcionesinicialesautosmoto.prom_habitante": {
+			          "Target": {
+			            "Entity": "estadisticainscripcionesinicialesautosmoto.prom_habitante"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "estadisticainscripcionesinicialesautosmoto"
+			            },
+			            "Object": {
+			              "Role": "estadisticainscripcionesinicialesautosmoto.prom_habitante"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "estadisticainscripcionesinicialesautosmoto_have_prom_habitante"
+			        }
+			      ]
+			    },
+			    "poblacional_has_estadisticainscripcionesinicialesautosmoto_prom_habitante": {
+			      "Binding": {
+			        "ConceptualEntity": "Poblacional"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "poblacional": {
+			          "Target": {
+			            "Entity": "poblacional"
+			          }
+			        },
+			        "estadisticainscripcionesinicialesautosmoto.prom_habitante": {
+			          "Target": {
+			            "Entity": "estadisticainscripcionesinicialesautosmoto.prom_habitante"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "poblacional"
+			            },
+			            "Object": {
+			              "Role": "estadisticainscripcionesinicialesautosmoto.prom_habitante"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "poblacionals_have_prom_habitante"
+			        }
+			      ]
+			    },
+			    "estadisticainscripcionesinicialesautosmoto_has_letra_provincia": {
+			      "Binding": {
+			        "ConceptualEntity": "estadistica-inscripciones-iniciales-autos-motos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "estadisticainscripcionesinicialesautosmoto": {
+			          "Target": {
+			            "Entity": "estadisticainscripcionesinicialesautosmoto"
+			          }
+			        },
+			        "estadisticainscripcionesinicialesautosmoto.letra_provincia": {
+			          "Target": {
+			            "Entity": "estadisticainscripcionesinicialesautosmoto.letra_provincia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "estadisticainscripcionesinicialesautosmoto"
+			            },
+			            "Object": {
+			              "Role": "estadisticainscripcionesinicialesautosmoto.letra_provincia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "estadisticainscripcionesinicialesautosmoto_have_letra_provincias"
+			        }
+			      ]
+			    },
+			    "estadisticainscripcionesinicialesautosmoto_has_cantidad": {
+			      "Binding": {
+			        "ConceptualEntity": "estadistica-inscripciones-iniciales-autos-motos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "estadisticainscripcionesinicialesautosmoto": {
+			          "Target": {
+			            "Entity": "estadisticainscripcionesinicialesautosmoto"
+			          }
+			        },
+			        "estadisticainscripcionesinicialesautosmoto.cantidad": {
+			          "Target": {
+			            "Entity": "estadisticainscripcionesinicialesautosmoto.cantidad"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "estadisticainscripcionesinicialesautosmoto"
+			            },
+			            "Object": {
+			              "Role": "estadisticainscripcionesinicialesautosmoto.cantidad"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "estadisticainscripcionesinicialesautosmoto_have_cantidads"
+			        }
+			      ]
+			    },
+			    "estadisticainscripcionesinicialesautosmoto_has_me": {
+			      "Binding": {
+			        "ConceptualEntity": "estadistica-inscripciones-iniciales-autos-motos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "estadisticainscripcionesinicialesautosmoto": {
+			          "Target": {
+			            "Entity": "estadisticainscripcionesinicialesautosmoto"
+			          }
+			        },
+			        "estadisticainscripcionesinicialesautosmoto.me": {
+			          "Target": {
+			            "Entity": "estadisticainscripcionesinicialesautosmoto.me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "estadisticainscripcionesinicialesautosmoto"
+			            },
+			            "Object": {
+			              "Role": "estadisticainscripcionesinicialesautosmoto.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "estadisticainscripcionesinicialesautosmoto_have_me"
+			        }
+			      ]
+			    },
+			    "estadisticainscripcionesinicialesautosmoto_has_anio": {
+			      "Binding": {
+			        "ConceptualEntity": "estadistica-inscripciones-iniciales-autos-motos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "estadisticainscripcionesinicialesautosmoto": {
+			          "Target": {
+			            "Entity": "estadisticainscripcionesinicialesautosmoto"
+			          }
+			        },
+			        "estadisticainscripcionesinicialesautosmoto.anio": {
+			          "Target": {
+			            "Entity": "estadisticainscripcionesinicialesautosmoto.anio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "estadisticainscripcionesinicialesautosmoto"
+			            },
+			            "Object": {
+			              "Role": "estadisticainscripcionesinicialesautosmoto.anio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "estadisticainscripcionesinicialesautosmoto_have_anios"
+			        }
+			      ]
+			    },
+			    "estadisticainscripcionesinicialesautosmoto_has_test": {
+			      "Binding": {
+			        "ConceptualEntity": "estadistica-inscripciones-iniciales-autos-motos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "estadisticainscripcionesinicialesautosmoto": {
+			          "Target": {
+			            "Entity": "estadisticainscripcionesinicialesautosmoto"
+			          }
+			        },
+			        "estadisticainscripcionesinicialesautosmoto.test": {
+			          "Target": {
+			            "Entity": "estadisticainscripcionesinicialesautosmoto.test"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "estadisticainscripcionesinicialesautosmoto"
+			            },
+			            "Object": {
+			              "Role": "estadisticainscripcionesinicialesautosmoto.test"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "estadisticainscripcionesinicialesautosmoto_have_tests"
+			        }
+			      ]
+			    },
+			    "estadisticainscripcionesinicialesautosmoto_has_ultimo_me": {
+			      "Binding": {
+			        "ConceptualEntity": "estadistica-inscripciones-iniciales-autos-motos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "estadisticainscripcionesinicialesautosmoto": {
+			          "Target": {
+			            "Entity": "estadisticainscripcionesinicialesautosmoto"
+			          }
+			        },
+			        "estadisticainscripcionesinicialesautosmoto.ultimo_me": {
+			          "Target": {
+			            "Entity": "estadisticainscripcionesinicialesautosmoto.ultimo_me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "estadisticainscripcionesinicialesautosmoto"
+			            },
+			            "Object": {
+			              "Role": "estadisticainscripcionesinicialesautosmoto.ultimo_me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "estadisticainscripcionesinicialesautosmoto_have_ultimo_me"
+			        }
+			      ]
+			    },
+			    "estadisticainscripcionesinicialesautosmoto_has_ubicacion": {
+			      "Binding": {
+			        "ConceptualEntity": "estadistica-inscripciones-iniciales-autos-motos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "estadisticainscripcionesinicialesautosmoto": {
+			          "Target": {
+			            "Entity": "estadisticainscripcionesinicialesautosmoto"
+			          }
+			        },
+			        "estadisticainscripcionesinicialesautosmoto.ubicacion": {
+			          "Target": {
+			            "Entity": "estadisticainscripcionesinicialesautosmoto.ubicacion"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "estadisticainscripcionesinicialesautosmoto"
+			            },
+			            "Object": {
+			              "Role": "estadisticainscripcionesinicialesautosmoto.ubicacion"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "estadisticainscripcionesinicialesautosmoto_have_ubicacions"
+			        }
+			      ]
+			    },
+			    "estadisticainscripcionesinicialesautosmoto_has_fecha_me": {
+			      "Binding": {
+			        "ConceptualEntity": "estadistica-inscripciones-iniciales-autos-motos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "estadisticainscripcionesinicialesautosmoto": {
+			          "Target": {
+			            "Entity": "estadisticainscripcionesinicialesautosmoto"
+			          }
+			        },
+			        "estadisticainscripcionesinicialesautosmoto.fecha_me": {
+			          "Target": {
+			            "Entity": "estadisticainscripcionesinicialesautosmoto.fecha_me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "estadisticainscripcionesinicialesautosmoto"
+			            },
+			            "Object": {
+			              "Role": "estadisticainscripcionesinicialesautosmoto.fecha_me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "estadisticainscripcionesinicialesautosmoto_have_fecha_me"
+			        }
+			      ]
+			    },
+			    "estadisticainscripcionesinicialesautosmoto_has_fecha": {
+			      "Binding": {
+			        "ConceptualEntity": "estadistica-inscripciones-iniciales-autos-motos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "estadisticainscripcionesinicialesautosmoto": {
+			          "Target": {
+			            "Entity": "estadisticainscripcionesinicialesautosmoto"
+			          }
+			        },
+			        "estadisticainscripcionesinicialesautosmoto.fecha": {
+			          "Target": {
+			            "Entity": "estadisticainscripcionesinicialesautosmoto.fecha"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "estadisticainscripcionesinicialesautosmoto"
+			            },
+			            "Object": {
+			              "Role": "estadisticainscripcionesinicialesautosmoto.fecha"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "estadisticainscripcionesinicialesautosmoto_have_fechas"
+			        }
+			      ]
+			    },
+			    "estadisticainscripcionesinicialesautosmoto_has_tipo_vehiculo": {
+			      "Binding": {
+			        "ConceptualEntity": "estadistica-inscripciones-iniciales-autos-motos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "estadisticainscripcionesinicialesautosmoto": {
+			          "Target": {
+			            "Entity": "estadisticainscripcionesinicialesautosmoto"
+			          }
+			        },
+			        "estadisticainscripcionesinicialesautosmoto.tipo_vehiculo": {
+			          "Target": {
+			            "Entity": "estadisticainscripcionesinicialesautosmoto.tipo_vehiculo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "estadisticainscripcionesinicialesautosmoto"
+			            },
+			            "Object": {
+			              "Role": "estadisticainscripcionesinicialesautosmoto.tipo_vehiculo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "estadisticainscripcionesinicialesautosmoto_have_tipo_vehiculos"
+			        }
+			      ]
+			    },
+			    "poblacional_in_jurisdicción": {
+			      "Binding": {
+			        "ConceptualEntity": "Poblacional"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "poblacional": {
+			          "Target": {
+			            "Entity": "poblacional"
+			          }
+			        },
+			        "poblacional.jurisdicción": {
+			          "Target": {
+			            "Entity": "poblacional.jurisdicción"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "poblacional.jurisdicción"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "poblacional"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "poblacional.jurisdicción"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "poblacionals_are_in_jurisdiccións"
+			        }
+			      ]
+			    },
+			    "estadisticainscripcionesinicialesautosmoto_in_test": {
+			      "Binding": {
+			        "ConceptualEntity": "estadistica-inscripciones-iniciales-autos-motos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "estadisticainscripcionesinicialesautosmoto": {
+			          "Target": {
+			            "Entity": "estadisticainscripcionesinicialesautosmoto"
+			          }
+			        },
+			        "estadisticainscripcionesinicialesautosmoto.test": {
+			          "Target": {
+			            "Entity": "estadisticainscripcionesinicialesautosmoto.test"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "estadisticainscripcionesinicialesautosmoto.test"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "estadisticainscripcionesinicialesautosmoto"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "estadisticainscripcionesinicialesautosmoto.test"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "estadisticainscripcionesinicialesautosmoto_are_in_tests"
+			        }
+			      ]
+			    },
+			    "estadisticainscripcionesinicialesautosmoto_in_ubicacion": {
+			      "Binding": {
+			        "ConceptualEntity": "estadistica-inscripciones-iniciales-autos-motos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "estadisticainscripcionesinicialesautosmoto": {
+			          "Target": {
+			            "Entity": "estadisticainscripcionesinicialesautosmoto"
+			          }
+			        },
+			        "estadisticainscripcionesinicialesautosmoto.ubicacion": {
+			          "Target": {
+			            "Entity": "estadisticainscripcionesinicialesautosmoto.ubicacion"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "estadisticainscripcionesinicialesautosmoto.ubicacion"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "estadisticainscripcionesinicialesautosmoto"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "estadisticainscripcionesinicialesautosmoto.ubicacion"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "estadisticainscripcionesinicialesautosmoto_are_in_ubicacions"
+			        }
+			      ]
+			    }
+			  }
+			}
+		contentType: json
+

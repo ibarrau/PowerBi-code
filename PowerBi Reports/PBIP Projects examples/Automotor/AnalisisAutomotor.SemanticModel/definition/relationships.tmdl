@@ -1,0 +1,9 @@
+relationship a3ad3192-ff3b-42b3-96b3-06d8ee1e81d0
+	crossFilteringBehavior: bothDirections
+	fromColumn: estadistica-inscripciones-iniciales-autos-motos.provincia
+	toColumn: Poblacional.Jurisdicción
+
+relationship ddb0b85b-6312-d9c7-f766-64bc99423c17
+	fromColumn: estadistica-inscripciones-iniciales-autos-motos.Fecha
+	toColumn: TablaFecha.Fecha
+

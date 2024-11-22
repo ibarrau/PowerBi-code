@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "AnalisisAutomotor"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "6b76397d-1df7-42bc-8808-d352cc3329fb"
+  }
+}

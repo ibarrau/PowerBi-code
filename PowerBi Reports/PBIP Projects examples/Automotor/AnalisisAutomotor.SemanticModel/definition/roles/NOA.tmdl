@@ -1,0 +1,7 @@
+role NOA
+	modelPermission: read
+
+	tablePermission Poblacional = [Jurisdicción] = "Jujuy" || [Jurisdicción] = "Salta" || [Jurisdicción] = "Tucumán" || [Jurisdicción] = "Catamarca" || [Jurisdicción] = "Santiago del Estero"
+
+	annotation PBI_Id = 986bbcb6e04841d298af5c30dcce7c24
+

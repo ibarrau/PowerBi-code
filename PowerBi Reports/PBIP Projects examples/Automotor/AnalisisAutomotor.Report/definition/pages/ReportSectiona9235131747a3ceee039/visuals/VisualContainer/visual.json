@@ -1,0 +1,31 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
+  "name": "VisualContainer",
+  "position": {
+    "x": 16,
+    "y": 0,
+    "z": 2000,
+    "height": 64,
+    "width": 96
+  },
+  "visual": {
+    "visualType": "image",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "imageUrl": {
+              "expr": {
+                "ResourcePackageItem": {
+                  "PackageName": "RegisteredResources",
+                  "PackageType": 1,
+                  "ItemName": "transparente06994559074575468.png"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

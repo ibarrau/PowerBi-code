@@ -1,0 +1,5 @@
+expression Año = 2015 meta [IsParameterQuery=true, Type="Number", IsParameterQueryRequired=true]
+	lineageTag: eb1a55ba-5fa8-41f3-9c31-4e8310609eee
+
+	annotation PBI_ResultType = Number
+

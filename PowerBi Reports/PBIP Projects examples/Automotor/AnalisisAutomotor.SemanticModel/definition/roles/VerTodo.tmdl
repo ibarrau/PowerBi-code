@@ -1,0 +1,5 @@
+role VerTodo
+	modelPermission: read
+
+	annotation PBI_Id = 0806344a45714d37aaa0b81afddfed4e
+

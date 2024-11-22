@@ -1,0 +1,62 @@
+table Poblacional
+	lineageTag: 9f840b0e-6cf5-459c-9e6c-68f769d3dc32
+
+	column Jurisdicción
+		dataType: string
+		lineageTag: 5a2ab71d-02d7-47ea-bbe7-77473a8ad3cd
+		dataCategory: StateOrProvince
+		summarizeBy: none
+		sourceColumn: Jurisdicción
+
+		annotation SummarizationSetBy = Automatic
+
+	column Capital
+		dataType: string
+		lineageTag: 18d3c663-d4a3-46f9-807f-568109c1f3cf
+		summarizeBy: none
+		sourceColumn: Capital
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Población (1)'
+		dataType: double
+		formatString: #,0.00
+		lineageTag: 234a6873-7bb7-4956-aa22-134dafa0b648
+		summarizeBy: none
+		sourceColumn: Población (1)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Superficie km² (2)'
+		dataType: double
+		lineageTag: 2edb5825-7734-446d-89fb-31eea4a5c33b
+		summarizeBy: none
+		sourceColumn: Superficie km² (2)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Densidad hab/km²'
+		dataType: string
+		lineageTag: a1e7d3a2-0bb5-4535-a8b0-e395a991d2e7
+		summarizeBy: none
+		sourceColumn: Densidad hab/km²
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Poblacional-d463f2db-7614-4fe1-92ab-f718007879f8 = m
+		mode: import
+		source =
+				let
+				    Origen = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("dVS7bttAEPwVQlUCEIt7P8rEsAIEtmHIiRvDxVkkZBoSmfCRIP4blylS5RP0Y9ndo2QhSBppj9y5m5uZ5d3d4qyZqlQVVV28n+q2G4p3TV8Pi/L/LxSEKEBaSbUQ+CsNGCvKsLgv7xZ/dV+k4nqbxkRtFpyyIILBhRYerKc9jsgzbNulfk29N6ktlnXfprbqkMO2uE3bbU1sTru08xBUoL2FAicUPStd3u0xrTtcr+qhGca6XTfMAYS1oGzEOkZwWjP4iJkeppFA6fvQtUwughR0glIGXHBUlTp373/3VfdA256UGrQIEDx1SmdBqyxUKTKo6/umbses8ekiRgU2WqxCABmJoZTzUeft2NfFav+ro87r1Kd2/8LXUdpCjKSoD+CDZJ1Lz6hl1++6gUi9Vlajd46E8gqEI5a+NNz+cXqafsza36Ttt1R1PSl+eO483c3zJqAkE1TzUWRz2n2ZrRtTscrHaRkgclSk0WCMYP3UAbNquqeUU3IotdbgDBEM6E8QbGk+5LLGNDxT02slwWs8QjEbg8Irn4WbIc3QdC3re42MqjQwRgqJWpP3KkIQxE/72aGrevo67X+S+yeltag1yxUNCE+JsGVkANlSXNWbnuJ229TVjog5pOWMZe81CKn5IpIRqO6Ypcr/uDXNkMnuWTAhsC9h7m7Rg9TO1sylC5zlWSeW2M8xpq6LqRlmwFwarUBL0tM78Cbf4AhAy8766ZmyT9f5QOO24bQptD06SphCC6PhiTlehIDL+mg7lxrja8BqdgLtFBwaZWaBqbNJmzzX5zibLNy/nwaPagueJe1A8zXdnNdPTd33ifuXE5LFV5+HxynlQVcelLB55PHjYNgKzH7xxr3N8Gk97fYvB1kvm82EO2HeT15IxAXIXzmF46lIBmdoKu//AA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type text) meta [Serialized.Text = true]) in type table [Jurisdicción = _t, Capital = _t, #"Población (1)" = _t, #"Superficie km² (2)" = _t, #"Densidad hab/km²" = _t]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(Origen,{{"Jurisdicción", type text}, {"Capital", type text}, {"Población (1)", type number}, {"Superficie km² (2)", type number}, {"Densidad hab/km²", type text}})
+				in
+				    #"Tipo cambiado"
+
+	annotation PBI_Id = 6fc3baf8-0f8e-4bd8-b2bf-2d134e3f6ce6
+
+	annotation LinkedQueryName = Poblacional
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,157 @@
+table estadistica-inscripciones-iniciales-autos-motos
+	lineageTag: 3faf3c4a-e9d1-4372-9cfa-481cba5985b5
+
+	measure 'Prom.Habitante' = SUM('estadistica-inscripciones-iniciales-autos-motos'[cantidad]) / SUM(Poblacional[Población (1)])
+		formatString: 0.0000
+		lineageTag: 98498ff4-5b03-4cda-ad0f-470c1ab4b403
+
+	measure 'Prom. Pcia' = Sum('estadistica-inscripciones-iniciales-autos-motos'[cantidad]) / 24
+		lineageTag: c7fd4e78-44b1-4201-aed1-2289fc8e6614
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure CantidadAnterior = CALCULATE(SUM('estadistica-inscripciones-iniciales-autos-motos'[cantidad]), SAMEPERIODLASTYEAR(TablaFecha[Fecha]))
+		formatString: #,0
+		lineageTag: 162eb6b7-040a-4402-b144-ba8459f2a492
+
+	measure 'Tasa de Crecimiento Anual' = IF(ISBLANK([CantidadAnterior]),0,(SUM('estadistica-inscripciones-iniciales-autos-motos'[cantidad]) - [CantidadAnterior]) / [CantidadAnterior] )
+		lineageTag: 276b84e1-7388-452e-9cac-db729df16db3
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Alerta = 103
+		formatString: 0
+		lineageTag: 79a8c54b-94dd-4220-a858-34d18b8e3722
+
+	measure 'Prom. Anual' =
+			
+			DIVIDE(
+			    SUM('estadistica-inscripciones-iniciales-autos-motos'[cantidad])
+			    , DISTINCTCOUNT(TablaFecha[Año])
+			)
+		lineageTag: 696b6afd-620c-45ef-850f-12bce4c370f4
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column tipo_vehiculo
+		dataType: string
+		lineageTag: d8856f97-dd74-485d-b99a-5b5c29dbee98
+		summarizeBy: none
+		sourceColumn: tipo_vehiculo
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fecha
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: a679edcf-4864-4295-97c1-5a47503a8331
+		summarizeBy: none
+		sourceColumn: Fecha
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Fecha mes'
+		dataType: string
+		lineageTag: 1ce3bf3e-31d6-408d-93a1-1232898b3c4f
+		summarizeBy: none
+		sourceColumn: Fecha mes
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ubicacion = "Argentina"
+		lineageTag: 4ddbb96d-8456-47c3-87ab-f0a367d39e22
+		dataCategory: Country
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column UltimoMes =
+			IF(AND(
+				YEAR('estadistica-inscripciones-iniciales-autos-motos'[Fecha]) = YEAR(LASTDATE(ALL('estadistica-inscripciones-iniciales-autos-motos'[Fecha]))),
+				MONTH('estadistica-inscripciones-iniciales-autos-motos'[Fecha]) = MONTH(LASTDATE(ALL('estadistica-inscripciones-iniciales-autos-motos'[Fecha])) )),
+				"Si",
+				"No"
+			)
+		lineageTag: 1e7eea6f-dd9d-411e-af79-58991b2f82c0
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column test = CONCATENATE('estadistica-inscripciones-iniciales-autos-motos'[provincia],", Argentina")
+		lineageTag: c6a0279f-1f30-4c28-a77a-9f4eaac2c7ac
+		dataCategory: StateOrProvince
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column anio
+		dataType: int64
+		formatString: 0
+		lineageTag: b40d501a-81a8-4ccd-92b4-dc781a24f213
+		summarizeBy: sum
+		sourceColumn: anio
+
+		annotation SummarizationSetBy = Automatic
+
+	column mes
+		dataType: int64
+		formatString: 0
+		lineageTag: 831ace8c-7409-4072-8b70-5e5b526343fd
+		summarizeBy: sum
+		sourceColumn: mes
+
+		annotation SummarizationSetBy = Automatic
+
+	column provincia
+		dataType: string
+		lineageTag: d53525a9-b18c-4bfe-8a9e-7ea96ac3c8bb
+		dataCategory: StateOrProvince
+		summarizeBy: none
+		sourceColumn: provincia
+
+		annotation SummarizationSetBy = Automatic
+
+	column cantidad
+		dataType: int64
+		formatString: 0
+		lineageTag: a8f4ab35-cc89-4e93-8c1a-5260ac353b70
+		summarizeBy: sum
+		sourceColumn: cantidad
+
+		annotation SummarizationSetBy = Automatic
+
+	column letraProvincia
+		dataType: string
+		lineageTag: eaf39268-8d23-484f-8fac-8f2116742d92
+		summarizeBy: none
+		sourceColumn: letraProvincia
+
+		annotation SummarizationSetBy = Automatic
+
+	partition estadistica-inscripciones-iniciales-autos-motos-87429271-916d-43ba-b646-6c96cf201c14 = m
+		mode: import
+		source =
+				let
+				    Origen_autos = Table.PromoteHeaders(Csv.Document(Web.Contents("http://datos.jus.gob.ar/dataset/1ab0cc03-ab9b-4520-975c-5757d87d1061/resource/4358c995-bb04-4ad9-be4a-a9076dc3e42c/download/estadistica-inscripciones-iniciales-automotores-2018-03.csv"),[Delimiter=",", Columns=6, Encoding=65001, QuoteStyle=QuoteStyle.None]), [PromoteAllScalars=true]),
+				    Origen_maquina = Table.PromoteHeaders(Csv.Document(Web.Contents("http://datos.jus.gob.ar/dataset/852b58b1-98b5-4f80-9f80-62e09cf3cfbb/resource/c8ca86f7-beb5-4a40-bc26-3a411d87de5e/download/estadistica-inscripciones-iniciales-maquinarias-2018-03.csv"),[Delimiter=",", Columns=6, Encoding=65001, QuoteStyle=QuoteStyle.None]), [PromoteAllScalars=true]),
+				    Origen_motos = Table.PromoteHeaders(Csv.Document(Web.Contents("http://datos.jus.gob.ar/dataset/72d85f23-b751-4d12-935b-25e32ed9445e/resource/d523dd08-5c12-467e-b947-aa3206a24d21/download/estadistica-inscripciones-iniciales-motovehiculos-2018-03.csv"),[Delimiter=",", Columns=6, Encoding=65001, QuoteStyle=QuoteStyle.None]), [PromoteAllScalars=true]),
+				    Origen = Table.Combine({#"Origen_autos", #"Origen_maquina", #"Origen_motos"}),
+				    #"Columnas con nombre cambiado" = Table.RenameColumns(Origen,{{"anio_inscripcion_inicial", "anio"}, {"mes_inscripcion_inicial", "mes"}, {"provincia_inscripcion_inicial", "provincia"}, {"letra_provincia_inscripcion_inicial", "letraProvincia"}, {"cantidad_inscripciones_iniciales", "cantidad"}}),
+				    #"Valor reemplazado1" = Table.ReplaceValue(#"Columnas con nombre cambiado","Ciudad Autónoma de Bs.As.","Ciudad de Buenos Aires",Replacer.ReplaceText,{"provincia"}),
+				    #"Columna combinada insertada" = Table.AddColumn(#"Valor reemplazado1", "Fecha", each Text.Combine({Text.From([anio], "es-AR"), Text.PadStart(Text.From([mes], "es-AR"),2,"0")},"-"), type text),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Columna combinada insertada",{{"tipo_vehiculo", type text}, {"anio", Int64.Type}, {"mes", Int64.Type}, {"provincia", type text}, {"letraProvincia", type text}, {"cantidad", Int64.Type}, {"Fecha", type date}}),
+				    #"Nombre del mes insertado" = Table.AddColumn(#"Tipo cambiado", "Fecha mes", each Date.MonthName([Fecha]), type text),
+				    #"Filtered Rows" = Table.SelectRows(#"Nombre del mes insertado", each [anio] > Año)
+				in
+				    #"Filtered Rows"
+
+	annotation PBI_Id = 708e0c55-6ed1-49cc-844b-aeb6d076db5f
+
+	annotation LinkedQueryName = estadistica-inscripciones-iniciales-autos-motos
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

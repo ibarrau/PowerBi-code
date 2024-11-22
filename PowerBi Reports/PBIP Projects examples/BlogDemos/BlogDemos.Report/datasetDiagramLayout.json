@@ -1,0 +1,202 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 0,
+            "y": 545.2
+          },
+          "nodeIndex": "Cambiador_unidades",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 560.9,
+            "y": 445.1
+          },
+          "nodeIndex": "Customer",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 804.3,
+            "y": 445.8
+          },
+          "nodeIndex": "InternetSales",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1897.1,
+            "y": 485.2
+          },
+          "nodeIndex": "Parámetro",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2304.8,
+            "y": 473.2
+          },
+          "nodeIndex": "PresupuestoCompras",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1081.6,
+            "y": 446.5
+          },
+          "nodeIndex": "Product",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1466.4,
+            "y": 533.6
+          },
+          "nodeIndex": "ProductCategory",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1489.3,
+            "y": 719.3
+          },
+          "nodeIndex": "ProductSubCategory",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 488.5,
+            "y": 919.5
+          },
+          "nodeIndex": "Stores",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 815.5,
+            "y": 0
+          },
+          "nodeIndex": "TablaFecha",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 407.8,
+            "y": 31.1
+          },
+          "nodeIndex": "TableCountConsecutive",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 563,
+            "y": 1393.3
+          },
+          "nodeIndex": "TableRLS",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2712.6,
+            "y": 447.2
+          },
+          "nodeIndex": "TableTypes",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3120.4,
+            "y": 447.2
+          },
+          "nodeIndex": "UserByPage",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3484.2,
+            "y": 0
+          },
+          "nodeIndex": "TooltipDocs",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Todas las tablas",
+      "zoomValue": 37.638397443214245,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas las tablas",
+  "defaultDiagram": "Todas las tablas"
+}

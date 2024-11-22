@@ -1,0 +1,27 @@
+table URLs
+	lineageTag: 78250e3d-5571-4708-8cfb-bc8ae67e568f
+
+	column URL
+		dataType: string
+		lineageTag: 2c2369fc-ab29-43d6-9ca5-c5dc69e37591
+		dataCategory: WebUrl
+		summarizeBy: none
+		sourceColumn: URL
+
+		annotation SummarizationSetBy = Automatic
+
+	partition URLs-c9bc1726-37fb-4de0-87a6-8cc15cc9c521 = m
+		mode: import
+		source =
+				let
+				    Origen = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("FcoxDsIwDAXQu3QCCTUtY7fegL2qLJOY8gVyIjtAORdH4GKU8UlvmpprrcWHEMTbF24oksBttiX8FUaVNQ8ny09oBDslodEW0QplKtnIH0Xsggg5bD7fOeL7UXpvUx2JE+2OXd/tm3n+AQ==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type text) meta [Serialized.Text = true]) in type table [URL = _t]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(Origen,{{"URL", type text}})
+				in
+				    #"Tipo cambiado"
+
+	annotation PBI_Id = 62851acc-1195-4c4e-a487-f6e89dc4ff43
+
+	annotation LinkedQueryName = URLs
+
+	annotation PBI_ResultType = Table
+

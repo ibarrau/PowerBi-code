@@ -1,0 +1,159 @@
+table TablaFecha
+	lineageTag: 9523a96d-41a1-4b5e-80ce-fe5cad33d8b2
+
+	column Fecha
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 3c75600d-be66-47eb-8d11-b9f6ef86d29f
+		summarizeBy: none
+		sourceColumn: Fecha
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column IdFecha
+		dataType: int64
+		formatString: 0
+		lineageTag: 23a90f72-bd98-4d63-a6c6-b14d4253864f
+		summarizeBy: sum
+		sourceColumn: IdFecha
+
+		annotation SummarizationSetBy = Automatic
+
+	column Año
+		dataType: int64
+		formatString: 0
+		lineageTag: 9fbc4d63-34fa-4dec-98f5-367532412988
+		summarizeBy: sum
+		sourceColumn: Año
+
+		annotation SummarizationSetBy = Automatic
+
+	column Trimestre
+		dataType: string
+		lineageTag: bf42fa9b-8f92-4be5-a6aa-182b433b0fef
+		summarizeBy: none
+		sourceColumn: Trimestre
+
+		annotation SummarizationSetBy = Automatic
+
+	column IdMes
+		dataType: int64
+		formatString: 0
+		lineageTag: f51039f1-9379-439f-9d49-e1d9d9135422
+		summarizeBy: sum
+		sourceColumn: IdMes
+
+		annotation SummarizationSetBy = Automatic
+
+	column Mes
+		dataType: string
+		lineageTag: 53f106ff-13f0-4cb8-b0df-1f18aa18f4c1
+		summarizeBy: none
+		sourceColumn: Mes
+		sortByColumn: IdMes
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column Periodo
+		dataType: string
+		lineageTag: 2a6a7e01-149b-4018-a755-90b73d41e496
+		summarizeBy: none
+		sourceColumn: Periodo
+
+		annotation SummarizationSetBy = Automatic
+
+	column TrimestreAño
+		dataType: string
+		lineageTag: c1b57b56-0918-47f9-9368-ff42eaae5596
+		summarizeBy: none
+		sourceColumn: TrimestreAño
+
+		annotation SummarizationSetBy = Automatic
+
+	column Dia
+		dataType: int64
+		formatString: 0
+		lineageTag: 7a8916be-20ed-4d32-acaa-238ad6729eb8
+		summarizeBy: sum
+		sourceColumn: Dia
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Dia Semana'
+		dataType: int64
+		formatString: 0
+		lineageTag: 83823d8f-f704-4046-af14-76c228b0bfa4
+		summarizeBy: sum
+		sourceColumn: Dia Semana
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nombre Dia'
+		dataType: string
+		lineageTag: f0f2b574-a24c-4c45-920b-1e5560923f29
+		summarizeBy: none
+		sourceColumn: Nombre Dia
+
+		annotation SummarizationSetBy = Automatic
+
+	partition TablaFecha = m
+		mode: import
+		source = ```
+				let
+				    Source = let
+				//Capture the date range from the parameters
+				    StartDate = #date(Año+1, 1, 1),
+				    EndDate = DateTime.Date(DateTime.LocalNow()),
+				//Get the number of dates that will be required for the table
+				    GetDateCount = Duration.Days(EndDate - StartDate),
+				//Take the count of dates and turn it into a list of dates
+				    GetDateList = List.Dates(StartDate, GetDateCount, 
+				    #duration(1,0,0,0)),
+				//Convert the list into a table
+				    DateListToTable = Table.FromList(GetDateList, 
+				    Splitter.SplitByNothing(), {"Fecha"}, null, ExtraValues.Error),
+				// Convert to Date
+				    ConvertToDate = Table.TransformColumns(DateListToTable,{{"Fecha", Date.From, type date}}),
+				// Date Key
+				    DateKey = Table.AddColumn(ConvertToDate, "IdFecha", each Number.FromText(Text.From(Date.Year([Fecha])) & Date.ToText([Fecha],"MM") & Date.ToText([Fecha],"dd") ) , Int32.Type ),
+				//Add Year Column
+				    YearNumber = Table.AddColumn(DateKey, "Año", 
+				    each Date.Year([Fecha]), Int32.Type),
+				//Add Quarter format QX
+				    Quarter = Table.AddColumn(YearNumber, "Trimestre",
+				    each Text.Combine({"Q", Text.From(Date.QuarterOfYear([Fecha]))}), type text),
+				//Add Month Number Column
+				    MonthNumber = Table.AddColumn(Quarter , "IdMes", 
+				    each Date.Month([Fecha]), Int32.Type),
+				//Add Month Name Column
+				    MonthName = Table.AddColumn(MonthNumber , "Mes", 
+				    each Date.ToText([Fecha],"MMMM", "es-es"), type text),
+				//Add Period
+				    Periodo = Table.AddColumn(MonthName , "Periodo", 
+				    each Text.From([Año]) & Text.PadStart(Text.From([IdMes]),2,"0"), type text),
+				//Add YearQ
+				    TrimestreAño = Table.AddColumn(Periodo, "TrimestreAño",
+				    each Text.Combine({Text.From([Año]), [Trimestre]}), type text ),
+				//Add Day Number Column
+				    DayNumber  = Table.AddColumn(TrimestreAño , "Dia", 
+				    each Date.Day([Fecha]), Int32.Type),
+				//Add Day of week
+				    DayOfWeek = Table.AddColumn(DayNumber, "Dia Semana",
+				    each Date.DayOfWeek([Fecha]), Int32.Type),
+				//Add Day Name Column
+				    DayName  = Table.AddColumn(DayOfWeek, "Nombre Dia", 
+				    each Date.ToText([Fecha], "dddd"), type text)
+				in
+				    DayName
+				in
+				    Source
+				```
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

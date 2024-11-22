@@ -1,0 +1,9 @@
+role NEA
+	modelPermission: read
+
+	tablePermission Poblacional =
+			[Jurisdicción] = "Chaco" || [Jurisdicción] = "Formosa" ||
+			[Jurisdicción] = "Misiones" || [Jurisdicción] = "Corrientes"
+
+	annotation PBI_Id = 49aacffce45f44e5a3a02e23de82c188
+
