@@ -26,11 +26,11 @@ from simplepbi import imports
 
 # Set variables
 Throw_exception = ""
-Folder_Name = sys.argv[1]
+Folder_Name = sys.argv[0]
 Workspace_name = Folder_Name.split("/")[-1]
-Workspace = sys.argv[2]
+Workspace = sys.argv[1]
 
-list_files = " ".join(sys.argv[3:])
+list_files = " ".join(sys.argv[5:])
 print("The arguments are: " , str(sys.argv))
 
 print("Folder_Name: " + Folder_Name, "\nWorkspace: " + Workspace, "\nFolders: " + str(list_files))
@@ -40,9 +40,9 @@ print("Folder_Name: " + Folder_Name, "\nWorkspace: " + Workspace, "\nFolders: " 
 #print("list_files: " + str(list_files))
 
 # log into Power BI
-TENANT_ID = sys.argv[4]
-power_bi_client_id = sys.argv[5]
-power_bi_secret = sys.argv[5]
+TENANT_ID = sys.argv[2]
+power_bi_client_id = sys.argv[3]
+power_bi_secret = sys.argv[4]
 print("Environment Variables loaded.")
 
 # get token and create objects
