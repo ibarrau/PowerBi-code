@@ -21,6 +21,7 @@ This script is used to deploy Power BI reports to a workspace. It is called from
 
 import os
 import sys 
+import json
 from simplepbi import token
 from simplepbi import imports
 
