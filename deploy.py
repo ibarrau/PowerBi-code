@@ -39,7 +39,7 @@ def partes_report(item_path):
         # Skip folders with the name ".pbi"
         if os.path.basename(root) == ".pbi":
             continue
-
+        print("Checking folder: ", item_path, " in root: ", root, " and files: ", files)
         for file in files:
             # Skip files with the name "item.*.json"
             if file.startswith("item.") and file.endswith(".json"):
@@ -95,7 +95,7 @@ def partes_report(item_path):
                 #"Payload": encoded_contents,
                 "PayloadType": "InlineBase64"
             })
-    return parts
+    print(parts)
           
             
 def partes_semantic(item_path):
@@ -134,15 +134,15 @@ def partes_semantic(item_path):
                 #"Payload": encoded_contents,
                 "PayloadType": "InlineBase64"
             })
-    return parts
+    print(parts)
 
 # Set variables
 Throw_exception = ""
-Folder_Name = sys.argv[1]
-Workspace_name = Folder_Name.split("/")[-1]
-Workspace = sys.argv[2]
+#Workspace_name = Folder_Name.split("/")[-1]
+Workspace = sys.argv[1]
 
-list_files = " ".join(sys.argv[6:])
+list_files = " ".join(sys.argv[5:])
+Folder_Name = "/".join(list_files.split("/")[:-1])
 print("The arguments are: " , str(sys.argv))
 
 print("Folder_Name: " + Folder_Name, "\nWorkspace: " + Workspace, "\nFolders: " + str(list_files))
@@ -152,9 +152,9 @@ print("Folder_Name: " + Folder_Name, "\nWorkspace: " + Workspace, "\nFolders: " 
 #print("list_files: " + str(list_files))
 
 # log into Power BI
-TENANT_ID = sys.argv[3]
-power_bi_client_id = sys.argv[4]
-power_bi_secret = sys.argv[5]
+TENANT_ID = sys.argv[2]
+power_bi_client_id = sys.argv[3]
+power_bi_secret = sys.argv[4]
 print("Environment Variables loaded.")
 
 # get token and create objects
