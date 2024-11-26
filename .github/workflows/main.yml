@@ -3,7 +3,7 @@ name: Process Reports and Models
 on:
   push:
     paths:
-      - 'PowerBi%20Reports/PBIP%20Projects%20examples/BlogDemos/**'  # Trigger only when there's a change in this folder
+      - 'PowerBi Reports/PBIP Projects examples/BlogDemos/**'  # Trigger only when there's a change in this folder
 
 jobs:
   process_changes:
@@ -31,7 +31,7 @@ jobs:
         id: detect_changes
         run: |
           # Define the folder to check for changes
-          target_folder="PowerBi%20Reports/PBIP%20Projects%20examples/BlogDemos"
+          target_folder="PowerBi Reports/PBIP Projects examples/BlogDemos"
           Workspace = "d453a221-6f9c-40e3-a7ef-346e068ea8dc"
           
           # Find all folders that end with .Report or .SemanticModel
