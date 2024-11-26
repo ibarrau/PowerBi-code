@@ -162,18 +162,18 @@ t = token.Token(TENANT_ID, power_bi_client_id, None, None, power_bi_secret, use_
 
 print("Token generated")
 
-for file in list_files:
-    # import report from path
-    try:
-        print("Importing ", file, "into workspace id ", Workspace, " from folder ", Folder_Name, "...")
-        if file.split(".")[-1] == "Report":            
-            print("File imported: " + file)            
-        else:
-            print("File imported: " + file)            		
-    except:
-        print("Error importing file: " + file)
-        Throw_exception = Throw_exception + "Error importing file: " + file + ".\n"
-        pass
+# import report from path
+try:    
+    if list_files.split(".")[-1] == "Report":            
+        print("running report")
+        partes_report(list_files)
+    else:
+        print("running semantic")
+        partes_semantic(list_files)
+except:
+    print("Error importing file: " + file)
+    Throw_exception = Throw_exception + "Error importing file: " + file + ".\n"
+    pass
 
 if Throw_exception != "":
     raise Exception(Throw_exception)
