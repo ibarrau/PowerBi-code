@@ -563,7 +563,7 @@
             "expression": [
               "",
               "Var SelDate = SELECTEDVALUE(TablaFecha[Fecha])",
-              "Var wtf =",
+              "Var wtf = ",
               "CALCULATE(",
               "    MAX(InternetSales[Order Date])",
               "    ,FILTER(Customer, INT(NOT ISEMPTY(InternetSales)) = 1)",
