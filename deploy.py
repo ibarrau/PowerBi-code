@@ -171,11 +171,8 @@ try:
     else:
         print("running semantic")
         partes_semantic(list_files)
-except:
-    print("Error importing file: " + file)
-    Throw_exception = Throw_exception + "Error importing file: " + file + ".\n"
-    pass
+except Exception as e:
+    print("Error_: ", e)
+    raise Exception(e)
 
-if Throw_exception != "":
-    raise Exception(Throw_exception)
     
