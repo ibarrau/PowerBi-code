@@ -564,7 +564,7 @@
               "",
               "Var SelDate = SELECTEDVALUE(TablaFecha[Fecha])",
               "Var wtf = ",
-              "CALCULATE(",
+              "CALCULATE ( ",
               "    MAX(InternetSales[Order Date])",
               "    ,FILTER(Customer, INT(NOT ISEMPTY(InternetSales)) = 1)",
               "    --,FILTER(ALLEXCEPT(InternetSales, Customer[CustomerKey]), InternetSales[Order Date]<SelDate )",
