@@ -30,14 +30,14 @@ Folder_Name = sys.argv[1]
 Workspace_name = Folder_Name.split("/")[-1]
 Workspace = sys.argv[2]
 
-Files = " ".join(sys.argv[3:])
+list_files = " ".join(sys.argv[3:])
 print("The arguments are: " , str(sys.argv))
 
-print("Folder_Name: " + Folder_Name, "\nWorkspace: " + Workspace, "\nFiles: " + Files)
+print("Folder_Name: " + Folder_Name, "\nWorkspace: " + Workspace, "\nFolders: " + str(list_files))
 
 # Get list of files to import
-list_files = [item for item in Files.split(",") if item[-4:]=="pbix" and item.split("/")[0] ==Folder_Name]
-print("list_files: " + str(list_files))
+#list_files = [item for item in Files.split(",") if item[-4:]=="pbix" and item.split("/")[0] ==Folder_Name]
+#print("list_files: " + str(list_files))
 
 # log into Power BI
 TENANT_ID = sys.argv[4]
@@ -47,7 +47,7 @@ print("Environment Variables loaded.")
 
 # get token and create objects
 t = token.Token(TENANT_ID, power_bi_client_id, None, None, power_bi_secret, use_service_principal=True)
-it = core.Items(t.token)
+#it = core.Items(t.token)
 
 print("Token generated")
 
@@ -55,25 +55,24 @@ for file in list_files:
     # import report from path
     try:
         print("Importing ", file, "into workspace id ", Workspace, " from folder ", Folder_Name, "...")
-		if file.split(".")[-1] == "Report":			
-			res = it.simple_deploy_report(Workspace, Workspace, file)
-			if res.status_code == 202:
-				print("File imported: " + file)
-			else:
-				print("Error importing file: " + file)
-				print(res.text)
-				Throw_exception = Throw_exception + "Error importing file: " + file + ".\n"
-				pass
-		else:
-			res = it.simple_deploy_semantic_model(Workspace, file)
-			if res.status_code == 202:
-				print("File imported: " + file)
-			else:
-				print("Error importing file: " + file)
-				print(res.text)
-				Throw_exception = Throw_exception + "Error importing file: " + file + ".\n"
-				pass
-		
+        if file.split(".")[-1] == "Report":
+            res = it.simple_deploy_report(Workspace, Workspace, file)
+            if res.status_code == 202:
+                print("File imported: " + file)
+            else:
+                print("Error importing file: " + file)
+                print(res.text)
+                Throw_exception = Throw_exception + "Error importing file: " + file + ".\n"
+                pass
+        else:
+            res = it.simple_deploy_semantic_model(Workspace, file)
+            if res.status_code == 202:
+                print("File imported: " + file)
+            else:
+                print("Error importing file: " + file)
+                print(res.text)
+                Throw_exception = Throw_exception + "Error importing file: " + file + ".\n"
+                pass		
     except:
         print("Error importing file: " + file)
         Throw_exception = Throw_exception + "Error importing file: " + file + ".\n"
