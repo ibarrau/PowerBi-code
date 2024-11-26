@@ -32,7 +32,6 @@ jobs:
         run: |
           # Define the folder to check for changes
           target_folder="PowerBi Reports/PBIP Projects examples/BlogDemos"
-          Workspace = "d453a221-6f9c-40e3-a7ef-346e068ea8dc"
           
           # Find all folders that end with .Report or .SemanticModel
           changed_folders=$(git diff --name-only $GITHUB_SHA^..$GITHUB_SHA -- "$target_folder" | grep -E "/.*\.(Report|SemanticModel)/" | cut -d/ -f1-2 | sort | uniq)
@@ -43,5 +42,5 @@ jobs:
       # Step 5: Run the Python script with the list of changed folders and secret key
       - name: Run Python script
         run: |
-          python deploy.py target_folder Workspace ${{ env.changed_folders }} ${{ secrets.TENANT_ID }} ${{ secrets.APP_ID }} ${{ secrets.SECRET_KEY }}  
+          python deploy.py target_folder "d453a221-6f9c-40e3-a7ef-346e068ea8dc" ${{ env.changed_folders }} ${{ secrets.TENANT_ID }} ${{ secrets.APP_ID }} ${{ secrets.SECRET_KEY }}  
 
