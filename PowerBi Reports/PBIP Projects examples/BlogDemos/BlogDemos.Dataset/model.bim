@@ -582,7 +582,7 @@
               "var __select = SELECTEDVALUE(TablaFecha[Fecha])",
               "RETURN",
               "COUNTROWS ( ",
-              "    FILTER(",
+              "    FILTER ( ",
               "        ADDCOLUMNS(",
               "            VALUES(Customer[CustomerKey])",
               "            , \"@dif\", [Dias sin comprar]",
