@@ -1,0 +1,47 @@
+name: Process Reports and Models
+
+on:
+  push:
+    paths:
+      - 'PowerBi%20Reports/PBIP%20Projects%20examples/**'  # Trigger only when there's a change in this folder
+
+jobs:
+  process_changes:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the code
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Step 2: Set up Python environment
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      # Step 3: Install the necessary Python package from PyPI
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install simplepbi 
+
+      # Step 4: Get list of changed folders ending with .report or .semanticmodel
+      - name: Get changed folders
+        id: detect_changes
+        run: |
+          # Define the folder to check for changes
+          target_folder="PowerBi%20Reports/PBIP%20Projects%20examples"
+          Workspace = ""
+          
+          # Find all folders that end with .Report or .SemanticModel
+          changed_folders=$(git diff --name-only $GITHUB_SHA^..$GITHUB_SHA -- "$target_folder" | grep -E "/.*\.(Report|SemanticModel)/" | cut -d/ -f1-2 | sort | uniq)
+
+          # Save changed folders to output for later use
+          echo "changed_folders=$changed_folders" >> $GITHUB_ENV
+
+      # Step 5: Run the Python script with the list of changed folders and secret key
+      - name: Run Python script
+        run: |
+          python deploy.py target_folder Workspace ${{ env.changed_folders }} ${{ secrets.TENANT_ID }} ${{ secrets.APP_ID }} ${{ secrets.SECRET_KEY }}  
+
