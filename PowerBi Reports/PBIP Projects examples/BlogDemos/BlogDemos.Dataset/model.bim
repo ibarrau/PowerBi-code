@@ -581,7 +581,7 @@
               "",
               "var __select = SELECTEDVALUE(TablaFecha[Fecha])",
               "RETURN",
-              "COUNTROWS(",
+              "COUNTROWS ( ",
               "    FILTER(",
               "        ADDCOLUMNS(",
               "            VALUES(Customer[CustomerKey])",
