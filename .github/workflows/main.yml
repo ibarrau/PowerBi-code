@@ -32,7 +32,7 @@ jobs:
         run: |
           # Define the folder to check for changes
           target_folder="PowerBi%20Reports/PBIP%20Projects%20examples"
-          Workspace = ""
+          Workspace = "d453a221-6f9c-40e3-a7ef-346e068ea8dc"
           
           # Find all folders that end with .Report or .SemanticModel
           changed_folders=$(git diff --name-only $GITHUB_SHA^..$GITHUB_SHA -- "$target_folder" | grep -E "/.*\.(Report|SemanticModel)/" | cut -d/ -f1-2 | sort | uniq)
