@@ -39,7 +39,7 @@ jobs:
           # Save changed folders to output for later use
           echo "changed_folders=$changed_folders" >> $GITHUB_ENV
       - name: Dump matrix context
-        run: echo "$changed_folders"
+        run: echo target_folder
       # Step 5: Run the Python script with the list of changed folders and secret key
       - name: Run Python script
         run: python deploy.py target_folder "d453a221-6f9c-40e3-a7ef-346e068ea8dc" ${{ env.changed_folders }} ${{ secrets.TENANT_ID }} ${{ secrets.APP_ID }} ${{ secrets.SECRET_KEY }}  
