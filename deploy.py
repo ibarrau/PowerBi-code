@@ -53,7 +53,7 @@ def partes_report(item_path):
                     
                 # Remove the "byPath" item
                 semantic_model_name = pbir_json['datasetReference']['byPath']['path'].split("/")[-1].split(".")[0]                    
-                print("Looking for id of semantic model {} in workspace id {} related to the report".format(semantic_model_name, semantic_model_workspace_id))
+                #print("Looking for id of semantic model {} in workspace id {} related to the report".format(semantic_model_name, semantic_model_workspace_id))
                 try:
                     #it = self.list_items(semantic_model_workspace_id)
                     semantic_model_id = "asdasd"#[i['id'] for i in it['value'] if i['displayName']==semantic_model_name and i['type']=="SemanticModel" ]
