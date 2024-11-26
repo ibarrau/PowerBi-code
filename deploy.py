@@ -137,11 +137,11 @@ def partes_semantic(item_path):
 
 # Set variables
 Throw_exception = ""
-Folder_Name = sys.argv[0]
+Folder_Name = sys.argv[1]
 Workspace_name = Folder_Name.split("/")[-1]
-Workspace = sys.argv[1]
+Workspace = sys.argv[2]
 
-list_files = " ".join(sys.argv[5:])
+list_files = " ".join(sys.argv[6:])
 print("The arguments are: " , str(sys.argv))
 
 print("Folder_Name: " + Folder_Name, "\nWorkspace: " + Workspace, "\nFolders: " + str(list_files))
@@ -151,9 +151,9 @@ print("Folder_Name: " + Folder_Name, "\nWorkspace: " + Workspace, "\nFolders: " 
 #print("list_files: " + str(list_files))
 
 # log into Power BI
-TENANT_ID = sys.argv[2]
-power_bi_client_id = sys.argv[3]
-power_bi_secret = sys.argv[4]
+TENANT_ID = sys.argv[3]
+power_bi_client_id = sys.argv[4]
+power_bi_secret = sys.argv[5]
 print("Environment Variables loaded.")
 
 # get token and create objects
