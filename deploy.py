@@ -22,6 +22,7 @@ This script is used to deploy Power BI reports to a workspace. It is called from
 import os
 import sys 
 import json
+import base64
 from simplepbi import token
 from simplepbi import imports
 
@@ -87,12 +88,12 @@ def partes_report(item_path):
             file_path = os.path.relpath(os.path.join(root, file), item_path).replace("\\","/")
         
             # Base64-encode the file contents
-            #encoded_contents = base64.b64encode(file_contents).decode("utf-8")
+            encoded_contents = base64.b64encode(file_contents).decode("utf-8")
 
             # Add the file to the Parts array
             parts.append({
                 "Path": file_path,
-                #"Payload": encoded_contents,
+                "Payload": encoded_contents,
                 "PayloadType": "InlineBase64"
             })
     print(parts)
