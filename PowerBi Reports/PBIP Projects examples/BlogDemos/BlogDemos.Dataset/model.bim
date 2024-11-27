@@ -570,7 +570,7 @@
               "    --,FILTER(ALLEXCEPT(InternetSales, Customer[CustomerKey]), InternetSales[Order Date]<SelDate )",
               "    ,FILTER(ALL(TablaFecha), TablaFecha[Fecha]<SelDate )",
               ")",
-              "RETURN wtf"
+              "RETURN wtf // por que le puse ese nombre"
             ],
             "formatString": "General Date",
             "lineageTag": "e388d463-0c48-4f92-8dee-f37625c9ce30"
