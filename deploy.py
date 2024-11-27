@@ -27,11 +27,6 @@ import requests
 from simplepbi import token
 from simplepbi import imports
 
-
-def get_operation_status(auth_token, operation_id):
-    headers = {'Content-Type': 'application/json; charset=utf-8', "Authorization": "Bearer {}".format(auth_token)}
-    opera = requests.get("https://api.fabric.microsoft.com/v1/operations/{}".format(operation_id), headers=headers)
-    return opera.text
 def update(auth_token, workspace_id, item_id, body):
     '''This function will import a PBIX file from GitHub to Power BI
      ### Parameters
@@ -56,8 +51,7 @@ def update(auth_token, workspace_id, item_id, body):
         res.raise_for_status()
         if res.status_code==202:
             print("Request accepted, item provisioning in progress. Please wait.")
-        msj = get_operation_status(auth_token, res.headers['x-ms-operation-id'])
-        print(msj)
+        print("Operation id: ", res.headers['x-ms-operation-id'])
         return res
     except requests.exceptions.HTTPError as ex:
         print("HTTP Error: ", ex, "\nText: ", ex.response.text)
