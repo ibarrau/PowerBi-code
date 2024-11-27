@@ -23,8 +23,46 @@ import os
 import sys 
 import json
 import base64
+import requests
 from simplepbi import token
 from simplepbi import imports
+
+
+def get_operation_status(auth_token, operation_id):
+    headers = {'Content-Type': 'application/json; charset=utf-8', "Authorization": "Bearer {}".format(auth_token)}
+    opera = requests.get("https://api.fabric.microsoft.com/v1/operations/{}".format(operation_id), headers=headers)
+    return opera.text
+def update(auth_token, workspace_id, item_id, body):
+    '''This function will import a PBIX file from GitHub to Power BI
+     ### Parameters
+    ----
+    owner: str
+        The account owner of the repository. The name is not case sensitive. For example: https://dev.azure.com/ibarrau/ the organization name is ibarrau    
+    workspace_id: str uuid
+        The Power Bi workspace id. You can take it from PBI Service URL    
+    ### Returns
+    ----
+    Dict:
+        Response 200 Ok
+    '''
+    try:           
+        
+        url="https://api.fabric.microsoft.com/v1/workspaces/{}/items/{}/updateDefinition".format(workspace_id, item_id)
+        #headers = {'Content-Type': 'multipart/form-data', "Authorization": "Bearer {}".format(auth_token)}
+        headers = {'Content-Type': 'application/json; charset=utf-8', "Authorization": "Bearer {}".format(auth_token)}
+        
+        
+        res = requests.post(url, data = body, headers=headers)
+        res.raise_for_status()
+        if res.status_code==202:
+            print("Request accepted, item provisioning in progress. Please wait.")
+        msj = get_operation_status(auth_token, res.headers['x-ms-operation-id'])
+        print(msj)
+        return res
+    except requests.exceptions.HTTPError as ex:
+        print("HTTP Error: ", ex, "\nText: ", ex.response.text)
+    except requests.exceptions.RequestException as e:
+        print("Request exception: ", e)
 
 def partes_report(item_path):
     parts = []
@@ -54,14 +92,7 @@ def partes_report(item_path):
                     
                 # Remove the "byPath" item
                 semantic_model_name = pbir_json['datasetReference']['byPath']['path'].split("/")[-1].split(".")[0]                    
-                #print("Looking for id of semantic model {} in workspace id {} related to the report".format(semantic_model_name, semantic_model_workspace_id))
-                try:
-                    #it = self.list_items(semantic_model_workspace_id)
-                    semantic_model_id = "asdasd"#[i['id'] for i in it['value'] if i['displayName']==semantic_model_name and i['type']=="SemanticModel" ]
-                    if semantic_model_id == []:
-                        raise Exception("Semantic Model {} does not exist in the specified workspace.".format(semantic_model_name))
-                except Exception as e:
-                    print("Error: ", e)
+                #print("Looking for id of semantic model {} in workspace id {} related to the report".format(semantic_model_name, semantic_model_workspace_id))               
                     
                 del pbir_json['datasetReference']['byPath']
                 
@@ -70,7 +101,7 @@ def partes_report(item_path):
                     "connectionString": None,
                     "pbiServiceModelId": None,
                     "pbiModelVirtualServerName": "sobe_wowvirtualserver",
-                    "pbiModelDatabaseName": semantic_model_id[0],
+                    "pbiModelDatabaseName": "4ba9ad01-163d-4a40-84a7-c5d32c7ef7e1",
                     "name": "EntityDataSource",
                     "connectionType": "pbiServiceXmlaStyleLive"
                 }
@@ -96,7 +127,13 @@ def partes_report(item_path):
                 "Payload": encoded_contents,
                 "PayloadType": "InlineBase64"
             })
-    print(parts)
+    body_update = {
+        "definition": {
+            "Parts": parts
+        }
+    }
+    item_update_json = json.dumps(body_update, indent=4)
+    update(t.token, Workspace, "48574d80-fc71-4733-b014-76ec11f5fa4c", item_update_json)
           
             
 def partes_semantic(item_path):
@@ -127,15 +164,21 @@ def partes_semantic(item_path):
                 file_contents = f.read()
 
             # Base64-encode the file contents
-            #encoded_contents = base64.b64encode(file_contents).decode("utf-8")
+            encoded_contents = base64.b64encode(file_contents).decode("utf-8")
 
             # Add the file to the Parts array
             parts.append({
                 "Path": file_path,
-                #"Payload": encoded_contents,
+                "Payload": encoded_contents,
                 "PayloadType": "InlineBase64"
             })
-    print(parts)
+    body_update = {
+    "definition": {
+            "Parts": parts
+        }
+    }
+    item_update_json = json.dumps(body_update, indent=4)
+    update(t.token, Workspace, "4ba9ad01-163d-4a40-84a7-c5d32c7ef7e1", item_update_json)
 
 # Set variables
 Throw_exception = ""
