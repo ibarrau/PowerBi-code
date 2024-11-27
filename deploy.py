@@ -176,11 +176,12 @@ def partes_semantic(item_path):
 
 # Set variables
 Throw_exception = ""
-#Workspace_name = Folder_Name.split("/")[-1]
 Workspace = sys.argv[1]
 
 list_files = " ".join(sys.argv[5:])
-Folder_Name = "/".join(list_files.split("/")[:-1])
+
+#Workspace Name just in case
+Folder_Name = list_files.split(",")[0].split("/")[:-1][-1]
 print("The arguments are: " , str(sys.argv))
 
 print("Folder_Name: " + Folder_Name, "\nWorkspace: " + Workspace, "\nFolders: " + str(list_files))
@@ -201,16 +202,16 @@ t = token.Token(TENANT_ID, power_bi_client_id, None, None, power_bi_secret, use_
 
 print("Token generated")
 
-# import report from path
-try:    
-    if list_files.split(".")[-1] == "Report":            
-        print("running report")
-        partes_report(list_files)
-    else:
-        print("running semantic")
-        partes_semantic(list_files)
-except Exception as e:
-    print("Error_: ", e)
-    raise Exception(e)
+for files in list_files.split(","):
+    try:    
+        if files.split(".")[-1] == "Report":            
+            print("running report")
+            partes_report(files)
+        else:
+            print("running semantic")
+            partes_semantic(files)
+    except Exception as e:
+        print("Error_: ", e)
+        raise Exception(e)
 
     
