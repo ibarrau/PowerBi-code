@@ -41,7 +41,8 @@ jobs:
             sed 's|/[^/]*$||' | sort | uniq)
 
           # Save changed folders to output for later use
-          echo "changed_folders=$changed_folders" >> $GITHUB_ENV
+          # echo "changed_folders=$changed_folders" >> $GITHUB_ENV
+          echo "changed_folders=$changed_folders" | sed 's/ /\\n/g' >> $GITHUB_ENV
           echo "Changed folders: $changed_folders"
 
       # Step 5: Run the Python script with the list of changed folders and secret key
