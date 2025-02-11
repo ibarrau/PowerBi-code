@@ -31,7 +31,7 @@ Workspace = sys.argv[1]
 list_files = " ".join(sys.argv[5:])
 
 # Get Workspace Name from folder
-Folder_Name = list_files.split(",")[0].split("/")[:-1][-1]
+Folder_Name = list_files.split(",")[0].split("/")[:-1][-2]
 print("The arguments are: " , str(sys.argv))
 
 # Show extraction
@@ -57,9 +57,9 @@ wp = core.Workspaces(t.token)
 # Find workspace id by name
 try:
     areas = wp.list_workspaces(roles="admin, member, contributor, viewer")
-    workspace_id = [i['id'] for i in areas['value'] if i['displayName']==Workspace and i['type']=="Workspace" ]
+    workspace_id = [i['id'] for i in areas['value'] if i['displayName']==Folder_Name and i['type']=="Workspace" ]
     if workspace_id == []:
-        raise Exception("Workspace {} does not exist.".format(Workspace))
+        raise Exception("Workspace {} does not exist.".format(Folder_Name))
 except Exception as e:
     print("Error: ", e)
 

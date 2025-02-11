@@ -3,7 +3,7 @@ name: Process Reports and Models
 on:
   push:
     paths:
-      - 'PowerBi Reports/PBIP Projects examples/BlogDemos/**'  # Trigger only when there's a change in this folder
+      - 'PowerBi Reports/Deploy Pruebas/**'  # Trigger only when there's a change in this folder
 
 jobs:
   process_changes:
