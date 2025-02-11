@@ -70,12 +70,12 @@ print("Token generated.\nWorkspace id found: " + str(workspace_id))
 for files in list_files.split(","):
     try:
         if ".Report" in files: # Another alternative check specific folder .split(".")[-1] == "Report"            
-            item_path = files.split(".Report")[0]+".Report/"
+            item_path = files.split(".Report")[0]+".Report"
             print("Running report deployment to path: " + item_path)
             it.simple_deploy_report(workspace_id[0], workspace_id[0], item_path)
         else:            
             if ".SemanticModel" in files:
-                item_path = files.split(".SemanticModel")[0]+".SemanticModel/"
+                item_path = files.split(".SemanticModel")[0]+".SemanticModel"
             else:
                 item_path = files.split(".Dataset")[0]+".Dataset/"
             print("Running semantic model deployment to path: " + item_path)
