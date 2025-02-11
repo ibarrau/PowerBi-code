@@ -1,7 +1,7 @@
 table estadistica-inscripciones-iniciales-autos-motos
 	lineageTag: 3faf3c4a-e9d1-4372-9cfa-481cba5985b5
 
-	measure 'Prom.Habitante' = SUM('estadistica-inscripciones-iniciales-autos-motos'[cantidad]) / SUM (Poblacional[Población (1)])
+	measure 'Prom.Habitante' = SUM('estadistica-inscripciones-iniciales-autos-motos'[cantidad]) / SUM (Poblacional[Población (1)] )
 		formatString: 0.0000
 		lineageTag: 98498ff4-5b03-4cda-ad0f-470c1ab4b403
 

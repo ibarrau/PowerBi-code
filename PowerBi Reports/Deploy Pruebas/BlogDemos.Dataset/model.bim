@@ -910,7 +910,7 @@
             "displayFolder": "*Medidas",
             "expression": [
               "",
-              "DIVIDE(",
+              "DIVIDE (",
               "    SUM(InternetSales[Net Price]) ,",
               "    SUM(InternetSales[Unit Cost])",
               "    , 0",
