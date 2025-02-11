@@ -88,11 +88,11 @@ for files in list_files.split(","):
 for pbi_item in list(set(items_deploy)):
     try:
         if ".Report" in pbi_item: # Another alternative check specific folder .split(".")[-1] == "Report"
-            print("Running report deployment to path: " + item_path)
-            it.simple_deploy_report(workspace_id[0], workspace_id[0], item_path)
+            print("Running report deployment to path: " + pbi_item)
+            it.simple_deploy_report(workspace_id[0], workspace_id[0], pbi_item)
         else:
-            print("Running semantic model deployment to path: " + item_path)
-            it.simple_deploy_semantic_model(workspace_id[0], item_path)
+            print("Running semantic model deployment to path: " + pbi_item)
+            it.simple_deploy_semantic_model(workspace_id[0], pbi_item)
     except Exception as e:
         print("Error_: ", e)
         raise Exception(e)
