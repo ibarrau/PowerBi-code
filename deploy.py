@@ -66,18 +66,31 @@ except Exception as e:
 
 print("Token generated.\nWorkspace id found: " + str(workspace_id))
 
-# Deploy Report or semantic model change by checking files modification at Report or SemanticModel folder.
+# Remove text after .SemanticModel or .Report to optimize deployment when modify multiple files of single item
+items_deploy = []
 for files in list_files.split(","):
     try:
         if ".Report" in files: # Another alternative check specific folder .split(".")[-1] == "Report"            
-            item_path = files.split(".Report")[0]+".Report"
-            print("Running report deployment to path: " + item_path)
-            it.simple_deploy_report(workspace_id[0], workspace_id[0], item_path)
+            item_path = files.split(".Report")[0]+".Report"            
         else:            
             if ".SemanticModel" in files:
                 item_path = files.split(".SemanticModel")[0]+".SemanticModel"
             else:
-                item_path = files.split(".Dataset")[0]+".Dataset/"
+                item_path = files.split(".Dataset")[0]+".Dataset"
+        items_deploy.append(item_path)
+    except Exception as e:
+        print("Error_: ", e)
+        raise Exception(e)
+
+
+
+# Deploy Report or semantic model change by checking files modification at Report or SemanticModel folder.
+for pbi_item in list(set(items_deploy)):
+    try:
+        if ".Report" in pbi_item: # Another alternative check specific folder .split(".")[-1] == "Report"
+            print("Running report deployment to path: " + item_path)
+            it.simple_deploy_report(workspace_id[0], workspace_id[0], item_path)
+        else:
             print("Running semantic model deployment to path: " + item_path)
             it.simple_deploy_semantic_model(workspace_id[0], item_path)
     except Exception as e:
