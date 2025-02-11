@@ -25,7 +25,7 @@ table estadistica-inscripciones-iniciales-autos-motos
 
 	measure 'Prom. Anual' =
 			
-			DIVIDE(
+			DIVIDE( 
 			    SUM('estadistica-inscripciones-iniciales-autos-motos'[cantidad])
 			    , DISTINCTCOUNT(TablaFecha[Año])
 			)
