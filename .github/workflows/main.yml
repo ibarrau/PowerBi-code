@@ -3,7 +3,7 @@ name: Process Reports and Models
 on:
   push:
     paths:
-      - 'PowerBi Reports/Deploy Pruebas/**'  # Trigger only when there's a change in this folder
+      - 'PowerBi Reports/**'  # Trigger only when there's a change in this folder
 
 jobs:
   process_changes:
@@ -33,7 +33,7 @@ jobs:
         id: detect_changes
         run: |
           # Define the folder to check for changes
-          target_folder="PowerBi Reports/Deploy Pruebas/"
+          target_folder="PowerBi Reports/"
           
           # Ensure we're comparing against the previous commit (use HEAD and HEAD^)
           # changed_folders=$(git diff --name-only HEAD^..HEAD -- "$target_folder" | grep -E "/.*\.(Report|SemanticModel)/" | cut -d/ -f1-2 | sort | uniq)
@@ -52,5 +52,5 @@ jobs:
 
       # Step 5: Run the Python script with the list of changed folders and secret key
       - name: Run Python script
-        run: python deploy.py "d453a221-6f9c-40e3-a7ef-346e068ea8dc" ${{ secrets.TENANT_ID }} ${{ secrets.APP_ID }} ${{ secrets.SECRET_KEY }} ${{ env.changed_folders }} 
+        run: python deploy.py "ldw-key" ${{ secrets.TENANT_ID }} ${{ secrets.APP_ID }} ${{ secrets.SECRET_KEY }} ${{ env.changed_folders }} 
 
