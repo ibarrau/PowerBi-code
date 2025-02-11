@@ -1,4 +1,4 @@
-role NOA 
+role NOA
 	modelPermission: read
 
 	tablePermission Poblacional = [Jurisdicción] = "Jujuy" || [Jurisdicción] = "Salta" || [Jurisdicción] = "Tucumán" || [Jurisdicción] = "Catamarca" || [Jurisdicción] = "Santiago del Estero"
