@@ -30,12 +30,12 @@ Workspace = sys.argv[1]
 # Get list of file path folders with changes
 list_files = " ".join(sys.argv[5:])
 
-# Get Workspace Name from folder
-Folder_Name = list_files.split(",")[0].split("/")[:-1][-2]
+# Get Workspace Name from folder considering the second item of the path as the workspace [1]. /Folders/Workspace/**
+Workspace_Name = list_files.split(",")[0].split("/")[:-1][1]
 print("The arguments are: " , str(sys.argv))
 
 # Show extraction
-print("Folder_Name: " + Folder_Name, "\nWorkspace: " + Workspace, "\nFolders: " + str(list_files))
+print("Folder_Name: " + Workspace_Name, "\nWorkspace: " + Workspace, "\nFolders: " + str(list_files))
 
 # Get list of files to import
 #list_files = [item for item in Files.split(",") if item[-4:]=="pbix" and item.split("/")[0] ==Folder_Name]
@@ -57,11 +57,12 @@ wp = core.Workspaces(t.token)
 # Find workspace id by name
 try:
     areas = wp.list_workspaces(roles="admin, member, contributor, viewer")
-    workspace_id = [i['id'] for i in areas['value'] if i['displayName']==Folder_Name and i['type']=="Workspace" ]
+    workspace_id = [i['id'] for i in areas['value'] if i['displayName']==Workspace_Name and i['type']=="Workspace" ]
     if workspace_id == []:
-        raise Exception("Workspace {} does not exist.".format(Folder_Name))
+        raise Exception("Workspace {} does not exist.".format(Workspace_Name))
 except Exception as e:
     print("Error: ", e)
+    sys.exit(1)
 
 print("Token generated.\nWorkspace id found: " + str(workspace_id))
 
