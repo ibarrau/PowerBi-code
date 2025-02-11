@@ -1,4 +1,4 @@
-{ 
+{  
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/1.2.0/schema.json",
   "themeCollection": {},
   "layoutOptimization": "None",

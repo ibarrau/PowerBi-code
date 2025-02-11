@@ -5,7 +5,7 @@ table estadistica-inscripciones-iniciales-autos-motos
 		formatString: 0.0000
 		lineageTag: 98498ff4-5b03-4cda-ad0f-470c1ab4b403
 
-	measure 'Prom. Pcia' = SUM('estadistica-inscripciones-iniciales-autos-motos'[cantidad]) / 24
+	measure 'Prom. Pcia' = SUM('estadistica-inscripciones-iniciales-autos-motos'[cantidad]) / 24 
 		lineageTag: c7fd4e78-44b1-4201-aed1-2289fc8e6614
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
