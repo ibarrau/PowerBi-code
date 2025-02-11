@@ -33,7 +33,7 @@ jobs:
         id: detect_changes
         run: |
           # Define the folder to check for changes
-          target_folder="PowerBi Reports/PBIP Projects examples/BlogDemos/"
+          target_folder="PowerBi Reports/Deploy Pruebas/"
           
           # Ensure we're comparing against the previous commit (use HEAD and HEAD^)
           # changed_folders=$(git diff --name-only HEAD^..HEAD -- "$target_folder" | grep -E "/.*\.(Report|SemanticModel)/" | cut -d/ -f1-2 | sort | uniq)
