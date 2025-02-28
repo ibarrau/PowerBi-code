@@ -15,14 +15,21 @@
 @   .       .         . *******@
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
-This script is used to deploy Power BI reports or semantic models to a workspace. It is called from the GitHub Action. It uses the simplepbi library to deploy.
+This script is used to deploy Power BI reports or semantic models to a workspace. It is called from the GitHub Action. It uses the simplepbi library and LaDataWeb API to deploy.
  
 '''
 
 import sys 
+import os
+import sys 
+import json
+import base64
+import requests
 from simplepbi import token
 from simplepbi.fabric import core
+# from simplepbi import ladataweb
 
+            
 # Set variables
 Throw_exception = ""
 Workspace = sys.argv[1]
@@ -87,18 +94,45 @@ for files in list_files.split(","):
 items_deploy = sm_items_deploy + re_items_deploy
 
 
-
 # Deploy Report or semantic model change by checking files modification at Report or SemanticModel folder.
 for pbi_item in list(set(items_deploy)):
     try:
+        item_name = pbi_item.split("/")[-1].split(".")[0]
+        if item_name == "":
+            raise Exception("Make sure the path doesn't en in / or \\ at the end.")
+        else:
+            print("Item name: ", item_name)
         if ".Report" in pbi_item: # Another alternative check specific folder .split(".")[-1] == "Report"
             print("Running report deployment to path: " + pbi_item)
-            it.simple_deploy_report(workspace_id[0], workspace_id[0], pbi_item)
+            # Build report parts for deploy checking semantic model workspace
+            parts = it.build_report_parts(workspace_id[0], pbi_item)
+            body = {
+                "ldw-api-key": "test_key",
+                "btoken": t.token,
+                "workspace_id": workspace_id[0],
+                "item_name": item_name,
+                "item_type": "Report",
+                "parts": parts
+            }
+            res = requests.post(url="https://ldw-api.azurewebsites.net/api/deploy-powerbi-item", headers={'Content-Type': 'application/json'}, data=json.dumps(body))            
+            # ladataweb.deploy_report(ldw_api_key, t.token, workspace_id[0], item_name, "Report", parts)
         else:
             print("Running semantic model deployment to path: " + pbi_item)
-            it.simple_deploy_semantic_model(workspace_id[0], pbi_item)
+            # Build semantic model parts for deploy
+            parts = it.build_semantic_model_parts(workspace_id[0], pbi_item)
+            body = {
+                "ldw-api-key": "test_key",
+                "btoken": t.token,
+                "workspace_id": workspace_id[0],
+                "item_name": item_name,
+                "item_type": "SemanticModel",
+                "parts": parts
+            }
+            res = requests.post(url="https://ldw-api.azurewebsites.net/api/deploy-powerbi-item", headers={'Content-Type': 'application/json'}, data=json.dumps(body))
+            # ladataweb.deploy_semantic_model(ldw_api_key, t.token, workspace_id[0], item_name, "SemanticModel", parts)
+        print(res.text)
     except Exception as e:
         print("Error_: ", e)
         raise Exception(e)
 
-    
+

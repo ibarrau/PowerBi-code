@@ -8,14 +8,14 @@
 @      . | |   _____  .        @
 @      . | |  |  __ \ .        @    La Data Web Script
 @      . | |__| |  | |.   ***  @
-@........|____| |  | |...*   *.@    Copyright © 2023 Ignacio Barrau
+@........|____| |  | |...*   *.@    Copyright © 2025 Ignacio Barrau
 @   .       . | |__| |. *     *@
 @   .       . |_____/ . *     *@    *********************************************
 @   .       .         . *     *@
 @   .       .         . *******@
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
-This script is used to deploy Power BI reports to a workspace. It is called from the Azure DevOps pipeline. It uses the simplepbi library to import the reports.
+This script is used to deploy Power BI reports or semantic model to a workspace. It is called from GitHub Actions. It uses the simplepbi library to deploy.
  
 '''
 
