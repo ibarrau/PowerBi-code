@@ -34,8 +34,12 @@ def get_feriados(year):
                     uls.append(ul[1].text_content())
                     uls.append(tipo_feriado)
                     uls.append(tipo_feriado)
-                    #Add table title as a component in the list to insert in the frame
-                    df = df.append(pd.Series(uls, index=['Fecha', 'Dia', 'Desc', 'Tipo']), ignore_index=True)
+                    print(uls)
+                    if len(uls) == 4:
+                        new_row = pd.DataFrame([uls], columns=['Fecha', 'Dia', 'Desc', 'Tipo'])
+                        df = pd.concat([df, new_row], ignore_index=True)
+                    else:
+                        print("Fila inválida:", uls)
 
                 else:
                     uls = []
@@ -44,8 +48,12 @@ def get_feriados(year):
                     uls.append(ul[1].text_content())
                     uls.append(ul[2].text_content())
                     uls.append(tipo_feriado)
-                    #Add table title as a component in the list to insert in the frame
-                    df = df.append(pd.Series(uls, index=['Fecha', 'Dia', 'Desc', 'Tipo']), ignore_index=True)
+                    print(uls)
+                    if len(uls) == 4:
+                        new_row = pd.DataFrame([uls], columns=['Fecha', 'Dia', 'Desc', 'Tipo'])
+                        df = pd.concat([df, new_row], ignore_index=True)
+                    else:
+                        print("Fila inválida:", uls)
     # Create a clean date
     df["Año"]= str(year)
     df[['nroDia','Mes']] = df['Fecha'].str.split(' de ',expand=True)
@@ -78,7 +86,7 @@ if __name__ == "__main__":
     try:
         df = get_feriados(year)
     except Exception as ex:
-        print("Error en extracción o guardado en fram.\nExcepcion: " , ex)
+        print("Error en extracción o guardado en frame.\nExcepcion: " , ex)
         quit()        
     
     print('Guardando...')    
