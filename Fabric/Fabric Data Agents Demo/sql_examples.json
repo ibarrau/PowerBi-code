@@ -1,0 +1,14 @@
+{
+    "Which are the top 10 most popular artist?": "SELECT DISTINCT top 15 artists, popularity FROM Spotify_Tracks order by popularity DESC",
+    "How many albums does harry styles has?": "SELECT COUNT(album_name) as albums_count FROM Spotify_Tracks WHERE LOWER(artists) like LOWER('%Harry Styles%')",
+    "Which albums has harry styles released?": "SELECT DISTINCT album_name FROM Spotify_Tracks WHERE LOWER(artists) like LOWER('%Harry Styles%')",
+    "What type or kind of music has bad bunny done?": "SELECT DISTINCT track_genre FROM Spotify_Tracks WHERE LOWER(artists) like LOWER('%Bad Bunny%')",
+    "What song is from Perreo Tenebroso album has most energy?": "SELECT TOP 1 track_name FROM Spotify_Tracks WHERE album_name like LOWER('%Perreo Tenebroso%') ORDER BY energy DESC",
+    "Which are the top 5 sets bigger of City category": "SELECT DISTINCT set_name, piece_count FROM Lego_Sets WHERE LOWER(theme_name) like LOWER('%city%') ORDER BY piece_count DESC",
+    "Which are the funnest sets of classic theme?": "SELECT DISTINCT TOP 5 set_name, play_star_rating FROM Lego_Sets WHERE LOWER(theme_name) like LOWER('%classic%') ORDER BY play_star_rating DESC",
+    "Which is the bigger set from the ghostbusters": "SELECT DISTINCT TOP 1 set_name, piece_count FROM Lego_Sets WHERE LOWER(theme_name) like LOWER('%ghostbusters%') ORDER BY piece_count DESC",
+    "Show me the funnest sets with small values": "SELECT DISTINCT theme_name, set_name, play_star_rating FROM Lego_Sets WHERE piece_count < 1000 and play_star_rating = 5 and play_star_rating is not null ORDER BY play_star_rating DESC",
+    "Show me the best rated friends sets": "SELECT DISTINCT set_name, prod_desc, val_star_rating FROM Lego_Sets WHERE LOWER(theme_name) like LOWER('%friends%') and val_star_rating is not null ORDER BY val_star_rating DESC",
+    "Which themes have the most expensive sets?": "SELECT DISTINCT theme_name, list_price FROM Lego_Sets ORDER BY list_price DESC",
+    "Which sets have a car in it or In which sets can I find a car?": "SELECT DISTINCT theme_name, set_name, prod_desc FROM Lego_Sets WHERE prod_long_desc like '%car%'"
+}
