@@ -1,5 +1,5 @@
 {
-    "Which are the top 10 most popular artist?": "SELECT DISTINCT top 15 artists, popularity FROM Spotify_Tracks order by popularity DESC",
+    "Which are the top 10 most popular artist?": "SELECT DISTINCT top 10 artists, popularity FROM Spotify_Tracks order by popularity DESC",
     "How many albums does harry styles has?": "SELECT COUNT(album_name) as albums_count FROM Spotify_Tracks WHERE LOWER(artists) like LOWER('%Harry Styles%')",
     "Which albums has harry styles released?": "SELECT DISTINCT album_name FROM Spotify_Tracks WHERE LOWER(artists) like LOWER('%Harry Styles%')",
     "What type or kind of music has bad bunny done?": "SELECT DISTINCT track_genre FROM Spotify_Tracks WHERE LOWER(artists) like LOWER('%Bad Bunny%')",
@@ -10,5 +10,6 @@
     "Show me the funnest sets with small values": "SELECT DISTINCT theme_name, set_name, play_star_rating FROM Lego_Sets WHERE piece_count < 1000 and play_star_rating = 5 and play_star_rating is not null ORDER BY play_star_rating DESC",
     "Show me the best rated friends sets": "SELECT DISTINCT set_name, prod_desc, val_star_rating FROM Lego_Sets WHERE LOWER(theme_name) like LOWER('%friends%') and val_star_rating is not null ORDER BY val_star_rating DESC",
     "Which themes have the most expensive sets?": "SELECT DISTINCT theme_name, list_price FROM Lego_Sets ORDER BY list_price DESC",
-    "Which sets have a car in it or In which sets can I find a car?": "SELECT DISTINCT theme_name, set_name, prod_desc FROM Lego_Sets WHERE prod_long_desc like '%car%'"
+    "Which sets have a car in it or In which sets can I find a car?": "SELECT DISTINCT theme_name, set_name, prod_desc FROM Lego_Sets WHERE prod_long_desc like '%car%'",
+    "Give me three examples of the most danceable songs of daddy yankee": "SELECT DISTINCT TOP 3 track_name, popularity FROM Spotify_Tracks WHERE LOWER(artists) like LOWER('%Daddy Yankee%') ORDER BY popularity DESC"
 }
