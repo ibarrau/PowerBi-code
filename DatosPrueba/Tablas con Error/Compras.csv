@@ -1,0 +1,53 @@
+Fecha,Comprobante,Número Comprobante,Proveedor,Categoría,Monto,Forma de Pago,Estado
+2025-10-05,Factura A,0001-00001523,TecnoMax,Tecnología,158000,Transferencia,Pagado
+2025-09-21,Factura B,0003-00004523,Distribuidora S.A.,Alimentos,29800,Efectivo,Pagado
+2025-09-19,Ticket,0005-00009921,OfiExpress,Oficina,12500,Débito,Pendiente
+2025-09-12,Factura C,0004-00008871,SuperLimpio,Limpieza,9650,Transferencia,Pagado
+2025-08-30,Factura B,0003-00004587,Distribuidora S.A.,Alimentos,30200,Efectivo,Pagado
+2025-08-27,Factura A,0001-00001589,TecnoMax,Tecnología,184300,Transferencia,Pagado
+2025-08-23,Ticket,0005-00009999,Papelería Centro,Oficina,8500,Débito,Pendiente
+2025-08-18,Factura C,0004-00008891,CleanHouse,Limpieza,11000,Efectivo,Pagado
+2025-08-12,Factura B,0003-00004600,Alimentos Norte,Alimentos,27000,Transferencia,Pagado
+2025-07-29,Factura A,0001-00001601,NetSystems,Tecnología,220000,Transferencia,Pendiente
+2025-07-27,Ticket,0005-00010001,OfiExpress,Oficina,13400,Débito,Pagado
+2025-07-22,Factura C,0004-00008901,CleanHouse,Limpieza,9800,Efectivo,Pagado
+2025-07-15,Factura B,0003-00004620,Distribuidora S.A.,Alimentos,31000,Transferencia,Pagado
+2025-07-08,Factura A,0001-00001625,TecnoMax,Tecnología,178000,Transferencia,Pendiente
+2025-07-01,Ticket,0005-00010015,Papelería Centro,Oficina,9500,Débito,Pagado
+2025-06-28,Factura C,0004-00008921,CleanHouse,Limpieza,10200,Efectivo,Pagado
+2025-06-20,Factura B,0003-00004645,Alimentos Norte,Alimentos,28700,Transferencia,Pagado
+2025-06-15,Factura A,0001-00001649,NetSystems,Tecnología,198500,Transferencia,Pagado
+2025-06-08,Factura B,0003-00004655,Distribuidora S.A.,Alimentos,32000,Efectivo,Pagado
+2025-06-03,Factura C,0004-00008945,SuperLimpio,Limpieza,10700,Efectivo,Pendiente
+2025-05-28,Factura A,0001-00001673,TecnoMax,Tecnología,162000,Transferencia,Pagado
+2025-05-21,Ticket,0005-00010032,OfiExpress,Oficina,8900,Débito,Pagado
+2025-05-15,Factura B,0003-00004678,Alimentos Norte,Alimentos,29500,Transferencia,Pendiente
+2025-05-10,Factura C,0004-00008960,CleanHouse,Limpieza,9400,Efectivo,Pagado
+2025-05-04,Factura A,0001-00001685,NetSystems,Tecnología,210000,Transferencia,Pendiente
+2025-04-30,Factura B,0003-00004689,Distribuidora S.A.,Alimentos,31200,Efectivo,Pagado
+2025-04-24,Factura C,0004-00008973,SuperLimpio,Limpieza,10150,Transferencia,Pagado
+2025-04-19,Ticket,0005-00010045,Papelería Centro,Oficina,7600,Débito,Pagado
+2025-04-12,Factura A,0001-00001697,TecnoMax,Tecnología,172000,Transferencia,Pagado
+2025-04-06,Factura B,0003-00004700,Alimentos Norte,Alimentos,28000,Efectivo,Pagado
+2025-03-30,Factura C,0004-00008985,CleanHouse,Limpieza,9600,Efectivo,Pendiente
+2025-03-25,Factura A,0001-00001702,NetSystems,Tecnología,195000,Transferencia,Pagado
+2025-03-18,Factura B,0003-00004710,Distribuidora S.A.,Alimentos,29900,Transferencia,Pagado
+2025-03-10,Factura C,0004-00008990,SuperLimpio,Limpieza,10300,Efectivo,Pagado
+2025-03-03,Ticket,0005-00010058,OfiExpress,Oficina,12000,Débito,Pendiente
+2025-02-25,Factura A,0001-00001714,TecnoMax,Tecnología,188000,Transferencia,Pagado
+2025-02-18,Factura B,0003-00004725,Alimentos Norte,Alimentos,31000,Efectivo,Pagado
+2025-02-10,Factura C,0004-00008998,CleanHouse,Limpieza,9700,Transferencia,Pendiente
+2025-02-03,Factura A,0001-00001721,NetSystems,Tecnología,207000,Transferencia,Pagado
+2025-01-28,Factura B,0003-00004732,Distribuidora S.A.,Alimentos,31500,Efectivo,Pagado
+2025-01-20,Ticket,0005-00010071,Papelería Centro,Oficina,8800,Débito,Pendiente
+2025-01-12,Factura C,0004-00009005,SuperLimpio,Limpieza,9900,Efectivo,Pagado
+2025-01-05,Factura A,0001-00001733,TecnoMax,Tecnología,180000,Transferencia,Pendiente
+2024-12-30,Factura B,0003-00004745,Alimentos Norte,Alimentos,30500,Efectivo,Pagado
+2024-12-22,Factura C,0004-00009012,CleanHouse,Limpieza,9600,Efectivo,Pagado
+2024-12-15,Factura A,0001-00001742,NetSystems,Tecnología,200000,Transferencia,Pagado
+2024-12-08,Ticket,0005-00010085,OfiExpress,Oficina,9100,Débito,Pagado
+2024-12-01,Factura B,0003-00004756,Distribuidora S.A.,Alimentos,29950,Transferencia,Pendiente
+2024-11-25,Factura C,0004-00009025,SuperLimpio,Limpieza,10400,Efectivo,Pagado
+2024-11-18,Factura A,0001-00001750,TecnoMax,Tecnología,174000,Transferencia,Pagado
+2025-18-18,Factura A,0001-00001750,TecnoMax,Tecnología,17000,Efectivo,Pagado
+2024-11-18,Factura A,0001-00001750,TecnoMax,Tecnología,"41,000.0",Débito,Pagado

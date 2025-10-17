@@ -1,0 +1,56 @@
+ID_Factura,Fecha,Comprobante,Monto,Sucursal,Segmento_Cliente,Método_Pago,Estado_Factura,Producto_Principal
+F1000,2023-11-27,Factura A,141873.38,Córdoba,Online,Contado,Pagada,Tecnología
+F1001,2023-07-01,Factura B,389863.23,La Plata,Mayorista,Transferencia,Pagada,Deportes
+F1002,2024-03-16,Factura C,474432.18,Mendoza,Retail,Transferencia,Pendiente,Hogar
+F1003,2025-03-03,Nota de crédito B,186291.15,Buenos Aires,Gobierno,Tarjeta de crédito,Pendiente,Electrodomésticos
+F1004,2023-02-13,Factura C,121920.29,Rosario,Corporativo,Tarjeta de débito,Pagada,Hogar
+F1005,2023-10-05,Factura A,266416.77,Córdoba,Online,Tarjeta de crédito,Vencida,Tecnología
+F1006,2024-01-28,Factura A,374258.54,La Plata,Retail,Tarjeta de débito,Pendiente,Juguetes
+F1007,2023-04-02,Factura C,355091.69,Mendoza,Corporativo,Tarjeta de crédito,Vencida,Deportes
+F1008,2024-11-13,Factura B,221841.13,Rosario,Mayorista,Transferencia,Pagada,Tecnología
+F1009,2024-07-15,Nota de crédito B,39086.48,Buenos Aires,Gobierno,Contado,Pendiente,Electrodomésticos
+F1010,2023-12-25,Factura C,202492.92,Córdoba,Retail,Tarjeta de crédito,Pagada,Juguetes
+F1011,2024-08-11,Factura A,263781.56,La Plata,Online,Tarjeta de débito,Vencida,Tecnología
+F1012,2025-04-29,Factura B,210934.34,Mendoza,Corporativo,Contado,Pagada,Indumentaria
+F1013,2025-09-07,Factura A,462182.94,Rosario,Retail,Tarjeta de crédito,Pagada,Hogar
+F1014,2023-05-30,Nota de crédito A,291045.75,Buenos Aires,Gobierno,Transferencia,Pendiente,Electrodomésticos
+F1015,2023-08-16,Factura C,43214.6,Córdoba,Corporativo,Tarjeta de débito,Vencida,Deportes
+F1016,2024-06-20,Factura A,130936.82,La Plata,Online,Contado,Pagada,Indumentaria
+F1017,2025-08-23,Factura C,497540.26,Mendoza,Mayorista,Transferencia,Pendiente,Juguetes
+F1018,2024-10-04,Factura B,364627.39,Rosario,Retail,Tarjeta de crédito,Pagada,Hogar
+F1019,2023-06-10,Factura A,354307.55,Buenos Aires,Gobierno,Transferencia,Pagada,Tecnología
+F1020,2023-03-09,Factura C,221757.73,Córdoba,Corporativo,Contado,Vencida,Electrodomésticos
+F1021,2025-02-14,Factura B,298325.11,La Plata,Online,Tarjeta de débito,Pendiente,Juguetes
+F1022,2024-04-21,Nota de crédito B,485209.6,Mendoza,Mayorista,Tarjeta de crédito,Vencida,Deportes
+F1023,2024-09-17,Factura A,358025.49,Rosario,Retail,Contado,Pagada,Tecnología
+F1024,2023-09-22,Factura C,463807.1,Buenos Aires,Gobierno,Tarjeta de débito,Pendiente,Hogar
+F1025,2024-02-08,Factura A,118058.91,Córdoba,Corporativo,Transferencia,Pagada,Indumentaria
+F1026,2023-01-19,Factura B,398778.82,La Plata,Online,Contado,Vencida,Electrodomésticos
+F1027,2025-06-01,Factura A,436150.0,Mendoza,Mayorista,Tarjeta de crédito,Pagada,Tecnología
+F1028,2025-01-06,Factura C,106415.67,Rosario,Retail,Tarjeta de débito,Pendiente,Hogar
+F1029,2024-12-19,Nota de crédito A,248765.28,Buenos Aires,Gobierno,Transferencia,Vencida,Deportes
+F1030,2023-11-07,Factura B,384917.94,Córdoba,Corporativo,Contado,Pagada,Juguetes
+F1031,2024-05-02,Factura A,405929.03,La Plata,Online,Tarjeta de crédito,Pendiente,Tecnología
+F1032,2024-07-04,Factura C,157240.8,Mendoza,Mayorista,Transferencia,Pagada,Electrodomésticos
+F1033,2023-06-27,Factura B,302791.66,Rosario,Retail,Tarjeta de débito,Vencida,Indumentaria
+F1034,2025-03-26,Nota de crédito B,230361.93,Buenos Aires,Gobierno,Contado,Pendiente,Hogar
+F1035,2024-09-29,Factura A,285029.61,Córdoba,Corporativo,Tarjeta de crédito,Vencida,Tecnología
+F1036,2023-05-10,Factura C,171427.02,La Plata,Online,Contado,Pagada,Electrodomésticos
+F1037,2025-07-08,Factura B,493832.72,Mendoza,Mayorista,Transferencia,Pagada,Juguetes
+F1038,2023-10-14,Factura A,252614.92,Rosario,Retail,Tarjeta de crédito,Pendiente,Hogar
+F1039,2024-03-22,Factura B,353012.24,Buenos Aires,Gobierno,Tarjeta de débito,Vencida,Deportes
+F1040,2025-05-19,Factura C,290874.67,Córdoba,Corporativo,Transferencia,Pagada,Tecnología
+F1041,2023-12-03,Factura A,334906.57,La Plata,Online,Contado,Pendiente,Indumentaria
+F1042,2024-11-30,Nota de crédito A,370926.03,Mendoza,Mayorista,Tarjeta de crédito,Pagada,Tecnología
+F1043,2025-09-03,Factura C,246029.89,Rosario,Retail,Tarjeta de débito,Pendiente,Juguetes
+F1044,2023-07-19,Factura A,209849.04,Buenos Aires,Gobierno,Transferencia,Pagada,Electrodomésticos
+F1045,2024-01-10,Factura B,457013.78,Córdoba,Corporativo,Contado,Vencida,Hogar
+F1046,2023-03-13,Factura C,47434.5,La Plata,Online,Tarjeta de crédito,Pendiente,Deportes
+F1047,2024-06-07,Nota de crédito B,158369.15,Mendoza,Mayorista,Transferencia,Pagada,Tecnología
+F1048,2025-04-11,Factura A,331207.81,Rosario,Retail,Tarjeta de débito,Vencida,Hogar
+F1049,2023-08-04,Factura B,411637.35,Buenos Aires,Gobierno,Contado,Pagada,Electrodomésticos
+F1050,2025-01-20,Factura C,206384.78,Córdoba,Corporativo,Tarjeta de crédito,Pendiente,Indumentaria
+F1051,2024-05-14,Factura A,123549.63,La Plata,Online,Transferencia,Pagada,Juguetes
+F1052,2024-08-25,Nota de crédito A,382794.77,Mendoza,Mayorista,Tarjeta de débito,Vencida,Hogar
+F1053,2025-25-25,Factura A,38123794.77,Córdoba,Mayorista,Tarjeta de débito,Pagada,Hogar
+F1052,2025-08-25,Factura C,-,Mendoza,Mayorista,Tarjeta de débito,Vencida,Hogar
